@@ -7,10 +7,12 @@ One thing I would love to do in the future is to bridge the results from other c
 
 If you have any suggestions please send them over! I'd gladly make changes if my system were to be unoptimal. Right now it is pretty apathetic towards track differences, which is unfair to teams with way tougher tracks.
 
+## Is this ranking good?
+Shortly, no. It doesn't really use anything like number of valid attempts, track differences, weather differences, and so on. All it really does is shows your score as a ratio of the global best score in your vehicle class over 3 years.
+
+But it's fun! I wouldn't use this system as it is for invites to World Championship, but I like extending the competition across borders and seas.
 
 ## How does the ranking work?
-
-My brain cooked this up at 11 pm on exam week, so it is far from perfect and very simple.
 
 Teams are based on their Team ID and nothing else. If your team has kept the same Team ID but competed in different classes, it will be counted as the same team, and past scores in those in those past seasons will be kept.
 
@@ -24,7 +26,7 @@ First we calculate the on-track performance $S_{ontrack}$. Instead of taking the
 
 $$S_{ontrack} = 100 \cdot \frac{E_{teambest}}{E_{eventmax}}$$
 
-We then calculated a competitiveness factor $C_k$, which is per event. This does not factor in track differences yet, so it may punish hillier tracks, or competition in lesser conditions
+We then calculated a competitiveness factor $C_k$, which is per event. This does not factor in track differences yet, so it may punish hillier tracks, or competition in lesser conditions.
 
 $$C_k = \frac{E_{eventmax}}{E_{worldmax}} $$
 
