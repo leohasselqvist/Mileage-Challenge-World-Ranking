@@ -1,0 +1,63 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2026_us,2026,P,ICE,1,US0008001,United States,12,Brigham Young University,Supermileage ICE,6,8,912
+sem_2026_us,2026,P,ICE,2,US0061002,United States,1,Mater Dei High School,Team Cosmo,5,8,860
+sem_2026_us,2026,P,ICE,3,US0063001,United States,3,Michigan Technological University,MTU Supermileage Systems,6,8,536
+sem_2026_us,2026,P,ICE,4,US0013001,United States,4,Cedarville University,Karcharias,5,8,511
+sem_2026_us,2026,P,ICE,5,US0071001,United States,16,Northern Illinois University,Huskie Engine,4,8,380
+sem_2026_us,2026,P,ICE,6,US0129005,United States,18,Armstrong High School,Falcon Spirit,4,8,223
+sem_2026_us,2026,P,ICE,7,US0130001,United States,19,University of Massachusetts Amherst,Mass Mileage,2,8,176
+sem_2026_us,2026,P,ICE,8,US0136001,United States,5,Penn State Behrend,Behrend Automotive Club,1,4,149
+sem_2026_us,2026,P,ICE,9,US0056001,United States,14,Livingston High School,Ecolancers,6,8,126
+sem_2026_us,2026,P,ICE,10,US0030001,United States,6,George M. Schurr High School,The Spartans,6,8,73
+sem_2026_us,2026,P,ICE,-,US0096002,United States,17,Trine University,Rolling Thunder,1,8,0
+sem_2026_us,2026,P,H2,1,US0084002,United States,212,Saint Thomas Academy,Experimental Vehicle Team 2,4,8,419
+sem_2026_us,2026,P,H2,2,US0118001,United States,202,Wheat Ridge High School,Rocky Mountain Racing,1,4,200
+sem_2026_us,2026,P,H2,-,US0093001,United States,214,Swarthmore College,Carthmore,1,4,0
+sem_2026_us,2026,P,BE,1,BR0026002,Brazil,311,Universidade Federal de Minas Gerais,Milhagem UFMG,4,8,470
+sem_2026_us,2026,P,BE,2,CA0013001,Canada,303,Université Laval,ALERION SUPERMILEAGE,5,8,427
+sem_2026_us,2026,P,BE,3,CO0001001,Colombia,314,Universidad de la Sabana,Unisabana Herons Electric Vehicle,6,8,396
+sem_2026_us,2026,P,BE,4,MX0009001,Mexico,302,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Aguascalientes,Borregos Racing,6,8,363
+sem_2026_us,2026,P,BE,5,US0006002,United States,305,Bradley University,Braves,6,8,344
+sem_2026_us,2026,P,BE,6,MX0010001,Mexico,304,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Guadalajara,Silca ELYOS Racing Team,5,8,336
+sem_2026_us,2026,P,BE,7,CA0018001,Canada,312,University of Toronto,UTSM - Tempest,5,8,325
+sem_2026_us,2026,P,BE,8,US0132001,United States,310,Southwest Christian High School,Stars 26,6,8,314
+sem_2026_us,2026,P,BE,9,US0051001,United States,308,Kankakee Valley High School,Watt's Buzzin,6,8,310
+sem_2026_us,2026,P,BE,10,US0071002,United States,307,Northern Illinois University,Huskie Hypermilers EV,6,8,297
+sem_2026_us,2026,P,BE,11,US0018001,United States,309,Colorado School of Mines,Rocky Mountain Peak Efficiency,2,6,275
+sem_2026_us,2026,P,BE,12,MX0017001,Mexico,320,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Laguna,Escudería Laguna,5,8,271
+sem_2026_us,2026,P,BE,13,US0022001,United States,306,Dunwoody College of Technology,Dunwoody Daredevils,7,8,270
+sem_2026_us,2026,P,BE,14,US0013002,United States,323,Cedarville University,Sting,4,8,254
+sem_2026_us,2026,P,BE,15,US0009001,United States,322,California Polytechnic State University,Cal Poly Supermileage Prototype,6,8,248
+sem_2026_us,2026,P,BE,16,US0129004,United States,328,Armstrong High School,Falcon Opportunity,6,8,224
+sem_2026_us,2026,P,BE,17,US0108001,United States,326,University of Illinois Urbana-Champaign,Eco Illini Supermileage,5,8,186
+sem_2026_us,2026,P,BE,18,US0174001,United States,330,Willmar Senior High School,Supercards,4,8,177
+sem_2026_us,2026,P,BE,19,US0175001,United States,331,Onamia Public School,Mille Lacs Raiders,8,8,174
+sem_2026_us,2026,P,BE,20,US0078001,United States,324,Purdue University Northwest,Pantheta Leo,6,8,160
+sem_2026_us,2026,P,BE,21,MX0015001,Mexico,319,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Sonora Norte,Saguaro Racing Team,4,8,126
+sem_2026_us,2026,P,BE,22,US0095002,United States,325,Texas A&M University,The 12th Amp,7,8,121
+sem_2026_us,2026,P,BE,23,GT0001002,Guatemala,316,Universidad del Valle de Guatemala,Taq'Balam,1,4,112
+sem_2026_us,2026,UC,ICE,1,US0116001,United States,512,Wawasee High School,Gold Warriors,4,8,271
+sem_2026_us,2026,UC,ICE,2,US0001001,United States,501,Alden-Conger High School,Knights ICEbreaker,8,8,249
+sem_2026_us,2026,UC,ICE,3,US0051002,United States,502,Kankakee Valley High School,Runnin' on Fumes,6,8,194
+sem_2026_us,2026,UC,ICE,4,US0075001,United States,503,Penn State University Park,Penn State University Nittany EcoWorks,7,8,184
+sem_2026_us,2026,UC,ICE,5,US0129001,United States,505,Armstrong High School,Falcon Pathfinder,7,8,153
+sem_2026_us,2026,UC,ICE,6,US0058001,United States,506,Louisiana Tech University,LA Tech ECO-CAR,6,8,147
+sem_2026_us,2026,UC,ICE,7,US0083002,United States,504,Ruston High School,Bearcat Motorsports 2,8,8,139
+sem_2026_us,2026,UC,ICE,8,US0160001,United States,515,Foothill High School,Tri-Valley Eco Car Engineering,4,8,61
+sem_2026_us,2026,UC,ICE,-,US0109002,United States,507,University of Michigan Ann Arbor,Cedar,3,8,0
+sem_2026_us,2026,UC,H2,1,US0084001,United States,601,Saint Thomas Academy,Experimental Vehicle Team 1,5,8,302
+sem_2026_us,2026,UC,H2,2,US0129002,United States,617,Armstrong High School,Falcon Curiosity,4,8,110
+sem_2026_us,2026,UC,H2,3,BR0021001,Brazil,611,Universidade Estadual do Oeste do Paraná Foz do Iguaçu,GCEE,6,8,67
+sem_2026_us,2026,UC,H2,-,CA0013002,Canada,612,Université Laval,ALER-ION SUPERMILEAGE,1,4,0
+sem_2026_us,2026,UC,H2,-,CA0018002,Canada,614,University of Toronto,Maple Mileage,2,8,0
+sem_2026_us,2026,UC,BE,1,US0061001,United States,701,Mater Dei High School,Team RUDI,7,8,226
+sem_2026_us,2026,UC,BE,2,US0084003,United States,719,Saint Thomas Academy,Experimental Vehicle Team 3,8,8,212
+sem_2026_us,2026,UC,BE,3,US0001002,United States,702,Alden-Conger High School,Shockwave,8,8,127
+sem_2026_us,2026,UC,BE,4,CA0017001,Canada,704,University of Ottawa,uOttawa Supermileage,7,8,96
+sem_2026_us,2026,UC,BE,5,US0116002,United States,703,Wawasee High School,Green Warriors,4,8,86
+sem_2026_us,2026,UC,BE,6,US0019002,United States,705,Cornell University,Cornell Electric Vehicles,6,8,60
+sem_2026_us,2026,UC,BE,7,US0129003,United States,721,Armstrong High School,Falcon Perseverance,5,8,54
+sem_2026_us,2026,UC,BE,8,US0083001,United States,718,Ruston High School,Bearcat Motorsports,7,8,51
+sem_2026_us,2026,UC,BE,9,CA0015001,Canada,711,University of British Columbia,Zeus,5,8,49
+sem_2026_us,2026,UC,BE,10,US0008002,United States,714,Brigham Young University,Supermileage Electric,4,8,48
+sem_2026_us,2026,UC,BE,-,US0108002,United States,720,University of Illinois Urbana-Champaign,Illini EV Concept,1,6,0

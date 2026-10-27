@@ -1,0 +1,33 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2025_br,2025,P,ICE,1,BR0011001,Brazil,1,IFRS Erechim,Drop Team,3,6,699
+sem_2025_br,2025,P,ICE,2,BR0041001,Brazil,2,UTFPR Pato Branco,Pato a Jato,4,6,521
+sem_2025_br,2025,P,ICE,3,BR0048001,Brazil,3,UTFPR Medianeira,Pé Vermelho Efficiency Team,5,6,134
+sem_2025_br,2025,P,ICE,-,BR0034001,Brazil,15,UFTM,Equipe Triangulo Verde,2,6,0
+sem_2025_br,2025,P,ICE,-,BR0038001,Brazil,16,UTFPR Cornélio Procópio,EcoDelta,4,6,0
+sem_2025_br,2025,P,ICE,-,BR0039001,Brazil,17,UTFPR Curitiba,Relampinhão,1,6,0
+sem_2025_br,2025,P,H2,1,BR0031001,Brazil,212,UFPR,Eco Octano UFPR Hidrogênio,1,3,132
+sem_2025_br,2025,P,BE,1,BR0026002,Brazil,304,UFMG,Milhagem UFMG BE,6,6,374
+sem_2025_br,2025,P,BE,2,MX0009001,Mexico,303,ITESM Aguascalientes,Borregos Racing,6,6,373
+sem_2025_br,2025,P,BE,3,BR0027001,Brazil,301,UFSC Florianópolis,E3 - Equipe de Eficiência Energética,5,6,313
+sem_2025_br,2025,P,BE,4,CO0001001,Colombia,324,Universidad de la Sabana,Unisabana Herons,6,6,311
+sem_2025_br,2025,P,BE,5,BR0013001,Brazil,302,IFSul Charqueadas,EIFCHAR,5,6,276
+sem_2025_br,2025,P,BE,6,BR0002002,Brazil,306,CEFET MG,Equipe ECOFET Prototype,6,6,202
+sem_2025_br,2025,P,BE,7,BR0031002,Brazil,305,UFPR,Eco Octano UFPR Elétrico,2,6,131
+sem_2025_br,2025,P,BE,8,BR0021002,Brazil,314,Unioeste Foz do Iguaçu,Grupo Cataratas de Eficiência Energética,5,6,114
+sem_2025_br,2025,P,BE,9,BR0022001,Brazil,315,UNESP Guaratinguetá,Fenrir,1,6,64
+sem_2025_br,2025,P,BE,-,BR0009001,Brazil,307,IFC Luzerna,MoBEE,5,6,0
+sem_2025_br,2025,P,BE,-,BR0042002,Brazil,308,Instituto Mauá de Tecnologia,EcoMauá,3,6,0
+sem_2025_br,2025,P,BE,-,BR0001001,Brazil,311,CEFET RJ,e-Wolf Racing,1,3,0
+sem_2025_br,2025,P,BE,-,BR0023001,Brazil,316,Universidade Federal de Itajubá,EcoVeículo Eletric,2,6,0
+sem_2025_br,2025,P,BE,-,BR0025001,Brazil,318,Universidade Federal de Lavras,Ne3,4,6,0
+sem_2025_br,2025,P,BE,-,BR0028001,Brazil,319,UFSC Joinville,Eficem,6,6,0
+sem_2025_br,2025,P,BE,-,BR0045001,Brazil,321,IFRS Rio Grande,IFECO,2,3,0
+sem_2025_br,2025,P,BE,-,BR0056001,Brazil,323,CEFET Nova Friburgo,Yawara Racing,2,2,0
+sem_2025_br,2025,P,BE,-,MX0002001,Mexico,326,IESM Ciudad de México,EcoVolt CCM,2,3,0
+sem_2025_br,2025,P,BE,-,PE0002001,Peru,327,UTEC,KON Team,2,3,0
+sem_2025_br,2025,UC,ICE,1,BR0026001,Brazil,512,UFMG,Milhagem UFMG ICE,2,6,54
+sem_2025_br,2025,UC,ICE,2,BR0002001,Brazil,511,CEFET MG,Equipe ECOFET UC,4,6,43
+sem_2025_br,2025,UC,ICE,-,BR0042001,Brazil,514,Instituto Mauá de Tecnologia,EcoMauá - Urbano,2,6,0
+sem_2025_br,2025,UC,H2,1,BR0021001,Brazil,611,Unioeste Foz do Iguaçu,GCEE,4,6,61
+sem_2025_br,2025,UC,BE,1,BR0048002,Brazil,701,UTFPR Medianeira,Green E-Car,4,6,25
+sem_2025_br,2025,UC,BE,-,BR0046001,Brazil,713,UFSJ Alto Paraopeba,e-Cap,3,3,0

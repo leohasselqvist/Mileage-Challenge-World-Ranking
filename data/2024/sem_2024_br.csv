@@ -1,0 +1,31 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2024_br,2024,P,ICE,1,BR0011001,Brazil,1,IFRS Erechim,Drop Team,2,4,611
+sem_2024_br,2024,P,ICE,2,BR0041001,Brazil,2,UTFPR Pato Branco,Pato a Jato,4,4,509
+sem_2024_br,2024,P,ICE,3,BR0048001,Brazil,12,UTFPR Medianeira,Pé Vermelho Efficiency Team,3,4,194
+sem_2024_br,2024,P,ICE,-,BR0034001,Brazil,11,UFTM,Equipe Triângulo Verde,3,4,0
+sem_2024_br,2024,P,ICE,-,BR0030001,Brazil,15,UFSJ Santo Antonio,Milhas Gerais,3,4,0
+sem_2024_br,2024,P,ICE,-,BR0020002,Brazil,17,UEMA,Team Coyote,3,4,0
+sem_2024_br,2024,P,H2,-,BO0001001,Bolivia,211,Escuela Militar de Ingeniería,CAPITAN VICTOR USTARIZ ARCE,4,4,0
+sem_2024_br,2024,P,BE,1,BR0027001,Brazil,328,UFSC Florianópolis,E3 UFSC,1,4,381
+sem_2024_br,2024,P,BE,2,BR0013001,Brazil,302,IFSul Charqueadas,Eifchar,4,4,341
+sem_2024_br,2024,P,BE,3,MX0009001,Mexico,307,ITESM Aguascalientes,Borregos Racing,4,4,316
+sem_2024_br,2024,P,BE,4,BR0026002,Brazil,301,UFMG,Milhagem UFMG BE,4,4,306
+sem_2024_br,2024,P,BE,5,BR0031002,Brazil,309,UFPR,Eco Octano UFPR Elétrico,4,4,219
+sem_2024_br,2024,P,BE,6,BR0002002,Brazil,320,CEFET MG,Equipe Ecofet Prototype,2,4,216
+sem_2024_br,2024,P,BE,7,BR0009001,Brazil,305,IFC Luzerna,MoBEE,4,4,200
+sem_2024_br,2024,P,BE,8,BR0042002,Brazil,324,Instituto Mauá de Tecnologia,Eco Mauá,4,4,167
+sem_2024_br,2024,P,BE,9,BR0059001,Brazil,311,SENAI Pato Branco,EcoDrive Electric Alliance SENAI UTFPR,4,4,140
+sem_2024_br,2024,P,BE,-,BR0028001,Brazil,303,UFSC Joinville,Eficem,4,4,0
+sem_2024_br,2024,P,BE,-,BR0045001,Brazil,304,IFRS Rio Grande,IFECO,3,4,0
+sem_2024_br,2024,P,BE,-,CO0001001,Colombia,312,Universidad de la Sabana,Unisabana Herons,2,4,0
+sem_2024_br,2024,P,BE,-,BR0022001,Brazil,314,UNESP Guaratinguetá,Fenrir,3,4,0
+sem_2024_br,2024,P,BE,-,PE0003001,Peru,319,Universidad Nacional de Ingenieria,Eco Motors UNI,1,4,0
+sem_2024_br,2024,P,BE,-,BR0001001,Brazil,321,CEFET RJ,E-WOLF RACING,4,4,0
+sem_2024_br,2024,P,BE,-,MX0004002,Mexico,323,UNAM,K2-DZEC-UNAM,2,4,0
+sem_2024_br,2024,P,BE,-,BR0025001,Brazil,325,Universidade Federal de Lavras,Ne3,1,4,0
+sem_2024_br,2024,P,BE,-,BR0023001,Brazil,326,Universidade Federal de Itajubá,EcoVeículo Electric,1,4,0
+sem_2024_br,2024,P,BE,-,BR0008001,Brazil,327,Insper,Insper Mileage,1,4,0
+sem_2024_br,2024,UC,ICE,-,BR0002001,Brazil,511,CEFET MG,Equipe Ecofet UC,4,4,0
+sem_2024_br,2024,UC,H2,-,BR0021002,Brazil,611,Unioeste Foz do Iguaçu,GCEE,3,4,0
+sem_2024_br,2024,UC,BE,1,BR0048002,Brazil,712,UTFPR Medianeira,Green E Car,4,4,25
+sem_2024_br,2024,UC,BE,-,BR0046001,Brazil,713,UFSJ Alto Paraopeba,e-CAP,4,4,0

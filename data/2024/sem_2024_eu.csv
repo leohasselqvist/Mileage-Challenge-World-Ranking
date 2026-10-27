@@ -1,0 +1,94 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2024_eu,2024,P,ICE,1,FR0050001,France,1,Lycée Saint-Joseph La Joliverie,Microjoule,2,6,2336
+sem_2024_eu,2024,P,ICE,2,FR0072002,France,2,Université Toulouse III Paul Sabatier INSA Toulouse,TIM UPS-INSA 2,3,6,2007
+sem_2024_eu,2024,P,ICE,3,FR0002001,France,3,Airbus Helicopters Centre de Formation Technique,TED,3,6,1933
+sem_2024_eu,2024,P,ICE,4,ES0025001,Spain,5,Unversitat Miguel Hernandez D'Elx,EQUIP UMH,3,6,1615
+sem_2024_eu,2024,P,ICE,5,FR0003002,France,6,Aix Marseille Université,Team Calisson,5,6,1458
+sem_2024_eu,2024,P,ICE,6,FI0001002,Finland,4,Tampere University,Remmi-Team,2,6,1277
+sem_2024_eu,2024,P,ICE,7,FR0044001,France,7,Lycée Marcel Callo,Team Callo,3,6,1141
+sem_2024_eu,2024,P,ICE,8,BE0005001,Belgium,20,,EcoMOTION,3,6,1108
+sem_2024_eu,2024,P,ICE,9,ES0013001,Spain,9,Instituto de Educación Secundaria Leonardo Da Vinci,Eco DaVinci,3,6,872
+sem_2024_eu,2024,P,ICE,10,SE0001002,Sweden,12,Chalmers University of Technology,Chalmers Vera Team,1,6,845
+sem_2024_eu,2024,P,ICE,11,DE0020001,Germany,11,University of Rostock,Hanseatic Efficiency,4,6,770
+sem_2024_eu,2024,P,ICE,12,ES0011001,Spain,15,Instituto de Educación Secundaria Jandula,ECO-JANDULA TEAM,3,6,720
+sem_2024_eu,2024,P,ICE,13,TR0018001,Turkey,17,Istanbul Technical University,FACILIS Team,3,6,582
+sem_2024_eu,2024,P,ICE,14,ES0007001,Spain,21,Instituto de Educación Secundaria Alto Nalón,Prototipos Barredos,4,6,511
+sem_2024_eu,2024,P,ICE,15,PL0004001,Poland,30,Lodz University of Technology,Iron Warriors,3,6,482
+sem_2024_eu,2024,P,ICE,16,FR0046001,France,18,Lycée Viala Lacoste,DEFI  ECO  SYNERGIE,6,6,429
+sem_2024_eu,2024,P,ICE,17,PT0001001,Portugal,31,Agrupamento de Escolas Alcaides de Faria Barcelos,Cinquentenário do 25 de Abril,1,6,360
+sem_2024_eu,2024,P,ICE,18,ES0012001,Spain,16,Instituto de Educación Secundaria La Marxadella,ecologico-marxadella,3,6,289
+sem_2024_eu,2024,P,ICE,19,MA0009001,Morocco,29,Ecole Polytechnique Agadir,UNIVERSIAPOLIS CREATEURS,4,6,236
+sem_2024_eu,2024,P,ICE,-,LU0001001,Luxembourg,14,Lycée des Arts et Métiers Luxembourg,EcoQuest - LAM Luxembourg,2,6,0
+sem_2024_eu,2024,P,ICE,-,ES0024001,Spain,23,Universitat Politècnica de València Alcoy,UPV EcoMarathon,3,6,0
+sem_2024_eu,2024,P,ICE,-,FR0055001,France,24,Polytech Orleans,Exergie,4,6,0
+sem_2024_eu,2024,P,ICE,-,SK0003001,Slovakia,32,Technical University of Košice,SjF TUKE Eco Racing,3,6,0
+sem_2024_eu,2024,P,ICE,-,TR0005001,Turkey,34,Borusan Asim Kocabiyik Mesleki Ve Teknik Anadolu Lisesi,BHS Eco Team,2,6,0
+sem_2024_eu,2024,P,H2,1,DE0009001,Germany,201,Hochschule Stralsund,ThaiGer-H2-Racing Team,3,6,1074
+sem_2024_eu,2024,P,H2,2,IT0006002,Italy,203,Politecnico Di Torino,H2politO - Molecole da Corsa,5,6,794
+sem_2024_eu,2024,P,H2,3,DE0007001,Germany,202,Hochschule München,Hydro2Motion,4,6,477
+sem_2024_eu,2024,P,H2,4,DE0005002,Germany,210,Hochschule Karlsruhe,High Efficiency Karlsruhe,2,6,304
+sem_2024_eu,2024,P,H2,5,TR0011001,Turkey,204,Eskisehir Technical University,HIDROANA,2,6,303
+sem_2024_eu,2024,P,H2,6,PL0001002,Poland,217,AGH University of Science and Technology,Project Hydrive AGH,2,6,240
+sem_2024_eu,2024,P,H2,-,PL0005001,Poland,206,Lublin University of Technology,HYDROGREEN POLLUB,3,6,0
+sem_2024_eu,2024,P,H2,-,DE0012001,Germany,211,Nicolaus August Otto Berufskolleg,Team NAOB,2,6,0
+sem_2024_eu,2024,P,H2,-,GB0013002,United Kingdom,215,University College London,UCL HyperMile,3,6,0
+sem_2024_eu,2024,P,H2,-,TR0022001,Turkey,218,Karadeniz Technical University,Hydrogenix K-Tech Team,4,6,0
+sem_2024_eu,2024,P,BE,1,FR0054001,France,301,Polytech Nantes,Polyjoule,4,6,1259
+sem_2024_eu,2024,P,BE,2,FR0010001,France,303,College Marcel Doret,TEAM ECOMOMES,4,6,992
+sem_2024_eu,2024,P,BE,3,BG0001001,Bulgaria,307,N.Vaptsarov Professional High School of Agriculture and Forestry,Blue-EV,6,6,904
+sem_2024_eu,2024,P,BE,4,HU0004002,Hungary,337,Kecskeméti SZC Kandó Kálmán Technikum,Kandó Racing,4,6,901
+sem_2024_eu,2024,P,BE,5,FR0041001,France,306,Lycée Léonard de Vinci,AUGUSTINE,6,6,834
+sem_2024_eu,2024,P,BE,6,IT0003001,Italy,305,Istituto Tecnico Industriale Leonardo da Vinci,Team Zero C,4,6,808
+sem_2024_eu,2024,P,BE,7,DE0015001,Germany,304,Schulzentrum am Sund,Greendrive,4,6,776
+sem_2024_eu,2024,P,BE,8,GB0015002,United Kingdom,335,University of Bath,Green Bath Racing,5,6,696
+sem_2024_eu,2024,P,BE,9,DE0008002,Germany,308,Hochschule Offenburg,Schluckspecht,6,6,685
+sem_2024_eu,2024,P,BE,10,FR0029001,France,316,Institut National des Sciences Appliquées de Lyon,Proto INSA Club,5,6,674
+sem_2024_eu,2024,P,BE,11,BG0005001,Bulgaria,309,University of Ruse,AVTOMOBILIST,4,6,594
+sem_2024_eu,2024,P,BE,12,DE0001002,Germany,311,Brandenburgische Technische Universität Cottbus-Senftenberg,Lausitz Dynamics,5,6,533
+sem_2024_eu,2024,P,BE,13,GB0007002,United Kingdom,334,Imperial College London,Imperial Eco-Marathon,4,6,530
+sem_2024_eu,2024,P,BE,14,FR0047001,France,312,Lycée Pierre Paul Riquet,Riquet Eco Car,4,6,499
+sem_2024_eu,2024,P,BE,15,FR0062001,France,317,Université de Limoges,Limotion,5,6,383
+sem_2024_eu,2024,P,BE,16,FR0069001,France,314,Université d'Orléans,Hyperbole,5,6,364
+sem_2024_eu,2024,P,BE,17,IT0001002,Italy,338,Istituto d'Istruzione Superiore Tecnica Industriale e Professionale Luigi Bucci Faenza,FAENZA FABI RACING,4,6,353
+sem_2024_eu,2024,P,BE,18,IE0001001,Ireland,315,University of Galway,The Geec,6,6,346
+sem_2024_eu,2024,P,BE,19,FR0053001,France,332,Polytech Nancy,Eco Motion Team by Polytech Nancy,2,6,344
+sem_2024_eu,2024,P,BE,20,ES0022001,Spain,327,UPCT,UPCT SOLARTEAM,2,6,296
+sem_2024_eu,2024,P,BE,21,FR0052002,France,331,Pôle Universitaire Léonard de Vinci,Vinci Eco Drive,2,6,234
+sem_2024_eu,2024,P,BE,22,NL0007001,Netherlands,319,Gymnasium Celeanum,CeleRacing,4,6,177
+sem_2024_eu,2024,P,BE,23,SK0001001,Slovakia,318,Secondary Technical school of Transport Trnava,Dopraváci,5,6,169
+sem_2024_eu,2024,P,BE,-,GR0004001,Greece,310,University of West Attica,Poseidon Team,3,6,0
+sem_2024_eu,2024,P,BE,-,BE0003002,Belgium,322,Ecole Supérieure des Arts Saint-Luc Liège,Dynamo Team,2,6,0
+sem_2024_eu,2024,P,BE,-,BE0012001,Belgium,324,Henallux,E-Comet Pierrard,4,6,0
+sem_2024_eu,2024,UC,ICE,1,DK0003001,Denmark,501,Technical University of Denmark,DTU Roadrunners,3,6,414
+sem_2024_eu,2024,UC,ICE,2,CH0002001,Switzerland,510,Haute école d'ingénierie et d'architecture de Fribourg,Fri-Style Engineering,5,6,315
+sem_2024_eu,2024,UC,ICE,3,DE0008001,Germany,502,Hochschule Offenburg,Schluckspecht Urban Concept,5,6,292
+sem_2024_eu,2024,UC,ICE,4,IT0006001,Italy,503,Politecnico Di Torino,H2politO - Molecole Urbane,6,6,251
+sem_2024_eu,2024,UC,ICE,5,IT0001001,Italy,512,Istituto d'Istruzione Superiore Tecnica Industriale e Professionale Luigi Bucci Faenza,Faenza ITI Racing,5,6,132
+sem_2024_eu,2024,UC,ICE,6,PT0005001,Portugal,504,Universidade da Beira Interior,UBIcar Team,2,6,126
+sem_2024_eu,2024,UC,ICE,-,FR0025001,France,511,École Supérieure des Techniques Aéronautiques et de Construction Automobile Paris-Saclay,PV3e,1,6,0
+sem_2024_eu,2024,UC,ICE,-,SK0001002,Slovakia,514,Secondary Technical school of Transport Trnava,Dopraváci Urban,1,6,0
+sem_2024_eu,2024,UC,H2,1,FR0054002,France,601,Polytech Nantes,Cityjoule,5,6,311
+sem_2024_eu,2024,UC,H2,2,NL0011001,Netherlands,602,Hogeschool Van Arnhem En Nijmegen,HAN Hydromotive,5,6,277
+sem_2024_eu,2024,UC,H2,3,BG0003001,Bulgaria,605,Technical University of Sofia,TUS Team,5,6,204
+sem_2024_eu,2024,UC,H2,4,FR0016001,France,610,École Nationale Supérieure d’Électricité et de Mécanique Vandoeuvre-Les-Nancy,ULHYS,5,6,138
+sem_2024_eu,2024,UC,H2,5,DE0014001,Germany,607,Rheinisch-Westfälische Technische Hochschule Aachen,Ecogenium e.V.,4,6,128
+sem_2024_eu,2024,UC,H2,-,BG0005002,Bulgaria,608,University of Ruse,HydRU Racing Team,5,6,0
+sem_2024_eu,2024,UC,H2,-,PT0004001,Portugal,612,Instituto Superior Técnico,Técnico Fuel Cell,6,6,0
+sem_2024_eu,2024,UC,H2,-,TR0007001,Turkey,614,Bursa Uludag University,Team UMAKIT,4,6,0
+sem_2024_eu,2024,UC,BE,1,HU0006001,Hungary,701,Szechenyi Istvan University,SZEnergy Team,6,6,309
+sem_2024_eu,2024,UC,BE,2,FR0072001,France,703,Université Toulouse III Paul Sabatier INSA Toulouse,TIM,5,6,268
+sem_2024_eu,2024,UC,BE,3,IT0005001,Italy,704,Politecnico Di Milano,Team Green Mecc,6,6,230
+sem_2024_eu,2024,UC,BE,4,TR0008001,Turkey,705,Cukurova University,Cukurova Electromobile Team,5,6,186
+sem_2024_eu,2024,UC,BE,5,TR0034001,Turkey,707,Yildiz Technical University,YTU AESK,5,6,146
+sem_2024_eu,2024,UC,BE,6,TR0022002,Turkey,706,Karadeniz Technical University,ENERGY TECHNOLOGIES TEAM,5,6,135
+sem_2024_eu,2024,UC,BE,7,DE0009002,Germany,715,Hochschule Stralsund,Bengalo Racing,3,6,131
+sem_2024_eu,2024,UC,BE,8,FR0020001,France,708,École Nationale Supérieure d'Ingénieurs de Limoges,Limooz'E Team,4,6,98
+sem_2024_eu,2024,UC,BE,9,FR0045001,France,710,Lycée Nicephore Niepce,NICEPHORE,5,6,76
+sem_2024_eu,2024,UC,BE,10,ES0012002,Spain,716,Instituto de Educación Secundaria La Marxadella,Urban Marxadella,5,6,74
+sem_2024_eu,2024,UC,BE,11,NL0010002,Netherlands,709,Hogeschool Van Amsterdam,Team EVA,6,6,72
+sem_2024_eu,2024,UC,BE,12,NL0023001,Netherlands,719,Windesheim University of Applied Sciences,Blue Racing Team,4,6,60
+sem_2024_eu,2024,UC,BE,13,ES0013002,Spain,717,Instituto de Educación Secundaria Leonardo Da Vinci,URBAN DAVINCI,3,6,59
+sem_2024_eu,2024,UC,BE,14,BE0007001,Belgium,711,Hogeschool VIVES,VIVES Eco-Team,5,6,47
+sem_2024_eu,2024,UC,BE,15,ES0026001,Spain,718,Instituto de Educación Secundaria Nuestra Senora de los Remedios,EcoCar Guarnizo,3,6,46
+sem_2024_eu,2024,UC,BE,-,DE0019001,Germany,702,Technische Universität München,TUfast Eco Team,1,6,0
+sem_2024_eu,2024,UC,BE,-,NO0001001,Norway,720,Norwegian University of Science And Technology,Fuel Fighter NTNU,2,6,0

@@ -1,0 +1,60 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2026_qa,2026,P,ICE,1,ID0031001,Indonesia,1,Universitas Negeri Malang,SEMERU TEAM Kumbolo UM,6,6,1109
+sem_2026_qa,2026,P,ICE,2,ID0002001,Indonesia,15,Diponegoro University,Antawirya Rondhan ICE,6,6,1090
+sem_2026_qa,2026,P,ICE,3,ID0016002,Indonesia,3,Sebelas Maret University,Bengawan Team UNS,5,6,754
+sem_2026_qa,2026,P,ICE,4,CN0018001,China,11,Jilin University,Conception Racing Team,6,6,698
+sem_2026_qa,2026,P,ICE,5,ID0004001,Indonesia,16,Institut Teknologi Bandung,RAKATA PROTOTYPE ETHANOL,5,6,502
+sem_2026_qa,2026,P,ICE,6,SA0011001,Saudi Arabia,21,Prince Sattam bin Abdulaziz University,SAQR,3,6,403
+sem_2026_qa,2026,P,ICE,7,SA0002001,Saudi Arabia,6,King Saud University,SAAF,5,6,292
+sem_2026_qa,2026,P,ICE,8,PH0039001,Philippines,19,Mapúa Malayan Colleges Mindanao,AME Merlin,4,6,143
+sem_2026_qa,2026,P,ICE,9,PH0021002,Philippines,20,University of Mindanao,UMindanao Wildcats,4,6,99
+sem_2026_qa,2026,P,H2,1,ID0021002,Indonesia,212,Universitas Brawijaya,Apatte62 Brawijaya Team 2,6,6,538
+sem_2026_qa,2026,P,H2,2,ID0008002,Indonesia,203,Institut Teknologi Sepuluh Nopember,Antasena ITS Team,6,6,498
+sem_2026_qa,2026,P,H2,3,IN0058001,India,211,Kumaraguru College of Technology,Team ReNew,3,3,278
+sem_2026_qa,2026,P,H2,4,ID0023002,Indonesia,201,Universitas Indonesia,NAKOELA UI TEAM,3,3,183
+sem_2026_qa,2026,P,H2,-,SA0011002,Saudi Arabia,214,Prince Sattam bin Abdulaziz University,HydroSAQR,2,3,0
+sem_2026_qa,2026,P,BE,1,ID0029001,Indonesia,323,Universitas Muhammadiyah Sidoarjo,IMEI TEAM,3,6,1136
+sem_2026_qa,2026,P,BE,2,ID0065002,Indonesia,324,Universitas Udayana,WEIMANA NAGAPASA TEAM,2,6,1039
+sem_2026_qa,2026,P,BE,3,ID0022002,Indonesia,302,Universitas Gadjah Mada,SEMAR PROTO UGM,6,6,828
+sem_2026_qa,2026,P,BE,4,ID0002002,Indonesia,301,Diponegoro University,Antawirya Rondhan EV,6,6,745
+sem_2026_qa,2026,P,BE,5,CN0002001,China,311,Beijing Institute of Technology,YISHENG-EPC,5,6,552
+sem_2026_qa,2026,P,BE,6,ID0001002,Indonesia,304,BINUS University,D'BASE TEAM PROTO,6,6,496
+sem_2026_qa,2026,P,BE,7,MY0006002,Malaysia,329,Multimedia University Melaka,Grüne Welt,5,6,304
+sem_2026_qa,2026,P,BE,8,ID0056002,Indonesia,322,Universitas Ahmad Dahlan,Al Qorni Team,3,3,280
+sem_2026_qa,2026,P,BE,9,SA0003002,Saudi Arabia,306,Prince Sultan University,PSU ECO TEAM I,6,6,266
+sem_2026_qa,2026,P,BE,10,MY0005001,Malaysia,309,Monash University Malaysia,Hyperion Racing Team,4,6,187
+sem_2026_qa,2026,P,BE,11,SA0001001,Saudi Arabia,338,Alfaisal University,Team Alfaisal,5,6,143
+sem_2026_qa,2026,P,BE,12,KZ0004002,Kazakhstan,325,Kazakh-British Technical University,ShallQar,6,6,140
+sem_2026_qa,2026,P,BE,13,IN0028001,India,305,Pandit Deendayal Energy University,Team Kaizen India,4,6,132
+sem_2026_qa,2026,P,BE,14,EG0004002,Egypt,314,Cairo University,CU HORUS,5,6,105
+sem_2026_qa,2026,P,BE,15,EG0007002,Egypt,316,Helwan University,E-Rally,2,3,99
+sem_2026_qa,2026,P,BE,16,PH0013002,Philippines,333,Mapua Institute of Technology,Cardinal One,6,6,91
+sem_2026_qa,2026,P,BE,17,IN0011001,India,319,Government Engineering College Barton Hill,Team Pravega,3,3,88
+sem_2026_qa,2026,P,BE,18,QA0003003,Qatar,310,University of Doha for Science and Technology,EV Wolves,3,6,67
+sem_2026_qa,2026,P,BE,19,SA0005002,Saudi Arabia,340,King Faisal University,Qara,4,6,59
+sem_2026_qa,2026,P,BE,-,KZ0003001,Kazakhstan,307,Satbayev Kazakh National Technical University,S.U. Racing team,1,3,0
+sem_2026_qa,2026,P,BE,-,EG0027001,Egypt,317,Menofia University,Menofia Racing Team,2,6,0
+sem_2026_qa,2026,P,BE,-,IN0032003,India,321,Somaiya Vidyavihar University,Yugant,1,3,0
+sem_2026_qa,2026,P,BE,-,OM0002003,Oman,330,German University of Technology in Oman,GUlynx,2,3,0
+sem_2026_qa,2026,P,BE,-,QA0007001,Qatar,335,Hamad Bin Khalifa University,Alkawaser,1,3,0
+sem_2026_qa,2026,UC,ICE,1,ID0035001,Indonesia,517,Universitas Negeri Yogyakarta,Garuda Eco Team,6,6,535
+sem_2026_qa,2026,UC,ICE,2,ID0008001,Indonesia,501,Institut Teknologi Sepuluh Nopember,ITS TEAM SAPUANGIN,5,6,448
+sem_2026_qa,2026,UC,ICE,3,ID0031002,Indonesia,516,Universitas Negeri Malang,SEMERU TEAM Akasa UM,5,6,388
+sem_2026_qa,2026,UC,ICE,4,EG0004001,Egypt,511,Cairo University,CU ANUBIS,6,6,95
+sem_2026_qa,2026,UC,ICE,5,QA0001002,Qatar,520,Qatar University,Gernas ICE,5,6,47
+sem_2026_qa,2026,UC,ICE,6,EG0007001,Egypt,515,Helwan University,Helwan Supermileage,4,6,45
+sem_2026_qa,2026,UC,ICE,-,PK0009001,Pakistan,519,National University of Sciences and Technology Rawalpindi,ApexDrive,3,3,0
+sem_2026_qa,2026,UC,ICE,-,QA0002002,Qatar,521,Texas A&M University at Qatar,Maroon Mavericks,2,6,0
+sem_2026_qa,2026,UC,H2,1,ID0022001,Indonesia,612,Universitas Gadjah Mada,SEMAR URBAN UGM,3,6,249
+sem_2026_qa,2026,UC,H2,2,SG0007001,Singapore,615,Temasek Polytechnic,TP Eco Flash,6,6,201
+sem_2026_qa,2026,UC,H2,3,KR0001001,"Korea, Republic Of",614,Kookmin University,KUST,6,6,89
+sem_2026_qa,2026,UC,H2,4,CN0036002,China,611,Tongji University,ZEAL Eco-Power,6,6,81
+sem_2026_qa,2026,UC,BE,1,ID0065001,Indonesia,701,Universitas Udayana,WEIMANA AGNIJAYA TEAM,4,6,244
+sem_2026_qa,2026,UC,BE,2,ID0008003,Indonesia,718,Institut Teknologi Sepuluh Nopember,Nogogeni ITS Team,6,6,231
+sem_2026_qa,2026,UC,BE,3,ID0023001,Indonesia,704,Universitas Indonesia,ARJUNA UI TEAM,6,6,223
+sem_2026_qa,2026,UC,BE,4,ID0021001,Indonesia,702,Universitas Brawijaya,Apatte62 Brawijaya Team 1,6,6,213
+sem_2026_qa,2026,UC,BE,5,ID0030001,Indonesia,720,Universitas Negeri Jakarta,Batavia Generation Team 2,6,6,180
+sem_2026_qa,2026,UC,BE,6,ID0004002,Indonesia,717,Institut Teknologi Bandung,RAKATA URBAN ELECTRIC,5,6,178
+sem_2026_qa,2026,UC,BE,7,SA0003001,Saudi Arabia,707,Prince Sultan University,PSU ECO TEAM II,6,6,41
+sem_2026_qa,2026,UC,BE,-,IN0032001,India,716,Somaiya Vidyavihar University,Eta,1,3,0
+sem_2026_qa,2026,UC,BE,-,SA0005001,Saudi Arabia,723,King Faisal University,KAFO,2,3,0

@@ -1,0 +1,100 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2026_pl,2026,P,ICE,1,FR0072002,France,5,Université Toulouse III Paul Sabatier INSA Toulouse,TIM Prototype,4,6,1848
+sem_2026_pl,2026,P,ICE,2,ES0025001,Spain,3,Unversitat Miguel Hernandez D'Elx,EQUIP UMH,6,6,1829
+sem_2026_pl,2026,P,ICE,3,PL0002001,Poland,7,State University of Applied Sciences in Krosno,Rotor,5,6,1693
+sem_2026_pl,2026,P,ICE,4,FR0050001,France,1,Lycée Saint-Joseph La Joliverie,Microjoule,4,6,1580
+sem_2026_pl,2026,P,ICE,5,FR0003002,France,2,Aix Marseille Université,Calisson,6,6,1341
+sem_2026_pl,2026,P,ICE,6,FR0084001,France,17,Lycée Viala Lacoste,DEFI  ECO  SYNERGIE,6,6,1241
+sem_2026_pl,2026,P,ICE,7,SE0001002,Sweden,10,Chalmers University of Technology,Chalmers Vera Team,5,6,1235
+sem_2026_pl,2026,P,ICE,8,FI0001002,Finland,6,Tampere University,Remmi-Team,4,6,935
+sem_2026_pl,2026,P,ICE,9,DE0020001,Germany,4,University of Rostock,Hanseatic Efficiency,6,6,896
+sem_2026_pl,2026,P,ICE,10,ES0013001,Spain,14,Instituto de Educación Secundaria Leonardo Da Vinci,Islero,3,6,799
+sem_2026_pl,2026,P,ICE,11,TR0018001,Turkey,9,Istanbul Technical University,Facilis,2,6,728
+sem_2026_pl,2026,P,ICE,12,HU0002002,Hungary,8,Budapest University of Technology and Economics,BME SharkTeam,5,6,692
+sem_2026_pl,2026,P,ICE,13,PL0004001,Poland,22,Lodz University of Technology,Iron Warriors,4,6,674
+sem_2026_pl,2026,P,ICE,14,ES0011001,Spain,12,Instituto de Educación Secundaria Jandula,ECO-JANDULA,6,6,597
+sem_2026_pl,2026,P,ICE,15,LU0001001,Luxembourg,20,Lycée des Arts et Métiers Luxembourg,EcoQuest LAM Luxembourg,6,6,408
+sem_2026_pl,2026,P,ICE,16,FR0055001,France,16,Polytech Orleans,Exergie,4,6,381
+sem_2026_pl,2026,P,ICE,17,SK0002001,Slovakia,26,Slovak University of Technology Bratislava,FME racing team,4,6,330
+sem_2026_pl,2026,P,ICE,18,MA0009001,Morocco,21,Ecole Polytechnique Agadir,UNIVERSIAPOLIS CREATEURS,4,6,248
+sem_2026_pl,2026,P,ICE,-,GB0016001,United Kingdom,19,University of Birmingham,Brum Eco Racing,2,6,0
+sem_2026_pl,2026,P,ICE,-,TR0009001,Turkey,28,Erciyes University,ERU TYEKK,1,4,0
+sem_2026_pl,2026,P,H2,1,DE0001002,Germany,202,Brandenburgische Technische Universität Cottbus-Senftenberg,Lausitz Dynamics,6,6,1151
+sem_2026_pl,2026,P,H2,2,DE0009001,Germany,201,Hochschule Stralsund,ThaiGer-H2-Racing Team,4,6,938
+sem_2026_pl,2026,P,H2,3,IT0006002,Italy,203,Politecnico Di Torino,H2politO - Molecole da Corsa,4,6,812
+sem_2026_pl,2026,P,H2,4,DE0007001,Germany,211,Hochschule München,Hydro2Motion,6,6,743
+sem_2026_pl,2026,P,H2,5,PL0001002,Poland,207,AGH University of Science and Technology,Project Hydrive,5,6,337
+sem_2026_pl,2026,P,H2,6,PL0005001,Poland,208,Lublin University of Technology,Hydrogreen Team POLLUB - Hydros,5,6,303
+sem_2026_pl,2026,P,H2,7,NL0010001,Netherlands,204,Hogeschool Van Amsterdam,H2A,3,6,290
+sem_2026_pl,2026,P,H2,8,TR0022001,Turkey,215,Karadeniz Technical University,HYDROGENIX K-TECH TEAM,3,6,196
+sem_2026_pl,2026,P,H2,9,TR0011001,Turkey,209,Eskisehir Technical University,HIDROANA,3,6,163
+sem_2026_pl,2026,P,H2,-,GB0013002,United Kingdom,206,University College London,UCL HyperMile,1,4,0
+sem_2026_pl,2026,P,H2,-,DE0012001,Germany,212,Nicolaus August Otto Berufskolleg,Team NAOB,3,6,0
+sem_2026_pl,2026,P,H2,-,NL0009002,Netherlands,214,Hogeschool Rotterdam,Phidippides,1,4,0
+sem_2026_pl,2026,P,BE,1,FR0054001,France,301,Polytech Nantes,Polyjoule,6,6,1095
+sem_2026_pl,2026,P,BE,2,GB0007002,United Kingdom,327,Imperial College London,Project Exergy,4,6,964
+sem_2026_pl,2026,P,BE,3,IT0003001,Italy,306,Istituto Tecnico Industriale Leonardo da Vinci,Team Zero C,6,6,946
+sem_2026_pl,2026,P,BE,4,FR0029001,France,321,Institut National des Sciences Appliquées de Lyon,Proto INSA Club,6,6,866
+sem_2026_pl,2026,P,BE,5,BG0001001,Bulgaria,303,N.Vaptsarov Professional High School of Agriculture and Forestry,BLUE-EV,6,6,831
+sem_2026_pl,2026,P,BE,6,FR0010001,France,302,College Marcel Doret,TEAM ECOMOMES,6,6,824
+sem_2026_pl,2026,P,BE,7,GB0015002,United Kingdom,304,University of Bath,Green Bath Racing,6,6,785
+sem_2026_pl,2026,P,BE,8,FR0041001,France,305,Lycée Léonard de Vinci,AUGUSTINE,6,6,758
+sem_2026_pl,2026,P,BE,9,DE0008002,Germany,309,Hochschule Offenburg,Schluckspecht Prototype,6,6,736
+sem_2026_pl,2026,P,BE,10,DE0015001,Germany,308,Schulzentrum am Sund,Greendrive,5,6,666
+sem_2026_pl,2026,P,BE,11,DE0010002,Germany,319,Hochschule Trier,Team proTRon,6,6,594
+sem_2026_pl,2026,P,BE,12,CZ0001001,Czech Republic,318,Czech Technical University in Prague,Green Gliders,6,6,538
+sem_2026_pl,2026,P,BE,13,BG0005001,Bulgaria,307,University of Ruse,AVTOMOBILIST,5,6,489
+sem_2026_pl,2026,P,BE,14,FR0069001,France,322,Université d'Orléans,Hyperbole++,2,4,429
+sem_2026_pl,2026,P,BE,15,FR0062001,France,325,Université de Limoges,Limotion,6,6,414
+sem_2026_pl,2026,P,BE,16,IT0001004,Italy,329,Istituto d'Istruzione Superiore Tecnica Industriale e Professionale Luigi Bucci Faenza,Faenza Fabi Racing,5,6,290
+sem_2026_pl,2026,P,BE,17,FR0053001,France,324,Polytech Nancy,Eco Motion Team,4,6,286
+sem_2026_pl,2026,P,BE,18,SK0001001,Slovakia,336,Secondary Technical school of Transport Trnava,Dopraváci Prototype,6,6,282
+sem_2026_pl,2026,P,BE,19,NL0027001,Netherlands,332,Thorbecke Scholengemeenschap,AllStar Racing,6,6,230
+sem_2026_pl,2026,P,BE,20,BE0010001,Belgium,311,Université de Liège,Ardent motion,2,6,221
+sem_2026_pl,2026,P,BE,21,BG0007001,Bulgaria,314,Professional Technical High School of Gabrovo,Flashteam,3,6,215
+sem_2026_pl,2026,P,BE,22,BG0008001,Bulgaria,315,Professional High School of Transport and Management Kazanlak,Spirit of the Valley,4,6,142
+sem_2026_pl,2026,P,BE,23,NL0007001,Netherlands,330,Gymnasium Celeanum,CeleRacing,1,6,90
+sem_2026_pl,2026,P,BE,24,BG0002001,Bulgaria,312,Professional High School of Mechatronics and Electronics Burgas,Mehano Team Racing,3,6,39
+sem_2026_pl,2026,P,BE,25,TR0060001,Turkey,338,Eskisehir Osmangazi Üniversitesi,Mavera Teknoloji Takimi,1,4,38
+sem_2026_pl,2026,P,BE,-,GR0004001,Greece,310,University of West Attica,Poseidon Team - PROTOTYPE,2,6,0
+sem_2026_pl,2026,P,BE,-,CH0004001,Switzerland,316,Institut Le Rosey,ILR Racing,1,6,0
+sem_2026_pl,2026,P,BE,-,FR0052002,France,323,Pôle Universitaire Léonard de Vinci,Vinci Eco Drive,1,6,0
+sem_2026_pl,2026,P,BE,-,NL0010004,Netherlands,331,Hogeschool Van Amsterdam,Plaat2A,3,6,0
+sem_2026_pl,2026,P,BE,-,TR0026002,Turkey,337,Middle East Technical University,CLEAN ENERGY TEAM,2,6,0
+sem_2026_pl,2026,UC,ICE,1,DK0003001,Denmark,501,Technical University of Denmark,DTU Roadrunners,3,6,331
+sem_2026_pl,2026,UC,ICE,2,CH0002003,Switzerland,502,Haute école d'ingénierie et d'architecture de Fribourg,Fri-style Engineering,6,6,252
+sem_2026_pl,2026,UC,ICE,3,FR0025001,France,511,École Supérieure des Techniques Aéronautiques et de Construction Automobile Paris-Saclay,PV3e,3,6,245
+sem_2026_pl,2026,UC,ICE,4,IT0006001,Italy,503,Politecnico Di Torino,H2politO - Molecole Urbane,6,6,237
+sem_2026_pl,2026,UC,ICE,5,IT0001003,Italy,512,Istituto d'Istruzione Superiore Tecnica Industriale e Professionale Luigi Bucci Faenza,FAENZA NOVA RACING,4,6,188
+sem_2026_pl,2026,UC,ICE,6,DE0008001,Germany,504,Hochschule Offenburg,Schluckspecht,6,6,188
+sem_2026_pl,2026,UC,H2,1,FR0054002,France,601,Polytech Nantes,Cityjoule,6,6,323
+sem_2026_pl,2026,UC,H2,2,GR0003002,Greece,614,Technical University of Crete,TUC Eco Racing Team,4,6,138
+sem_2026_pl,2026,UC,H2,3,BG0003001,Bulgaria,603,Technical University of Sofia,TUS Team,6,6,120
+sem_2026_pl,2026,UC,H2,-,DE0014001,Germany,602,Rheinisch-Westfälische Technische Hochschule Aachen,Ecogenium Team Aachen,5,6,0
+sem_2026_pl,2026,UC,H2,-,DE0009002,Germany,611,Hochschule Stralsund,Bengalo Racing,2,4,0
+sem_2026_pl,2026,UC,H2,-,HU0002001,Hungary,615,Budapest University of Technology and Economics,BME HydroShark,5,6,0
+sem_2026_pl,2026,UC,H2,-,NL0011001,Netherlands,616,Hogeschool Van Arnhem En Nijmegen,HAN Hydromotive,4,6,0
+sem_2026_pl,2026,UC,H2,-,PL0005002,Poland,617,Lublin University of Technology,Hydrogreen Team POLLUB - Hydra,3,6,0
+sem_2026_pl,2026,UC,H2,-,PT0004001,Portugal,618,Instituto Superior Técnico,Técnico Fuel Cell,4,6,0
+sem_2026_pl,2026,UC,BE,1,HU0006001,Hungary,701,Szechenyi Istvan University,SZEnergy Team,6,6,332
+sem_2026_pl,2026,UC,BE,2,FR0072001,France,703,Université Toulouse III Paul Sabatier INSA Toulouse,TIM Urban,6,6,270
+sem_2026_pl,2026,UC,BE,3,IT0005001,Italy,708,Politecnico Di Milano,Team Green Mecc,6,6,260
+sem_2026_pl,2026,UC,BE,4,TR0034001,Turkey,704,Yildiz Technical University,AESK,5,6,256
+sem_2026_pl,2026,UC,BE,5,BG0005002,Bulgaria,709,University of Ruse,ElectRU,6,6,220
+sem_2026_pl,2026,UC,BE,6,TR0008001,Turkey,702,Cukurova University,CUKUROVA ELECTROMOBILE TEAM,6,6,219
+sem_2026_pl,2026,UC,BE,7,GR0002001,Greece,717,National Technical University of Athens,PROMETHEUS ECO RACING,5,6,202
+sem_2026_pl,2026,UC,BE,8,BG0001002,Bulgaria,711,N.Vaptsarov Professional High School of Agriculture and Forestry,BLUE-G,6,6,199
+sem_2026_pl,2026,UC,BE,9,DE0010001,Germany,705,Hochschule Trier,Team proTRon,3,6,162
+sem_2026_pl,2026,UC,BE,10,NO0001001,Norway,719,Norwegian University of Science And Technology,FuelFighter,2,6,137
+sem_2026_pl,2026,UC,BE,11,FR0020001,France,716,École Nationale Supérieure d'Ingénieurs de Limoges,Limooz'e Team,6,6,103
+sem_2026_pl,2026,UC,BE,12,FR0045001,France,710,Lycée Nicephore Niepce,NIEPCE,6,6,87
+sem_2026_pl,2026,UC,BE,13,TR0077001,Turkey,731,Sahinbey Belediyesi Bilim ve Sanat Merkezi,Teknogaraj SART,5,6,87
+sem_2026_pl,2026,UC,BE,14,ES0013002,Spain,712,Instituto de Educación Secundaria Leonardo Da Vinci,Avispado,5,6,78
+sem_2026_pl,2026,UC,BE,15,FR0016001,France,733,École Nationale Supérieure d’Électricité et de Mécanique Vandoeuvre-Les-Nancy,ULHYS,6,6,73
+sem_2026_pl,2026,UC,BE,16,SK0001002,Slovakia,723,Secondary Technical school of Transport Trnava,Dopraváci Urban,6,6,49
+sem_2026_pl,2026,UC,BE,17,FR0008003,France,715,CentraleSupélec,RACSING,5,6,47
+sem_2026_pl,2026,UC,BE,18,TR0018002,Turkey,728,Istanbul Technical University,ITU Electric Vehicle,6,6,40
+sem_2026_pl,2026,UC,BE,-,TR0022002,Turkey,706,Karadeniz Technical University,ENERGY TECHNOLOGIES TEAM,2,6,0
+sem_2026_pl,2026,UC,BE,-,PL0008001,Poland,721,Warsaw University of Technology,SKAP,4,6,0
+sem_2026_pl,2026,UC,BE,-,TR0007001,Turkey,726,Bursa Uludag University,Team UMAKIT,2,6,0
+sem_2026_pl,2026,UC,BE,-,TR0038002,Turkey,730,Cezeri Yesil Teknoloji Mesleki ve Teknik Anadolu Lisesi,CEAGE,1,4,0

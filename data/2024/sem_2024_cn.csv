@@ -1,0 +1,24 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2024_cn,2024,P,ICE,1,CN0036001,China,2,Tongji University,Tongji ZEAL Eco-Power Team Z241 / 志远车队 Z241,4,6,521
+sem_2024_cn,2024,P,ICE,2,CN0034001,China,16,Tianjin University of Science & Technology,TUST ECO Racing Team / 碧海蓝天节能车队,6,6,514
+sem_2024_cn,2024,P,ICE,3,CN0002002,China,10,Beijing Institute of Technology,BITEPC II / 翼昇节能车队 二队,3,6,498
+sem_2024_cn,2024,P,ICE,4,CN0018002,China,1,Jilin University,Conception Racing Team II / 肯赛节能车队 二队,5,6,486
+sem_2024_cn,2024,P,ICE,5,CN0035001,China,3,Tianjin University of Technology and Education,Motorcade BinHai / 滨海号车队,4,6,468
+sem_2024_cn,2024,P,ICE,-,CN0054001,China,12,Geely University of China,Geely Star / Geely Star 吉利星,3,6,0
+sem_2024_cn,2024,P,ICE,-,CN0048001,China,14,Tianjin Sino German University of Applied Sciences,Eternal Topspeed / 极速光年车队,2,6,0
+sem_2024_cn,2024,P,H2,1,CN0002001,China,210,Beijing Institute of Technology,BITEPC I / ?????? ??,4,6,421
+sem_2024_cn,2024,P,BE,1,CN0013002,China,301,Guangzhou College of South China University of Technology,HuaQi EV  / ??????,3,6,508
+sem_2024_cn,2024,P,BE,2,CN0003002,China,302,Beijing Jiaotong University,Green Pulse Team Zhixing / ???????,6,6,386
+sem_2024_cn,2024,P,BE,3,CN0012002,China,303,Guangdong Polytechnic Normal University,Wing of Guangshi Team II  / ??????,6,6,380
+sem_2024_cn,2024,P,BE,4,CN0010002,China,305,Foshan University,Fengyin Racing / ????,5,6,354
+sem_2024_cn,2024,P,BE,5,CN0026001,China,304,Quanzhou Vocational and Technical University,QVTU-EV / QVTU-EV,6,6,307
+sem_2024_cn,2024,P,BE,6,CN0024002,China,314,Nanjing University of Science & Technology,Hummingbird Fleet / ????,5,6,279
+sem_2024_cn,2024,P,BE,7,CN0032002,China,318,Taiyuan University of Science and Technology,TYUST Wheeling Racing Team I / ????,6,6,255
+sem_2024_cn,2024,P,BE,8,CN0051001,China,312,Nanhang Jincheng College,ZERO / ????,6,6,171
+sem_2024_cn,2024,P,BE,9,CN0054002,China,311,Geely University of China,Star Trace Design / ??Design??,4,6,164
+sem_2024_cn,2024,P,BE,10,CN0052001,China,319,Taiyuan University of Technology,JX_Racing / ????,5,6,130
+sem_2024_cn,2024,UC,ICE,1,CN0018001,China,610,Jilin University,Conception Racing Team I / ?????? ??,5,6,58
+sem_2024_cn,2024,UC,ICE,2,CN0036002,China,601,Tongji University,Tongji  ZEAL Eco-Power Team Z242 / ???? Z242,5,6,39
+sem_2024_cn,2024,UC,H2,1,CN0018001,China,610,Jilin University,Conception Racing Team I / ?????? ??,5,6,58
+sem_2024_cn,2024,UC,H2,2,CN0036002,China,601,Tongji University,Tongji  ZEAL Eco-Power Team Z242 / ???? Z242,5,6,39
+sem_2024_cn,2024,UC,BE,1,CN0012001,China,710,Guangdong Polytechnic Normal University,Wing of Guangshi Team I / ??????,5,6,77

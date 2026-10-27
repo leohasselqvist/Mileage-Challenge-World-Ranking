@@ -1,0 +1,416 @@
+rank,vehicle_class,propulsion_type,team_id,team_name,institution,country,vehicle_number,wrl_points,points_2026,points_2025,points_2024,best_single_score,events_attended
+1,,,,,,,,0.0,0.0,0.0,0.0,0.0,13
+1,P,Be,FR0054001,Polyjoule,Polytech Nantes,France,301.0,196.39,96.39,65.0,35.0,100.0,3
+2,P,Be,FR0010001,TEAM ECOMOMES,College Marcel Doret,France,302.0,150.9,72.54,50.79,27.58,78.79,3
+3,P,Be,IT0003001,Team Zero C,Istituto Tecnico Industriale Leonardo da Vinci,Italy,306.0,148.48,83.27,42.75,22.46,83.27,3
+4,P,Be,BG0001001,BLUE-EV,N.Vaptsarov Professional High School of Agriculture and Forestry,Bulgaria,303.0,146.03,73.15,47.75,25.13,73.46,3
+5,P,Be,ID0022002,SEMAR PROTO UGM,Universitas Gadjah Mada,Indonesia,302.0,140.84,72.89,42.85,25.1,72.89,3
+6,P,Be,FR0041001,AUGUSTINE,Lycée Léonard de Vinci,France,305.0,132.92,66.73,43.01,23.19,66.73,3
+7,P,Be,GB0015002,Green Bath Racing,University of Bath,United Kingdom,304.0,132.53,69.1,44.08,19.35,69.1,3
+8,P,Be,ID0002002,Antawirya Rondhan EV,Diponegoro University,Indonesia,301.0,132.44,65.58,44.45,22.41,68.39,3
+9,P,Be,ID0029001,IMEI TEAM,Universitas Muhammadiyah Sidoarjo,Indonesia,323.0,126.63,100.0,0.0,26.63,100.0,2
+10,P,Be,GB0007002,Project Exergy,Imperial College London,United Kingdom,327.0,122.7,84.86,23.1,14.73,84.86,3
+11,P,Be,DE0008002,Schluckspecht Prototype,Hochschule Offenburg,Germany,309.0,119.23,64.79,35.4,19.04,64.79,3
+12,P,Be,DE0015001,Greendrive,Schulzentrum am Sund,Germany,308.0,117.36,58.63,37.16,21.57,61.64,3
+13,P,Be,BG0005001,AVTOMOBILIST,University of Ruse,Bulgaria,307.0,97.73,43.05,38.17,16.51,58.72,3
+14,P,Be,FR0029001,Proto INSA Club,Institut National des Sciences Appliquées de Lyon,France,321.0,94.97,76.23,0.0,18.74,76.23,2
+15,P,Be,ID0065002,WEIMANA NAGAPASA TEAM,Universitas Udayana,Indonesia,324.0,91.46,91.46,0.0,0.0,91.46,1
+16,P,Be,BR0026002,Milhagem UFMG,Universidade Federal de Minas Gerais,Brazil,311.0,69.79,41.37,19.91,8.51,41.37,5
+17,P,Be,FR0069001,Hyperbole++,Université d'Orléans,France,322.0,67.05,37.76,19.16,10.12,37.76,3
+18,P,Be,ID0001002,D'BASE TEAM PROTO,BINUS University,Indonesia,304.0,65.47,43.66,12.78,9.03,43.66,3
+19,P,Be,CA0013001,ALERION SUPERMILEAGE,Université Laval,Canada,303.0,62.21,37.59,15.81,8.81,37.59,3
+20,P,Be,MX0009001,Borregos Racing,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Aguascalientes,Mexico,302.0,60.6,31.95,19.86,8.78,31.95,5
+21,P,Be,CZ0001001,Green Gliders,Czech Technical University in Prague,Czech Republic,318.0,56.46,47.36,9.1,0.0,47.36,2
+22,P,Be,FR0053001,Eco Motion Team,Polytech Nancy,France,324.0,54.65,25.18,19.91,9.56,30.63,3
+23,P,Be,BR0013001,EIFCHAR,Instituto Federal Sul-rio-grandense Charqueadas,Brazil,305.0,54.1,29.93,14.69,9.48,29.93,3
+24,P,Be,MX0010001,Silca ELYOS Racing Team,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Guadalajara,Mexico,304.0,53.57,29.58,15.6,8.4,29.58,3
+25,P,Be,US0006002,Braves,Bradley University,United States,305.0,52.8,30.28,14.96,7.56,30.28,3
+26,P,Be,DE0010002,Team proTRon,Hochschule Trier,Germany,319.0,52.29,52.29,0.0,0.0,52.29,1
+27,P,Be,CO0001001,Unisabana Herons Electric Vehicle,Universidad de la Sabana,Colombia,314.0,51.42,34.86,16.56,0.0,34.86,4
+28,P,Be,BR0027001,E3 - Equipe de Eficiência Energética,Universidade Federal de Santa Catarina Florianópolis,Brazil,303.0,50.76,23.5,16.66,10.59,30.26,3
+29,P,Be,CN0002001,YISHENG-EPC,Beijing Institute of Technology,China,311.0,48.59,48.59,0.0,0.0,48.59,1
+30,P,Be,FR0062001,Limotion,Université de Limoges,France,325.0,47.09,36.44,0.0,10.65,36.44,2
+31,P,Be,US0022001,Dunwoody Daredevils,Dunwoody College of Technology,United States,306.0,45.01,23.77,12.4,8.84,25.26,3
+32,P,Be,US0132001,Stars 26,Southwest Christian High School,United States,310.0,42.35,27.64,10.49,4.23,27.64,3
+33,P,Be,US0018001,Rocky Mountain Peak Efficiency,Colorado School of Mines,United States,309.0,42.02,24.21,11.5,6.31,24.21,3
+34,P,Be,SK0001001,Dopraváci Prototype,Secondary Technical school of Transport Trnava,Slovakia,336.0,40.01,24.82,10.49,4.7,24.82,3
+35,P,Be,US0051001,Watt's Buzzin,Kankakee Valley High School,United States,308.0,39.0,27.29,11.71,0.0,27.29,2
+36,P,Be,MY0006002,Grüne Welt,Multimedia University Melaka,Malaysia,329.0,34.93,26.76,0.0,8.17,26.76,2
+37,P,Be,US0084002,Experimental Vehicle Team 2,Saint Thomas Academy,United States,301.0,30.52,0.0,18.15,12.37,35.35,2
+38,P,Be,US0009001,Cal Poly Supermileage Prototype,California Polytechnic State University,United States,322.0,29.92,21.83,0.0,8.09,23.11,2
+39,P,Be,CA0018001,UTSM - Tempest,University of Toronto,Canada,312.0,28.61,28.61,0.0,0.0,28.61,2
+40,P,Be,BR0028001,EFICEM,Universidade Federal de Santa Catarina Joinville,Brazil,318.0,26.67,26.67,0.0,0.0,26.67,3
+41,P,Be,MY0005001,Hyperion Racing Team,Monash University Malaysia,Malaysia,309.0,26.2,16.46,9.74,0.0,16.46,3
+42,P,Be,US0071002,Huskie Hypermilers EV,Northern Illinois University,United States,307.0,26.14,26.14,0.0,0.0,26.14,1
+43,P,Be,IT0001004,Faenza Fabi Racing,Istituto d'Istruzione Superiore Tecnica Industriale e Professionale Luigi Bucci Faenza,Italy,329.0,25.53,25.53,0.0,0.0,25.53,1
+44,P,Be,HU0004002,Kandó Racing,Kecskeméti SZC Kandó Kálmán Technikum,Hungary,337.0,25.05,0.0,0.0,25.05,71.56,1
+45,P,Be,ID0056002,Al Qorni Team,Universitas Ahmad Dahlan,Indonesia,322.0,24.65,24.65,0.0,0.0,24.65,1
+46,P,Be,IE0001001,The Geec,University of Galway,Ireland,315.0,24.26,0.0,14.64,9.62,27.48,2
+47,P,Be,BN0005002,Belia Tabah,Universiti Brunei Darussalam,Brunei Darussalam,309.0,24.03,0.0,16.08,7.95,24.73,2
+48,P,Be,GR0004001,Poseidon Team - PROTOTYPE,University of West Attica,Greece,310.0,23.96,0.0,23.96,0.0,36.86,3
+49,P,Be,MX0017001,Escudería Laguna,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Laguna,Mexico,320.0,23.86,23.86,0.0,0.0,23.86,1
+50,P,Be,IN0028001,Team Kaizen India,Pandit Deendayal Energy University,India,305.0,23.7,11.62,12.08,0.0,18.59,2
+51,P,Be,SA0003002,PSU ECO TEAM I,Prince Sultan University,Saudi Arabia,306.0,23.42,23.42,0.0,0.0,23.42,1
+52,P,Be,NL0007001,CeleRacing,Gymnasium Celeanum,Netherlands,330.0,23.38,7.92,10.54,4.92,16.22,3
+53,P,Be,ID0010002,KHAD Eco Team,Muhammadiyah University of Yogyakarta,Indonesia,307.0,23.16,0.0,0.0,23.16,66.16,1
+54,P,Be,US0013002,Sting,Cedarville University,United States,323.0,22.36,22.36,0.0,0.0,22.36,2
+55,P,Be,FR0052002,Vinci Eco Drive,Pôle Universitaire Léonard de Vinci,France,323.0,21.09,0.0,14.59,6.51,22.44,3
+56,P,Be,CN0013002,HuaQi EV  / ??????,Guangzhou College of South China University of Technology,China,301.0,20.49,0.0,0.0,20.49,58.54,2
+57,P,Be,US0078001,Pantheta Leo,Purdue University Northwest,United States,324.0,20.37,14.08,6.28,0.0,14.08,2
+58,P,Be,NL0027001,AllStar Racing,Thorbecke Scholengemeenschap,Netherlands,332.0,20.25,20.25,0.0,0.0,20.25,1
+59,P,Be,ID0018001,Sriwijaya Eco,Sriwijaya University,Indonesia,310.0,19.85,0.0,0.0,19.85,56.71,1
+60,P,Be,US0129004,Falcon Opportunity,Armstrong High School,United States,328.0,19.72,19.72,0.0,0.0,19.72,1
+61,P,Be,BE0010001,Ardent motion,Université de Liège,Belgium,311.0,19.45,19.45,0.0,0.0,19.45,1
+62,P,Be,US0071001,NIU Supermileage,Northern Illinois University,United States,309.0,19.23,0.0,11.98,7.26,20.73,2
+63,P,Be,BG0007001,Flashteam,Professional Technical High School of Gabrovo,Bulgaria,314.0,18.93,18.93,0.0,0.0,18.93,1
+64,P,Be,BE0012001,E-Comet,Henallux,Belgium,320.0,18.42,0.0,18.42,0.0,28.34,2
+65,P,Be,BR0009001,MOBEE,Instituto Federal Catarinense Luzerna,Brazil,315.0,18.06,12.5,0.0,5.56,15.89,3
+66,P,Be,MX0015001,Saguaro Racing Team,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Sonora Norte,Mexico,319.0,17.91,11.09,6.81,0.0,11.09,2
+67,P,Be,BR0002002,Equipe ECOFET Prototype,CEFET MG,Brazil,306.0,16.76,0.0,10.75,6.0,17.16,2
+68,P,Be,US0108001,Eco Illini Supermileage,University of Illinois Urbana-Champaign,United States,326.0,16.37,16.37,0.0,0.0,16.37,1
+69,P,Be,US0174001,Supercards,Willmar Senior High School,United States,330.0,15.58,15.58,0.0,0.0,15.58,1
+70,P,Be,US0175001,Mille Lacs Raiders,Onamia Public School,United States,331.0,15.32,15.32,0.0,0.0,15.32,1
+71,P,Be,DE0001002,Lausitz Dynamics,Brandenburgische Technische Universität Cottbus-Senftenberg,Germany,311.0,14.82,0.0,0.0,14.82,42.34,1
+72,P,Be,FR0047001,Riquet Eco Car,Lycée Pierre Paul Riquet,France,312.0,13.87,0.0,0.0,13.87,39.63,1
+73,P,Be,BR0045001,IFECO,"Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul Rio Grande",Brazil,322.0,13.12,13.12,0.0,0.0,13.12,3
+74,P,Be,BR0031002,Eco Octano UFPR Elétrico,UFPR,Brazil,305.0,13.06,0.0,6.97,6.09,17.39,2
+75,P,Be,SA0001001,Team Alfaisal,Alfaisal University,Saudi Arabia,338.0,12.59,12.59,0.0,0.0,12.59,1
+76,P,Be,BG0008001,Spirit of the Valley,Professional High School of Transport and Management Kazanlak,Bulgaria,315.0,12.5,12.5,0.0,0.0,12.5,1
+77,P,Be,KZ0004002,ShallQar,Kazakh-British Technical University,Kazakhstan,325.0,12.32,12.32,0.0,0.0,12.32,3
+78,P,Be,SA0003001,PSU ECO TEAM,Prince Sultan University,Saudi Arabia,329.0,11.29,0.0,11.29,0.0,17.36,1
+79,P,Be,KZ0003001,S.U. Racing team,Satbayev Kazakh National Technical University,Kazakhstan,307.0,10.91,0.0,10.91,0.0,16.79,3
+80,P,Be,CN0003002,Green Pulse Team Zhixing / ???????,Beijing Jiaotong University,China,302.0,10.73,0.0,0.0,10.73,30.66,1
+81,P,Be,US0095002,The 12th Amp,Texas A&M University,United States,325.0,10.65,10.65,0.0,0.0,10.65,1
+82,P,Be,CN0012002,Wing of Guangshi Team II  / ??????,Guangdong Polytechnic Normal University,China,303.0,10.56,0.0,0.0,10.56,30.18,1
+83,P,Be,IN0011001,Team Pravega,Government Engineering College Barton Hill,India,319.0,10.11,7.75,0.0,2.36,7.75,2
+84,P,Be,GT0001002,Taq'Balam,Universidad del Valle de Guatemala,Guatemala,316.0,9.86,9.86,0.0,0.0,9.86,1
+85,P,Be,CN0010002,Fengyin Racing / ????,Foshan University,China,305.0,9.84,0.0,0.0,9.84,28.12,1
+86,P,Be,IT0001002,FAENZA FABI RACING,Istituto d'Istruzione Superiore Tecnica Industriale e Professionale Luigi Bucci Faenza,Italy,338.0,9.81,0.0,0.0,9.81,28.04,1
+87,P,Be,BN0006001,UTB Eco-Drive Team 2025,Universiti Teknologi Brunei,Brunei Darussalam,318.0,9.8,0.0,9.8,0.0,15.07,1
+88,P,Be,BR0001001,e-Wolf Racing,Centro Federal de Educação Tecnológica Celso Suckow da Fonseca Maracanã,Brazil,311.0,9.42,9.42,0.0,0.0,9.42,3
+89,P,Be,EG0004002,CU HORUS,Cairo University,Egypt,314.0,9.24,9.24,0.0,0.0,9.24,1
+90,P,Be,EG0007002,E-Rally,Helwan University,Egypt,316.0,8.71,8.71,0.0,0.0,8.71,2
+91,P,Be,CN0026001,QVTU-EV / QVTU-EV,Quanzhou Vocational and Technical University,China,304.0,8.53,0.0,0.0,8.53,24.38,1
+92,P,Be,US0001002,KnightsPT,Alden-Conger High School,United States,307.0,8.37,0.0,0.0,8.37,23.91,1
+93,P,Be,ES0022001,UPCT SOLARTEAM,UPCT,Spain,327.0,8.23,0.0,0.0,8.23,23.51,1
+94,P,Be,PH0013002,Cardinal One,Mapua Institute of Technology,Philippines,333.0,8.01,8.01,0.0,0.0,8.01,1
+95,P,Be,QA0003001,Wolves racing - EV1,UDST,Qatar,315.0,7.83,0.0,7.83,0.0,12.04,1
+96,P,Be,CN0024002,Hummingbird Fleet / ????,Nanjing University of Science & Technology,China,314.0,7.76,0.0,0.0,7.76,22.16,1
+97,P,Be,QA0001001,Gernas EV,Qatar University,Qatar,314.0,7.56,0.0,4.42,3.14,8.98,2
+98,P,Be,CN0032002,TYUST Wheeling Racing Team I / ????,Taiyuan University of Science and Technology,China,318.0,7.09,0.0,0.0,7.09,20.25,1
+99,P,Be,ID0019002,MALEM DIWA PROTO,Syiah Kuala University,Indonesia,331.0,6.92,0.0,0.0,6.92,19.78,1
+100,P,Be,US0147002,Warrior Supermileage,Brainerd High School,United States,326.0,6.55,0.0,6.55,0.0,10.07,1
+101,P,Be,CA0016001,UM EcoMotion,University of Manitoba,Canada,311.0,6.49,0.0,6.49,0.0,9.99,1
+102,P,Be,US0083001,Bearcat Motorsports,Ruston High School,United States,321.0,6.49,0.0,6.49,0.0,9.99,1
+103,P,Be,BR0021002,Grupo Cataratas de Eficiência Energética,Unioeste Foz do Iguaçu,Brazil,314.0,6.07,0.0,6.07,0.0,9.34,1
+104,P,Be,US0147001,Warrior Way,Brainerd High School,United States,341.0,5.92,0.0,0.0,5.92,16.92,1
+105,P,Be,KZ0002002,BULAN,Nazarbayev University,Kazakhstan,326.0,5.91,0.0,5.91,0.0,9.09,1
+106,P,Be,QA0003003,EV Wolves,University of Doha for Science and Technology,Qatar,310.0,5.9,5.9,0.0,0.0,5.9,1
+107,P,Be,EG0027001,Menofia Racing Team,Menofia University,Egypt,317.0,5.86,0.0,5.86,0.0,9.01,2
+108,P,Be,ID0051001,Gatotkaca Unisi,UII,Indonesia,319.0,5.59,0.0,0.0,5.59,15.97,1
+109,P,Be,ID0060001,KRAKATOA TEAM-EV,UNTIRTA,Indonesia,312.0,5.53,0.0,0.0,5.53,15.81,1
+110,P,Be,US0116002,Green Warriors,Wawasee High School,United States,301.0,5.53,0.0,0.0,5.53,15.81,1
+111,P,Be,US0109001,UM Supermileage BE,University of Michigan Ann Arbor,United States,337.0,5.42,0.0,0.0,5.42,15.49,1
+112,P,Be,US0146001,Swanville Bulldogs,Swanville High School,United States,340.0,5.28,0.0,0.0,5.28,15.09,1
+113,P,Be,SA0005002,Qara,King Faisal University,Saudi Arabia,340.0,5.19,5.19,0.0,0.0,5.19,1
+114,P,Be,CN0051001,ZERO / ????,Nanhang Jincheng College,China,312.0,4.75,0.0,0.0,4.75,13.58,1
+115,P,Be,MY0016001,UMPSA-Tech,Universiti Malaysia Pahang,Malaysia,335.0,4.7,0.0,0.0,4.7,13.42,1
+116,P,Be,BR0042002,EcoMauá - PRT26,Instituto Mauá de Tecnologia,Brazil,321.0,4.64,0.0,0.0,4.64,13.26,3
+117,P,Be,CN0054002,Star Trace Design / ??Design??,Geely University of China,China,311.0,4.56,0.0,0.0,4.56,13.03,1
+118,P,Be,MX0002001,EcoVolt CCM,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Ciudad de México,Mexico,328.0,4.17,0.0,0.0,4.17,11.91,4
+119,P,Be,US0035002,Astronomical Supermileage,Granite Falls High School,United States,333.0,4.11,0.0,0.0,4.11,11.76,1
+120,P,Be,BR0059001,Ecodrive Alliance,SENAI Pato Branco,Brazil,326.0,3.89,0.0,0.0,3.89,11.12,2
+121,P,Be,BN0003001,Politeknik Brunei SSE,Politeknik Brunei,Brunei Darussalam,329.0,3.75,0.0,0.0,3.75,10.72,1
+122,P,Be,CN0052001,JX_Racing / ????,Taiyuan University of Technology,China,319.0,3.61,0.0,0.0,3.61,10.33,1
+123,P,Be,BG0002001,Mehano Team Racing,Professional High School of Mechatronics and Electronics Burgas,Bulgaria,312.0,3.43,3.43,0.0,0.0,3.43,2
+124,P,Be,BR0022001,Fenrir,UNESP Guaratinguetá,Brazil,315.0,3.41,0.0,3.41,0.0,5.24,2
+125,P,Be,TR0060001,Mavera Teknoloji Takimi,Eskisehir Osmangazi Üniversitesi,Turkey,338.0,3.35,3.35,0.0,0.0,3.35,2
+126,P,Be,BR0036001,MECMACK,Universidade Presbiteriana Mackenzie,Brazil,321.0,3.0,0.0,0.0,3.0,8.58,1
+127,P,Be,ID0059001,Mandalika Desantara,UNRAM,Indonesia,332.0,2.84,0.0,0.0,2.84,8.1,1
+128,P,Be,MX0003002,E Racing CEM,Instituto Tecnológico y de Estudios Superiores de Monterrey Campus Estado de México,Mexico,310.0,2.64,0.0,0.0,2.64,7.55,1
+129,P,Be,US0048002,Rolling Dukes,James Madison University,United States,334.0,2.14,0.0,0.0,2.14,6.12,1
+130,P,Be,US0083002,Bearcat Motorsports,Ruston High School,United States,312.0,1.92,0.0,0.0,1.92,5.48,1
+131,P,Be,BE0003002,Dynamo Team,Ecole Supérieure des Arts Saint-Luc Liège,Belgium,322.0,0.0,0.0,0.0,0.0,0.0,1
+132,P,Be,BN0006002,UTB Eco-Drive Team 2024,Universiti Teknologi Brunei,Brunei Darussalam,336.0,0.0,0.0,0.0,0.0,0.0,1
+133,P,Be,BR0008001,Insper Mileage,Insper,Brazil,327.0,0.0,0.0,0.0,0.0,0.0,1
+134,P,Be,BR0023001,EcoVeículo Electric Unifei,Universidade Federal de Itajubá,Brazil,316.0,0.0,0.0,0.0,0.0,0.0,3
+135,P,Be,BR0025001,Ne3,Universidade Federal de Lavras,Brazil,318.0,0.0,0.0,0.0,0.0,0.0,2
+136,P,Be,BR0056001,Yawara Racing,Centro Federal de Educação Tecnológica Celso Suckow da Fonseca Nova Friburgo,Brazil,325.0,0.0,0.0,0.0,0.0,0.0,2
+137,P,Be,CH0004001,ILR Racing,Institut Le Rosey,Switzerland,316.0,0.0,0.0,0.0,0.0,0.0,1
+138,P,Be,CO0003001,MiliRacing,Universidad Militar Nueva Granada,Colombia,313.0,0.0,0.0,0.0,0.0,0.0,1
+139,P,Be,CO0009001,ElA RACING,Universidad EIA,Colombia,327.0,0.0,0.0,0.0,0.0,0.0,1
+140,P,Be,ID0013001,Tunas Autron Team,Politeknik Negeri Malang,Indonesia,318.0,0.0,0.0,0.0,0.0,0.0,1
+141,P,Be,ID0027001,Mekatronic Team 1,Universitas Muhammadiyah Malang,Indonesia,333.0,0.0,0.0,0.0,0.0,0.0,1
+142,P,Be,ID0039002,ASATAMA TEAM,University of Sumatera Utara,Indonesia,337.0,0.0,0.0,0.0,0.0,0.0,1
+143,P,Be,ID0050001,KUKANG EV,ITERA,Indonesia,320.0,0.0,0.0,0.0,0.0,0.0,1
+144,P,Be,ID0054001,Gumi Paer,LIT,Indonesia,321.0,0.0,0.0,0.0,0.0,0.0,1
+145,P,Be,ID0079001,Selandir Eco Team,SMK Negeri 1 Lingsar,Indonesia,330.0,0.0,0.0,0.0,0.0,0.0,1
+146,P,Be,ID0080001,Akoms Ebullience,Akom Sumbawa,Indonesia,322.0,0.0,0.0,0.0,0.0,0.0,1
+147,P,Be,IN0009001,DJS Miles,Dwarkadas Jivanlal Sanghvi College of Engineering,India,325.0,0.0,0.0,0.0,0.0,0.0,1
+148,P,Be,IN0032003,Yugant,Somaiya Vidyavihar University,India,321.0,0.0,0.0,0.0,0.0,0.0,1
+149,P,Be,IN0064001,Folium Eco-drive,College of Engineering Trivandrum,India,324.0,0.0,0.0,0.0,0.0,0.0,1
+150,P,Be,MX0004002,K2-DZEC-UNAM,UNAM,Mexico,323.0,0.0,0.0,0.0,0.0,0.0,1
+151,P,Be,NL0010004,Plaat2A,Hogeschool Van Amsterdam,Netherlands,331.0,0.0,0.0,0.0,0.0,0.0,1
+152,P,Be,OM0002003,GUlynx,German University of Technology in Oman,Oman,330.0,0.0,0.0,0.0,0.0,0.0,1
+153,P,Be,PE0002001,KON Team,UTEC,Peru,327.0,0.0,0.0,0.0,0.0,0.0,1
+154,P,Be,PE0003001,Eco Motors UNI,Universidad Nacional de Ingenieria,Peru,330.0,0.0,0.0,0.0,0.0,0.0,2
+155,P,Be,PK0022001,Team Nixor Sharks,Nixor College,Pakistan,328.0,0.0,0.0,0.0,0.0,0.0,1
+156,P,Be,QA0007001,Alkawaser,Hamad Bin Khalifa University,Qatar,335.0,0.0,0.0,0.0,0.0,0.0,1
+157,P,Be,TH0012001,PNRU Collegian-Junior,Phranakhon Rajabhat University,Thailand,304.0,0.0,0.0,0.0,0.0,0.0,1
+158,P,Be,TR0026002,CLEAN ENERGY TEAM,Middle East Technical University,Turkey,337.0,0.0,0.0,0.0,0.0,0.0,1
+159,P,Be,US0134001,Greater Racing,Greater Lafayette Career Academy,United States,324.0,0.0,0.0,0.0,0.0,0.0,1
+1,P,H2,DE0009001,ThaiGer-H2-Racing Team,Hochschule Stralsund,Germany,201.0,181.49,81.49,65.0,35.0,100.0,3
+2,P,H2,DE0001002,Lausitz Dynamics,Brandenburgische Technische Universität Cottbus-Senftenberg,Germany,202.0,161.19,100.0,61.19,0.0,100.0,2
+3,P,H2,IT0006002,H2politO - Molecole da Corsa,Politecnico Di Torino,Italy,203.0,140.28,70.55,43.86,25.88,73.93,3
+4,P,H2,DE0007001,Hydro2Motion,Hochschule München,Germany,211.0,80.1,64.55,0.0,15.54,64.55,2
+5,P,H2,ID0008002,Antasena ITS Team,Institut Teknologi Sepuluh Nopember,Indonesia,203.0,64.91,43.27,21.65,0.0,43.27,3
+6,P,H2,ID0021002,Apatte62 Brawijaya Team 2,Universitas Brawijaya,Indonesia,212.0,63.72,46.74,0.0,16.98,48.51,3
+7,P,H2,NL0010001,H2A,Hogeschool Van Amsterdam,Netherlands,204.0,60.3,25.2,35.1,0.0,54.0,2
+8,P,H2,PL0001002,Project Hydrive,AGH University of Science and Technology,Poland,207.0,57.86,29.28,20.76,7.82,31.93,3
+9,P,H2,ID0023002,NAKOELA UI TEAM,Universitas Indonesia,Indonesia,201.0,49.41,15.9,33.52,0.0,51.56,2
+10,P,H2,PL0005001,Hydrogreen Team POLLUB - Hydros,Lublin University of Technology,Poland,208.0,46.95,26.32,20.63,0.0,31.74,3
+11,P,H2,CN0002001,BITEPC,Beijing Institute of Technology,China,214.0,44.06,0.0,30.34,13.72,46.68,2
+12,P,H2,TR0011001,HIDROANA,Eskisehir Technical University,Turkey,209.0,42.95,14.16,18.92,9.87,29.1,3
+13,P,H2,US0084002,Experimental Vehicle Team 2,Saint Thomas Academy,United States,212.0,36.4,36.4,0.0,0.0,36.4,1
+14,P,H2,DE0005002,High Efficiency Karlsruhe,Hochschule Karlsruhe,Germany,204.0,35.74,0.0,25.83,9.91,39.75,2
+15,P,H2,US0118001,Rocky Mountain Racing,Wheat Ridge High School,United States,202.0,29.63,17.38,12.25,0.0,18.85,3
+16,P,H2,IN0058001,Team ReNew,Kumaraguru College of Technology,India,211.0,24.15,24.15,0.0,0.0,24.15,3
+17,P,H2,CA0014001,University of Alberta EcoCar,University of Alberta,Canada,201.0,24.05,0.0,13.52,10.53,30.07,2
+18,P,H2,GB0013002,UCL HyperMile,University College London,United Kingdom,206.0,21.52,0.0,21.52,0.0,33.11,3
+19,P,H2,TR0022001,HYDROGENIX K-TECH TEAM,Karadeniz Technical University,Turkey,215.0,17.03,17.03,0.0,0.0,17.03,3
+20,P,H2,ID0037002,Bumi Siliwangi 2,Universitas Pendidikan Indonesia,Indonesia,202.0,16.36,0.0,0.0,16.36,46.74,1
+21,P,H2,CN0002002,BITEPC,Beijing Institute of Technology,China,212.0,9.71,0.0,0.0,9.71,27.75,1
+22,P,H2,BR0031001,Eco Octano UFPR Hidrogênio,UFPR,Brazil,212.0,8.38,0.0,8.38,0.0,12.89,1
+23,P,H2,MY0007002,Green Gear-H,Swinburne University of Technology Sarawak,Malaysia,214.0,6.03,0.0,0.0,6.03,17.23,1
+24,P,H2,BO0001001,CAPITAN VICTOR USTARIZ ARCE,Escuela Militar de Ingeniería,Bolivia,211.0,0.0,0.0,0.0,0.0,0.0,1
+25,P,H2,BR0021002,GCEE ÂNODO,Universidade Estadual do Oeste do Paraná Foz do Iguaçu,Brazil,211.0,0.0,0.0,0.0,0.0,0.0,1
+26,P,H2,CA0015002,UBC Supermileage - HFC Prototype,University of British Columbia,Canada,212.0,0.0,0.0,0.0,0.0,0.0,1
+27,P,H2,DE0012001,Team NAOB,Nicolaus August Otto Berufskolleg,Germany,212.0,0.0,0.0,0.0,0.0,0.0,3
+28,P,H2,NL0009002,Phidippides,Hogeschool Rotterdam,Netherlands,214.0,0.0,0.0,0.0,0.0,0.0,2
+29,P,H2,SA0001001,Alfaisal Eco Team,Alfaisal University,Saudi Arabia,211.0,0.0,0.0,0.0,0.0,0.0,1
+30,P,H2,SA0011002,HydroSAQR,Prince Sattam bin Abdulaziz University,Saudi Arabia,214.0,0.0,0.0,0.0,0.0,0.0,1
+31,P,H2,TR0025002,Hydromarmara,Marmara University,Turkey,216.0,0.0,0.0,0.0,0.0,0.0,1
+32,P,H2,TR0064002,MYS KAPSÜL SELÇUK,Selçuk Üniversitesi,Turkey,217.0,0.0,0.0,0.0,0.0,0.0,1
+33,P,H2,US0093001,Carthmore,Swarthmore College,United States,214.0,0.0,0.0,0.0,0.0,0.0,1
+1,P,Ice,FR0050001,Microjoule,Lycée Saint-Joseph La Joliverie,France,1.0,185.5,85.5,65.0,35.0,100.0,3
+2,P,Ice,ES0025001,EQUIP UMH,Unversitat Miguel Hernandez D'Elx,Spain,3.0,165.4,98.97,42.23,24.2,98.97,3
+3,P,Ice,FR0072002,TIM Prototype,Université Toulouse III Paul Sabatier INSA Toulouse,France,5.0,164.76,100.0,34.69,30.07,100.0,3
+4,P,Ice,FR0003002,Calisson,Aix Marseille Université,France,2.0,139.8,72.56,45.39,21.85,72.56,3
+5,P,Ice,PL0002001,Rotor,State University of Applied Sciences in Krosno,Poland,7.0,118.19,91.61,26.58,0.0,91.61,2
+6,P,Ice,SE0001002,Chalmers Vera Team,Chalmers University of Technology,Sweden,10.0,102.51,66.83,23.02,12.66,66.83,3
+7,P,Ice,FI0001002,Remmi-Team,Tampere University,Finland,6.0,98.2,50.6,28.47,19.13,54.67,3
+8,P,Ice,DE0020001,Hanseatic Efficiency,University of Rostock,Germany,4.0,96.41,48.48,36.39,11.54,55.98,3
+9,P,Ice,ID0031001,SEMERU TEAM Kumbolo UM,Universitas Negeri Malang,Indonesia,1.0,91.06,60.01,31.05,0.0,60.01,2
+10,P,Ice,US0061002,Team Cosmo,Mater Dei High School,United States,1.0,77.82,46.54,20.59,10.7,46.54,3
+11,P,Ice,ID0016002,Bengawan Team UNS,Sebelas Maret University,Indonesia,3.0,75.54,40.8,20.01,14.73,42.08,3
+12,P,Ice,TR0018001,Facilis,Istanbul Technical University,Turkey,9.0,72.8,39.39,24.69,8.72,39.39,3
+13,P,Ice,FR0084001,DEFI  ECO  SYNERGIE,Lycée Viala Lacoste,France,17.0,67.15,67.15,0.0,0.0,67.15,1
+14,P,Ice,US0008001,Supermileage ICE,Brigham Young University,United States,12.0,64.26,49.35,0.0,14.91,49.35,3
+15,P,Ice,HU0002002,BME SharkTeam,Budapest University of Technology and Economics,Hungary,8.0,63.28,37.45,25.83,0.0,39.74,2
+16,P,Ice,ES0011001,ECO-JANDULA,Instituto de Educación Secundaria Jandula,Spain,12.0,61.84,32.31,18.75,10.79,32.31,3
+17,P,Ice,BR0011001,Drop Team,"Instituto Federal de Educação, Ciência e Tecnologia do Rio Grande do Sul Erechim",Brazil,1.0,60.72,30.09,20.04,10.59,30.83,5
+18,P,Ice,ID0002001,Antawirya Rondhan ICE,Diponegoro University,Indonesia,15.0,58.98,58.98,0.0,0.0,58.98,1
+19,P,Ice,ES0013001,Islero,Instituto de Educación Secundaria Leonardo Da Vinci,Spain,14.0,56.3,43.24,0.0,13.07,43.24,2
+20,P,Ice,PL0004001,Iron Warriors,Lodz University of Technology,Poland,22.0,43.69,36.47,0.0,7.22,36.47,3
+21,P,Ice,US0063001,MTU Supermileage Systems,Michigan Technological University,United States,3.0,42.54,29.0,9.26,4.27,29.0,3
+22,P,Ice,US0013001,Karcharias,Cedarville University,United States,4.0,40.53,27.65,9.03,3.85,27.65,3
+23,P,Ice,CN0018001,Conception Racing Team,Jilin University,China,11.0,37.77,37.77,0.0,0.0,37.77,1
+24,P,Ice,LU0001001,EcoQuest LAM Luxembourg,Lycée des Arts et Métiers Luxembourg,Luxembourg,20.0,34.58,22.08,12.5,0.0,22.08,3
+25,P,Ice,TH0001001,Fueang Fha,Amphawa Industrial and Community Education,Thailand,5.0,32.61,0.0,23.11,9.5,35.55,2
+26,P,Ice,FR0002001,TED,Airbus Helicopters Centre de Formation Technique,France,3.0,28.96,0.0,0.0,28.96,82.75,1
+27,P,Ice,SK0002001,FME racing team,Slovak University of Technology Bratislava,Slovakia,26.0,28.18,17.86,10.32,0.0,17.86,2
+28,P,Ice,ID0004001,RAKATA PROTOTYPE ETHANOL,Institut Teknologi Bandung,Indonesia,16.0,27.16,27.16,0.0,0.0,27.16,2
+29,P,Ice,CN0036001,Tongji Zeal Eco-Power Team,Tongji University,China,15.0,23.72,0.0,15.91,7.81,24.48,2
+30,P,Ice,BR0048001,Pé Vermelho Efficiency Team,Universidade Tecnológica Federal do Paraná Medianeira,Brazil,3.0,23.52,16.77,3.84,2.91,16.77,3
+31,P,Ice,BR0041001,Pato a Jato,UTFPR Pato Branco,Brazil,2.0,23.18,0.0,14.94,8.24,23.54,3
+32,P,Ice,MA0009001,UNIVERSIAPOLIS CREATEURS,Ecole Polytechnique Agadir,Morocco,21.0,22.75,13.42,5.79,3.54,13.42,3
+33,P,Ice,SA0011001,SAQR,Prince Sattam bin Abdulaziz University,Saudi Arabia,21.0,21.81,21.81,0.0,0.0,21.81,2
+34,P,Ice,SA0002001,SAAF,King Saud University,Saudi Arabia,6.0,21.05,15.8,5.25,0.0,15.8,3
+35,P,Ice,ES0024001,UPV Alcoy Team,Universitat Politècnica de València Alcoy,Spain,20.0,20.84,0.0,20.84,0.0,32.07,2
+36,P,Ice,FR0055001,Exergie,Polytech Orleans,France,16.0,20.62,20.62,0.0,0.0,20.62,2
+37,P,Ice,US0071001,Huskie Engine,Northern Illinois University,United States,16.0,20.56,20.56,0.0,0.0,20.56,1
+38,P,Ice,ID0030002,Batavia Gasoline Team,Universitas Negeri Jakarta,Indonesia,11.0,17.2,0.0,17.2,0.0,26.47,1
+39,P,Ice,FR0044001,Team Callo,Lycée Marcel Callo,France,7.0,17.1,0.0,0.0,17.1,48.84,1
+40,P,Ice,BE0005001,EcoMOTION,,Belgium,20.0,16.6,0.0,0.0,16.6,47.43,1
+41,P,Ice,US0136001,Behrend Automotive Club,Penn State Behrend,United States,5.0,14.89,8.06,5.07,1.75,8.06,3
+42,P,Ice,TH0013001,RMUTP RACING,Rajamangala University of Technology Phra Nakhon,Thailand,4.0,13.36,0.0,0.0,13.36,38.18,1
+43,P,Ice,ES0012001,ecologico-marxadella,Instituto de Educación Secundaria La Marxadella,Spain,18.0,12.24,0.0,7.91,4.33,12.37,2
+44,P,Ice,VN0001001,HAUI AUTO,Hanoi University of Industry,Viet Nam,5.0,12.23,0.0,0.0,12.23,34.93,1
+45,P,Ice,US0129005,Falcon Spirit,Armstrong High School,United States,18.0,12.07,12.07,0.0,0.0,12.07,1
+46,P,Ice,ID0023002,Nakoela Team,Universitas Indonesia,Indonesia,2.0,12.03,0.0,0.0,12.03,34.38,1
+47,P,Ice,SK0003001,SjF TUKE Eco Racing,Technical University of Košice,Slovakia,21.0,10.38,0.0,10.38,0.0,15.97,2
+48,P,Ice,US0130001,Mass Mileage,University of Massachusetts Amherst,United States,19.0,9.52,9.52,0.0,0.0,9.52,2
+49,P,Ice,GB0017002,Eco-Vodcar,University of Central Lancashire,United Kingdom,26.0,8.92,0.0,8.92,0.0,13.72,1
+50,P,Ice,PH0039001,AME Merlin,Mapúa Malayan Colleges Mindanao,Philippines,19.0,7.74,7.74,0.0,0.0,7.74,1
+51,P,Ice,CN0034001,TUST ECO Racing Team / 碧海蓝天节能车队,Tianjin University of Science & Technology,China,16.0,7.7,0.0,0.0,7.7,22.0,1
+52,P,Ice,ES0007001,Prototipos Barredos,Instituto de Educación Secundaria Alto Nalón,Spain,21.0,7.66,0.0,0.0,7.66,21.88,1
+53,P,Ice,BR0038001,EcoDelta,Universidade Tecnológica Federal do Paraná Cornélio Procópio,Brazil,16.0,7.47,7.47,0.0,0.0,7.47,2
+54,P,Ice,CN0002002,BITEPC II / 翼昇节能车队 二队,Beijing Institute of Technology,China,10.0,7.46,0.0,0.0,7.46,21.32,1
+55,P,Ice,CN0018002,Conception Racing Team II / 肯赛节能车队 二队,Jilin University,China,1.0,7.28,0.0,0.0,7.28,20.8,1
+56,P,Ice,CN0035001,Motorcade BinHai / 滨海号车队,Tianjin University of Technology and Education,China,3.0,7.01,0.0,0.0,7.01,20.03,1
+57,P,Ice,US0056001,Ecolancers,Livingston High School,United States,14.0,6.82,6.82,0.0,0.0,6.82,2
+58,P,Ice,PH0021002,UMindanao Wildcats,University of Mindanao,Philippines,20.0,6.71,5.36,0.0,1.35,5.36,3
+59,P,Ice,US0030001,The Spartans,George M. Schurr High School,United States,6.0,6.59,3.95,2.64,0.0,4.06,2
+60,P,Ice,FR0046001,DEFI  ECO  SYNERGIE,Lycée Viala Lacoste,France,18.0,6.43,0.0,0.0,6.43,18.36,1
+61,P,Ice,CA0015002,MARK XV,University of British Columbia,Canada,21.0,6.01,0.0,0.0,6.01,17.17,1
+62,P,Ice,PT0001001,Cinquentenário do 25 de Abril,Agrupamento de Escolas Alcaides de Faria Barcelos,Portugal,31.0,5.39,0.0,0.0,5.39,15.41,1
+63,P,Ice,ID0024002,Tawang Alun UNEJ Team,Universitas Jember,Indonesia,11.0,4.49,0.0,0.0,4.49,12.84,1
+64,P,Ice,PH0013002,Cardinal One,Mapua Institute of Technology,Philippines,15.0,4.11,0.0,0.0,4.11,11.73,1
+65,P,Ice,US0094001,Terre Haute South Braves,Terre Haute South Vigo High School,United States,8.0,3.91,0.0,0.0,3.91,11.17,1
+66,P,Ice,ID0046002,Bayu Surya UMS,Universitas Muhammadiyah Surakarta,Indonesia,18.0,3.39,0.0,0.0,3.39,9.67,1
+67,P,Ice,US0002001,The Golden Gas,Arkansas Tech University,United States,6.0,2.77,0.0,0.0,2.77,7.92,1
+68,P,Ice,US0025001,The Flying Emus,Eastern Mennonite University,United States,10.0,2.64,0.0,0.0,2.64,7.53,1
+69,P,Ice,PH0037001,XU MEKAN-ECO,Xavier University Ateneo,Philippines,12.0,1.81,0.0,1.81,0.0,2.78,2
+70,P,Ice,BR0020002,Team Coyote,UEMA,Brazil,17.0,0.0,0.0,0.0,0.0,0.0,1
+71,P,Ice,BR0030001,Milhas Gerais,UFSJ Santo Antonio,Brazil,15.0,0.0,0.0,0.0,0.0,0.0,1
+72,P,Ice,BR0034001,Equipe Triangulo Verde,UFTM,Brazil,15.0,0.0,0.0,0.0,0.0,0.0,2
+73,P,Ice,BR0039001,Relampinhão,UTFPR Curitiba,Brazil,17.0,0.0,0.0,0.0,0.0,0.0,1
+74,P,Ice,CN0048001,Eternal Topspeed / 极速光年车队,Tianjin Sino German University of Applied Sciences,China,14.0,0.0,0.0,0.0,0.0,0.0,1
+75,P,Ice,CN0054001,Geely Star / Geely Star 吉利星,Geely University of China,China,12.0,0.0,0.0,0.0,0.0,0.0,1
+76,P,Ice,GB0016001,Brum Eco Racing,University of Birmingham,United Kingdom,19.0,0.0,0.0,0.0,0.0,0.0,1
+77,P,Ice,ID0062002,PABLOS,Politeknik Negeri Jember,Indonesia,16.0,0.0,0.0,0.0,0.0,0.0,1
+78,P,Ice,IN0032001,TEAM ETA,Somaiya Vidyavihar University,India,17.0,0.0,0.0,0.0,0.0,0.0,1
+79,P,Ice,PH0001002,Kalasag,Adamson University,Philippines,13.0,0.0,0.0,0.0,0.0,0.0,1
+80,P,Ice,TR0005001,BHS ECO TEAM,Borusan Asim Kocabiyik Mesleki Ve Teknik Anadolu Lisesi,Turkey,23.0,0.0,0.0,0.0,0.0,0.0,2
+81,P,Ice,TR0009001,ERU TYEKK,Erciyes University,Turkey,28.0,0.0,0.0,0.0,0.0,0.0,2
+82,P,Ice,US0064001,Carbonair,Milwaukee School of Engineering,United States,24.0,0.0,0.0,0.0,0.0,0.0,1
+83,P,Ice,US0096002,Rolling Thunder,Trine University,United States,17.0,0.0,0.0,0.0,0.0,0.0,1
+84,P,Ice,US0108001,Eco Illini Supermileage,University of Illinois Urbana-Champaign,United States,26.0,0.0,0.0,0.0,0.0,0.0,1
+85,P,Ice,US0134001,Greater Racing,Greater Lafayette Career Academy,United States,29.0,0.0,0.0,0.0,0.0,0.0,1
+1,Uc,Be,HU0006001,SZEnergy Team,Szechenyi Istvan University,Hungary,701.0,200.0,100.0,65.0,35.0,100.0,3
+2,Uc,Be,FR0072001,TIM Urban,Université Toulouse III Paul Sabatier INSA Toulouse,France,703.0,161.57,81.33,49.89,30.36,86.73,3
+3,Uc,Be,ID0065001,WEIMANA AGNIJAYA TEAM,Universitas Udayana,Indonesia,701.0,143.8,73.49,48.9,21.41,75.23,3
+4,Uc,Be,TR0008001,CUKUROVA ELECTROMOBILE TEAM,Cukurova University,Turkey,702.0,137.12,65.96,50.09,21.07,77.06,3
+5,Uc,Be,IT0005001,Team Green Mecc,Politecnico Di Milano,Italy,708.0,132.39,78.31,28.03,26.05,78.31,3
+6,Uc,Be,TR0034001,AESK,Yildiz Technical University,Turkey,704.0,129.03,77.11,35.38,16.54,77.11,3
+7,Uc,Be,US0061001,Team RUDI,Mater Dei High School,United States,701.0,123.24,68.07,33.2,21.97,68.07,3
+8,Uc,Be,ID0021001,Apatte62 Brawijaya Team 1,Universitas Brawijaya,Indonesia,702.0,122.18,64.16,40.35,17.67,64.16,3
+9,Uc,Be,ID0023001,ARJUNA UI TEAM,Universitas Indonesia,Indonesia,704.0,113.27,67.17,31.61,14.5,67.17,3
+10,Uc,Be,BG0005002,ElectRU,University of Ruse,Bulgaria,709.0,88.13,66.27,21.87,0.0,66.27,2
+11,Uc,Be,DE0010001,Team proTRon,Hochschule Trier,Germany,705.0,81.0,48.8,32.2,0.0,49.54,2
+12,Uc,Be,GR0002001,PROMETHEUS ECO RACING,National Technical University of Athens,Greece,717.0,76.75,60.84,15.9,0.0,60.84,2
+13,Uc,Be,ID0008003,Nogogeni ITS Team,Institut Teknologi Sepuluh Nopember,Indonesia,718.0,69.58,69.58,0.0,0.0,69.58,1
+14,Uc,Be,US0084003,Experimental Vehicle Team 3,Saint Thomas Academy,United States,719.0,63.86,63.86,0.0,0.0,63.86,1
+15,Uc,Be,BG0001002,BLUE-G,N.Vaptsarov Professional High School of Agriculture and Forestry,Bulgaria,711.0,59.94,59.94,0.0,0.0,59.94,1
+16,Uc,Be,US0001002,Shockwave,Alden-Conger High School,United States,702.0,59.12,38.25,20.87,0.0,38.25,2
+17,Uc,Be,FR0045001,NIEPCE,Lycée Nicephore Niepce,France,710.0,55.09,26.2,20.28,8.61,31.19,3
+18,Uc,Be,ID0030001,Batavia Generation Team 2,Universitas Negeri Jakarta,Indonesia,720.0,54.22,54.22,0.0,0.0,54.22,1
+19,Uc,Be,ID0004002,RAKATA URBAN ELECTRIC,Institut Teknologi Bandung,Indonesia,717.0,53.61,53.61,0.0,0.0,53.61,1
+20,Uc,Be,CA0017001,uOttawa Supermileage,University of Ottawa,Canada,704.0,53.02,28.92,13.12,10.99,31.39,3
+21,Uc,Be,TR0022002,ENERGY TECHNOLOGIES TEAM,Karadeniz Technical University,Turkey,706.0,47.49,0.0,32.2,15.29,49.54,3
+22,Uc,Be,DE0009002,Bengalo Racing,Hochschule Stralsund,Germany,707.0,45.05,0.0,30.21,14.84,46.48,2
+23,Uc,Be,ES0013002,Avispado,Instituto de Educación Secundaria Leonardo Da Vinci,Spain,712.0,43.69,23.49,13.52,6.68,23.49,3
+24,Uc,Be,FR0020001,Limooz'e Team,École Nationale Supérieure d'Ingénieurs de Limoges,France,716.0,42.12,31.02,0.0,11.1,31.72,2
+25,Uc,Be,NO0001001,FuelFighter,Norwegian University of Science And Technology,Norway,719.0,41.27,41.27,0.0,0.0,41.27,2
+26,Uc,Be,ID0035001,GARUDA UNY ECO TEAM,Universitas Negeri Yogyakarta,Indonesia,711.0,40.15,0.0,40.15,0.0,61.77,1
+27,Uc,Be,US0116002,Green Warriors,Wawasee High School,United States,703.0,39.42,25.9,13.52,0.0,25.9,2
+28,Uc,Be,CN0012001,Wing Of Guangshi,Guangdong Polytechnic Normal University,China,713.0,32.18,0.0,23.46,8.72,36.09,2
+29,Uc,Be,TR0077001,Teknogaraj SART,Sahinbey Belediyesi Bilim ve Sanat Merkezi,Turkey,731.0,26.2,26.2,0.0,0.0,26.2,1
+30,Uc,Be,BR0048002,Green E-Car,Universidade Tecnológica Federal do Paraná Medianeira,Brazil,701.0,25.27,17.47,4.97,2.83,17.47,3
+31,Uc,Be,US0019002,Cornell Electric Vehicles,Cornell University,United States,705.0,24.43,18.07,6.36,0.0,18.07,2
+32,Uc,Be,FR0016001,ULHYS,École Nationale Supérieure d’Électricité et de Mécanique Vandoeuvre-Les-Nancy,France,733.0,21.99,21.99,0.0,0.0,21.99,1
+33,Uc,Be,SK0001002,Dopraváci Urban,Secondary Technical school of Transport Trnava,Slovakia,723.0,21.52,14.76,6.76,0.0,14.76,2
+34,Uc,Be,NL0010002,EVA,Hogeschool Van Amsterdam,Netherlands,711.0,17.7,0.0,9.54,8.16,23.3,2
+35,Uc,Be,IN0014001,Team AVERERA,Indian Institute of Technology - Banaras Hindu University,India,714.0,16.5,0.0,16.5,0.0,25.38,1
+36,Uc,Be,NL0023001,Blue Racing Team Windesheim,Windesheim University of Applied Sciences,Netherlands,712.0,16.34,0.0,9.54,6.8,19.42,2
+37,Uc,Be,US0129003,Falcon Perseverance,Armstrong High School,United States,721.0,16.27,16.27,0.0,0.0,16.27,1
+38,Uc,Be,US0083001,Bearcat Motorsports,Ruston High School,United States,718.0,15.36,15.36,0.0,0.0,15.36,1
+39,Uc,Be,CA0015001,Zeus,University of British Columbia,Canada,711.0,14.76,14.76,0.0,0.0,14.76,3
+40,Uc,Be,BE0007001,VIVES Eco-Team,Hogeschool VIVES,Belgium,715.0,14.47,0.0,9.14,5.32,15.21,2
+41,Uc,Be,US0008002,Supermileage Electric,Brigham Young University,United States,714.0,14.46,14.46,0.0,0.0,14.46,1
+42,Uc,Be,FR0008003,RACSING,CentraleSupélec,France,715.0,14.16,14.16,0.0,0.0,14.16,1
+43,Uc,Be,ES0026001,EcoCar Guarnizo,Instituto de Educación Secundaria Nuestra Senora de los Remedios,Spain,716.0,13.36,0.0,8.15,5.21,14.89,2
+44,Uc,Be,SA0003001,PSU ECO TEAM II,Prince Sultan University,Saudi Arabia,707.0,12.35,12.35,0.0,0.0,12.35,1
+45,Uc,Be,SA0003002,PSU ECO TEAM,Prince Sultan University,Saudi Arabia,705.0,12.26,0.0,9.54,2.72,14.68,2
+46,Uc,Be,ID0024001,TITEN UNEJ TEAM,Universitas Jember,Indonesia,703.0,12.23,0.0,0.0,12.23,34.95,1
+47,Uc,Be,TR0018002,ITU Electric Vehicle,Istanbul Technical University,Turkey,728.0,12.05,12.05,0.0,0.0,12.05,2
+48,Uc,Be,ES0012002,Urban Marxadella,Instituto de Educación Secundaria La Marxadella,Spain,716.0,8.38,0.0,0.0,8.38,23.95,1
+49,Uc,Be,US0129001,Falcon UC,Armstrong High School,United States,718.0,6.23,0.0,0.0,6.23,17.8,1
+50,Uc,Be,TR0005002,BHS EVT,Borusan Asim Kocabiyik Mesleki Ve Teknik Anadolu Lisesi,Turkey,719.0,4.37,0.0,4.37,0.0,6.73,1
+51,Uc,Be,BR0046001,e-CAP,Universidade Federal de São João del-Rei Alto Paraopeba,Brazil,714.0,0.0,0.0,0.0,0.0,0.0,3
+52,Uc,Be,DE0019001,TUfast Eco Team,Technische Universität München,Germany,702.0,0.0,0.0,0.0,0.0,0.0,1
+53,Uc,Be,ID0044001,SAMANDIMAN UMPO,Universitas Muhammadiyah Ponorogo,Indonesia,717.0,0.0,0.0,0.0,0.0,0.0,1
+54,Uc,Be,ID0049001,RASENA TEAM,Universitas Airlangga,Indonesia,712.0,0.0,0.0,0.0,0.0,0.0,1
+55,Uc,Be,IN0032001,Eta,Somaiya Vidyavihar University,India,716.0,0.0,0.0,0.0,0.0,0.0,1
+56,Uc,Be,PH0008002,Eco Archers Team,De La Salle University,Philippines,714.0,0.0,0.0,0.0,0.0,0.0,1
+57,Uc,Be,PH0011001,Siklab Rizal,José Rizal University,Philippines,712.0,0.0,0.0,0.0,0.0,0.0,2
+58,Uc,Be,PH0017001,PUP Hygears,Polytechnic University of the Philippines Manila,Philippines,713.0,0.0,0.0,0.0,0.0,0.0,1
+59,Uc,Be,PL0008001,SKAP,Warsaw University of Technology,Poland,721.0,0.0,0.0,0.0,0.0,0.0,1
+60,Uc,Be,PT0004002,TFCamões,Instituto Superior Técnico,Portugal,724.0,0.0,0.0,0.0,0.0,0.0,1
+61,Uc,Be,QA0003001,Wolves Racing,UDST,Qatar,718.0,0.0,0.0,0.0,0.0,0.0,1
+62,Uc,Be,SA0005001,KAFO,King Faisal University,Saudi Arabia,723.0,0.0,0.0,0.0,0.0,0.0,1
+63,Uc,Be,TR0007001,Team UMAKIT,Bursa Uludag University,Turkey,726.0,0.0,0.0,0.0,0.0,0.0,1
+64,Uc,Be,TR0038002,CEAGE,Cezeri Yesil Teknoloji Mesleki ve Teknik Anadolu Lisesi,Turkey,730.0,0.0,0.0,0.0,0.0,0.0,1
+65,Uc,Be,TR0059001,ORET,Gaziantep University,Turkey,721.0,0.0,0.0,0.0,0.0,0.0,1
+66,Uc,Be,US0058002,LA Tech ECO-CAR II,Louisiana Tech University,United States,716.0,0.0,0.0,0.0,0.0,0.0,1
+67,Uc,Be,US0108002,Illini EV Concept,University of Illinois Urbana-Champaign,United States,720.0,0.0,0.0,0.0,0.0,0.0,2
+1,Uc,H2,FR0054002,Cityjoule,Polytech Nantes,France,601.0,200.0,100.0,65.0,35.0,100.0,3
+2,Uc,H2,US0084001,Experimental Vehicle Team 1,Saint Thomas Academy,United States,601.0,158.34,93.5,38.28,26.56,93.5,3
+3,Uc,H2,ID0022001,SEMAR URBAN UGM,Universitas Gadjah Mada,Indonesia,612.0,97.12,77.09,0.0,20.03,77.09,3
+4,Uc,H2,BG0003001,TUS Team,Technical University of Sofia,Bulgaria,603.0,93.46,37.15,33.35,22.96,65.59,3
+5,Uc,H2,SG0007001,TP Eco Flash,Temasek Polytechnic,Singapore,615.0,62.23,62.23,0.0,0.0,62.23,1
+6,Uc,H2,DE0014001,Ecogenium Team Aachen,Rheinisch-Westfälische Technische Hochschule Aachen,Germany,602.0,59.51,0.0,45.1,14.41,69.39,3
+7,Uc,H2,GR0003002,TUC Eco Racing Team,Technical University of Crete,Greece,614.0,42.72,42.72,0.0,0.0,42.72,2
+8,Uc,H2,US0129002,Falcon Curiosity,Armstrong High School,United States,617.0,34.06,34.06,0.0,0.0,34.06,2
+9,Uc,H2,BR0021001,GCEE,Universidade Estadual do Oeste do Paraná Foz do Iguaçu,Brazil,611.0,32.3,20.74,11.56,0.0,20.74,4
+10,Uc,H2,NL0011001,HAN Hydromotive,Hogeschool Van Arnhem En Nijmegen,Netherlands,616.0,31.17,0.0,0.0,31.17,89.07,3
+11,Uc,H2,CN0036002,ZEAL Eco-Power,Tongji University,China,611.0,29.47,25.08,0.0,4.39,25.08,2
+12,Uc,H2,KR0001001,KUST,Kookmin University,"Korea, Republic Of",614.0,27.55,27.55,0.0,0.0,27.55,3
+13,Uc,H2,FR0016001,ULHYS,École Nationale Supérieure d’Électricité et de Mécanique Vandoeuvre-Les-Nancy,France,604.0,15.53,0.0,0.0,15.53,44.37,2
+14,Uc,H2,CN0018001,Conception Racing Team I / ?????? ??,Jilin University,China,610.0,6.53,0.0,0.0,6.53,18.65,1
+15,Uc,H2,BG0005002,HydRU Racing Team,University of Ruse,Bulgaria,608.0,0.0,0.0,0.0,0.0,0.0,1
+16,Uc,H2,BR0021002,GCEE,Unioeste Foz do Iguaçu,Brazil,611.0,0.0,0.0,0.0,0.0,0.0,1
+17,Uc,H2,CA0013002,ALER-ION SUPERMILEAGE,Université Laval,Canada,612.0,0.0,0.0,0.0,0.0,0.0,1
+18,Uc,H2,CA0018002,Maple Mileage,University of Toronto,Canada,614.0,0.0,0.0,0.0,0.0,0.0,2
+19,Uc,H2,DE0009002,Bengalo Racing,Hochschule Stralsund,Germany,611.0,0.0,0.0,0.0,0.0,0.0,1
+20,Uc,H2,HU0002001,BME HydroShark,Budapest University of Technology and Economics,Hungary,615.0,0.0,0.0,0.0,0.0,0.0,1
+21,Uc,H2,MY0013002,UITM ECO-SPRINT,Universiti Teknologi Mara Shah Alam,Malaysia,612.0,0.0,0.0,0.0,0.0,0.0,2
+22,Uc,H2,PL0005002,Hydrogreen Team POLLUB - Hydra,Lublin University of Technology,Poland,617.0,0.0,0.0,0.0,0.0,0.0,1
+23,Uc,H2,PT0004001,Técnico Fuel Cell,Instituto Superior Técnico,Portugal,618.0,0.0,0.0,0.0,0.0,0.0,2
+24,Uc,H2,TR0007001,Team UMAKIT,Bursa Uludag University,Turkey,607.0,0.0,0.0,0.0,0.0,0.0,2
+25,Uc,H2,US0065001,Team Innova,Montgomery County Community College,United States,602.0,0.0,0.0,0.0,0.0,0.0,1
+26,Uc,H2,US0118002,Athena's Revenge,Wheat Ridge High School,United States,615.0,0.0,0.0,0.0,0.0,0.0,1
+27,Uc,H2,VN0009002,LH-EV Fuel Cell,Lac Hong University,Viet Nam,612.0,0.0,0.0,0.0,0.0,0.0,1
+1,Uc,Ice,ID0008001,ITS TEAM SAPUANGIN,Institut Teknologi Sepuluh Nopember,Indonesia,501.0,183.11,83.74,64.37,35.0,100.0,3
+2,Uc,Ice,DK0003001,DTU Roadrunners,Technical University of Denmark,Denmark,501.0,156.93,61.87,65.0,30.06,100.0,3
+3,Uc,Ice,ID0035001,Garuda Eco Team,Universitas Negeri Yogyakarta,Indonesia,517.0,130.06,100.0,0.0,30.06,100.0,2
+4,Uc,Ice,US0001001,Knights ICEbreaker,Alden-Conger High School,United States,501.0,94.12,46.54,27.61,19.97,57.05,3
+5,Uc,Ice,IT0006001,H2politO - Molecole Urbane,Politecnico Di Torino,Italy,503.0,87.5,44.3,24.97,18.23,52.07,3
+6,Uc,Ice,ID0002001,Antawirya Gentayu,Diponegoro University,Indonesia,503.0,78.43,0.0,52.08,26.36,80.12,2
+7,Uc,Ice,DE0008001,Schluckspecht,Hochschule Offenburg,Germany,504.0,76.8,35.14,20.45,21.2,60.58,3
+8,Uc,Ice,US0051002,Runnin' on Fumes,Kankakee Valley High School,United States,502.0,74.36,36.26,23.72,14.38,41.08,3
+9,Uc,Ice,ID0031002,SEMERU TEAM Akasa UM,Universitas Negeri Malang,Indonesia,516.0,72.52,72.52,0.0,0.0,72.52,1
+10,Uc,Ice,US0075001,Penn State University Nittany EcoWorks,Penn State University Park,United States,503.0,66.76,34.39,21.33,11.04,34.39,3
+11,Uc,Ice,US0116001,Gold Warriors,Wawasee High School,United States,512.0,62.2,50.65,0.0,11.55,50.65,3
+12,Uc,Ice,CH0002001,Fri-Style Engineering,Haute école d'ingénierie et d'architecture de Fribourg,Switzerland,502.0,54.62,0.0,31.75,22.87,65.35,2
+13,Uc,Ice,US0058001,LA Tech ECO-CAR,Louisiana Tech University,United States,506.0,49.09,27.48,10.79,10.82,30.91,3
+14,Uc,Ice,CH0002003,Fri-style Engineering,Haute école d'ingénierie et d'architecture de Fribourg,Switzerland,502.0,47.1,47.1,0.0,0.0,47.1,1
+15,Uc,Ice,FR0025001,PV3e,École Supérieure des Techniques Aéronautiques et de Construction Automobile Paris-Saclay,France,511.0,45.79,45.79,0.0,0.0,45.79,2
+16,Uc,Ice,US0129001,Falcon Pathfinder,Armstrong High School,United States,505.0,43.03,28.6,14.43,0.0,28.6,2
+17,Uc,Ice,US0083002,Bearcat Motorsports 2,Ruston High School,United States,504.0,41.16,25.98,15.18,0.0,25.98,2
+18,Uc,Ice,IT0001003,FAENZA NOVA RACING,Istituto d'Istruzione Superiore Tecnica Industriale e Professionale Luigi Bucci Faenza,Italy,512.0,35.14,35.14,0.0,0.0,35.14,1
+19,Uc,Ice,BR0026001,Milhagem UFMG ICE,Universidade Federal de Minas Gerais,Brazil,501.0,18.93,12.15,6.78,0.0,12.15,2
+20,Uc,Ice,EG0004001,CU ANUBIS,Cairo University,Egypt,511.0,17.76,17.76,0.0,0.0,17.76,2
+21,Uc,Ice,ID0030002,Batavia Gasoline Team 2,Universitas Negeri Jakarta,Indonesia,513.0,14.16,0.0,0.0,14.16,40.46,1
+22,Uc,Ice,US0160001,Tri-Valley Eco Car Engineering,Foothill High School,United States,515.0,11.4,11.4,0.0,0.0,11.4,1
+23,Uc,Ice,ID0039001,TEAM HORAS USU,University of Sumatera Utara,Indonesia,514.0,9.8,0.0,0.0,9.8,28.01,1
+24,Uc,Ice,IT0001001,Faenza ITI Racing,Istituto d'Istruzione Superiore Tecnica Industriale e Professionale Luigi Bucci Faenza,Italy,512.0,9.59,0.0,0.0,9.59,27.39,1
+25,Uc,Ice,US0083001,Bearcat Motorsports II,Ruston High School,United States,506.0,9.29,0.0,0.0,9.29,26.56,1
+26,Uc,Ice,PT0005001,UBIcar Team,Universidade da Beira Interior,Portugal,504.0,9.15,0.0,0.0,9.15,26.14,1
+27,Uc,Ice,ID0061001,Selembayung Team,UNRI,Indonesia,520.0,8.79,0.0,0.0,8.79,25.1,1
+28,Uc,Ice,QA0001002,Gernas ICE,Qatar University,Qatar,520.0,8.79,8.79,0.0,0.0,8.79,3
+29,Uc,Ice,EG0007001,Helwan Supermileage,Helwan University,Egypt,515.0,8.41,8.41,0.0,0.0,8.41,1
+30,Uc,Ice,BR0042001,EcoMauá-URB26,Instituto Mauá de Tecnologia,Brazil,512.0,8.04,8.04,0.0,0.0,8.04,2
+31,Uc,Ice,US0109002,Cedar,University of Michigan Ann Arbor,United States,507.0,7.65,0.0,7.65,0.0,11.78,3
+32,Uc,Ice,BR0002001,EQUIPE ECOFET UC,Centro Federal de Educação Tecnológica de Minas Gerais,Brazil,502.0,5.4,0.0,5.4,0.0,8.3,3
+33,Uc,Ice,US0022002,Dunwoody Daredevils UC,Dunwoody College of Technology,United States,511.0,5.23,0.0,0.0,5.23,14.94,1
+34,Uc,Ice,US0035001,Sally Supermileage,Granite Falls High School,United States,505.0,4.43,0.0,0.0,4.43,12.66,1
+35,Uc,Ice,CN0018001,Conception Racing Team I / ?????? ??,Jilin University,China,610.0,4.21,0.0,0.0,4.21,12.03,1
+36,Uc,Ice,CN0036002,Tongji  ZEAL Eco-Power Team Z242 / ???? Z242,Tongji University,China,601.0,2.83,0.0,0.0,2.83,8.09,1
+37,Uc,Ice,ID0001001,DBASE Team URBAN,BINUS University,Indonesia,515.0,0.0,0.0,0.0,0.0,0.0,1
+38,Uc,Ice,ID0019001,MALEM DIWA URBAN,Syiah Kuala University,Indonesia,518.0,0.0,0.0,0.0,0.0,0.0,1
+39,Uc,Ice,PK0009001,ApexDrive,National University of Sciences and Technology Rawalpindi,Pakistan,519.0,0.0,0.0,0.0,0.0,0.0,2
+40,Uc,Ice,QA0002002,Maroon Mavericks,Texas A&M University at Qatar,Qatar,521.0,0.0,0.0,0.0,0.0,0.0,3
+41,Uc,Ice,QA0003002,Wolves E100,UDST,Qatar,513.0,0.0,0.0,0.0,0.0,0.0,1
+42,Uc,Ice,SK0001002,Dopraváci Urban,Secondary Technical school of Transport Trnava,Slovakia,514.0,0.0,0.0,0.0,0.0,0.0,1
+43,Uc,Ice,TH0015001,Sakonnakhon Tech,Sakonnakhon Technical College,Thailand,517.0,0.0,0.0,0.0,0.0,0.0,1

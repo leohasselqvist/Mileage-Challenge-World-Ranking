@@ -1,0 +1,51 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2025_us,2025,P,ICE,1,US0061002,United States,2,Mater Dei High School,TEAM COSMO,4,6,718
+sem_2025_us,2025,P,ICE,2,BR0011001,Brazil,3,IFRS Erechim,Drop Team,5,6,629
+sem_2025_us,2025,P,ICE,3,US0063001,United States,6,Michigan Tech,MTU Supermileage Systems,4,6,323
+sem_2025_us,2025,P,ICE,4,US0013001,United States,8,Cedarville University,Karcharias,4,6,315
+sem_2025_us,2025,P,ICE,5,US0136001,United States,17,Penn State Behrend,Behrend Automotive Club,2,6,177
+sem_2025_us,2025,P,ICE,6,US0030001,United States,11,George M. Schurr High School,The Spartans,4,6,92
+sem_2025_us,2025,P,ICE,-,US0008001,United States,1,Brigham Young University,Cougar ICE,1,6,0
+sem_2025_us,2025,P,H2,1,CA0014001,Canada,201,University of Alberta,University of Alberta EcoCar,5,6,213
+sem_2025_us,2025,P,H2,2,US0118001,United States,214,Wheat Ridge High School,Rocky Mountain Racing,6,6,193
+sem_2025_us,2025,P,H2,-,CA0015002,Canada,212,University of British Columbia,UBC Supermileage - HFC Prototype,1,6,0
+sem_2025_us,2025,P,BE,1,US0084002,United States,301,Saint Thomas Academy,Experimental Vehicle Team 2,6,6,341
+sem_2025_us,2025,P,BE,2,MX0009001,Mexico,306,ITESM Aguascalientes,Borregos Racing,4,6,317
+sem_2025_us,2025,P,BE,3,CA0013001,Canada,211,Université Laval,Alérion Supermileage,4,6,297
+sem_2025_us,2025,P,BE,4,MX0010001,Mexico,304,ITESM Guadalajara,Silca ELYOS Racing Team,3,6,293
+sem_2025_us,2025,P,BE,5,US0006002,United States,308,Bradley University,Braves,5,6,281
+sem_2025_us,2025,P,BE,6,US0022001,United States,302,Dunwoody College of Technology,Dunwoody Doughboys,6,6,233
+sem_2025_us,2025,P,BE,7,US0071001,United States,309,Northern Illinois University,NIU Supermileage,5,6,225
+sem_2025_us,2025,P,BE,8,US0051001,United States,318,Kankakee Valley High School,Watt's Buzzin,3,6,220
+sem_2025_us,2025,P,BE,9,US0018001,United States,310,Colorado School of Mines,Peak Efficiency,5,6,216
+sem_2025_us,2025,P,BE,10,US0132001,United States,323,Southwest Christian High School,Stars-25,4,6,197
+sem_2025_us,2025,P,BE,11,MX0015001,Mexico,316,ITESM Sonora Norte,Saguaro Racing Team,4,6,128
+sem_2025_us,2025,P,BE,12,US0147002,United States,326,Brainerd High School,Warrior Supermileage,2,6,123
+sem_2025_us,2025,P,BE,13,CA0016001,Canada,311,University of Manitoba,UM EcoMotion,1,6,122
+sem_2025_us,2025,P,BE,14,US0083001,United States,321,Ruston High School,Bearcat Motorsports,5,6,122
+sem_2025_us,2025,P,BE,15,US0078001,United States,320,Purdue University Northwest,PNW Pantheta,3,6,118
+sem_2025_us,2025,P,BE,-,CA0018001,Canada,312,University of Toronto,UTSM - Raven,2,6,0
+sem_2025_us,2025,P,BE,-,CO0003001,Colombia,313,Universidad Militar Nueva Granada,MiliRacing,4,6,0
+sem_2025_us,2025,P,BE,-,MX0002001,Mexico,314,ITESM Ciudad de México,EcoVolt CCM,3,6,0
+sem_2025_us,2025,P,BE,-,US0013002,United States,317,Cedarville University,Sting,2,6,0
+sem_2025_us,2025,P,BE,-,US0134001,United States,324,Greater Lafayette Career Academy,Greater Racing,3,6,0
+sem_2025_us,2025,UC,ICE,1,US0001001,United States,501,Alden-Conger High School,Knights ICE,5,6,220
+sem_2025_us,2025,UC,ICE,2,US0051002,United States,502,Kankakee Valley High School,Runnin' on Fumes,4,6,189
+sem_2025_us,2025,UC,ICE,3,US0075001,United States,504,,Penn State UCC,3,6,170
+sem_2025_us,2025,UC,ICE,4,US0083002,United States,506,Ruston High School,Bearcat Motorsports 2,5,6,121
+sem_2025_us,2025,UC,ICE,5,US0129001,United States,512,Armstrong High School,Falcon ICE-E-U,2,6,115
+sem_2025_us,2025,UC,ICE,6,US0058001,United States,505,Louisiana Tech University,LA Tech ECO-CAR,3,6,86
+sem_2025_us,2025,UC,ICE,7,US0109002,United States,511,University of Michigan Ann Arbor,UM Supermileage: Maple,4,6,61
+sem_2025_us,2025,UC,ICE,-,US0116001,United States,503,Wawasee High School,Green Warriors,3,6,0
+sem_2025_us,2025,UC,H2,1,US0084001,United States,601,Saint Thomas Academy,Experimental Vehicle Team 1,3,6,202
+sem_2025_us,2025,UC,H2,-,BR0021001,Brazil,611,Unioeste Foz do Iguaçu,GCEE,4,6,0
+sem_2025_us,2025,UC,H2,-,CA0018002,Canada,612,University of Toronto,UTSM Hydro Chargers,1,6,0
+sem_2025_us,2025,UC,H2,-,US0118002,United States,615,Wheat Ridge High School,Athena's Revenge,1,6,0
+sem_2025_us,2025,UC,H2,-,US0129002,United States,616,Armstrong High School,Falcon H-E,3,6,0
+sem_2025_us,2025,UC,BE,1,US0061001,United States,701,Mater Dei High School,Team RUDI,2,6,167
+sem_2025_us,2025,UC,BE,2,US0001002,United States,712,Alden-Conger High School,Knights BE,4,6,105
+sem_2025_us,2025,UC,BE,3,US0116002,United States,720,Wawasee High School,Gold Warriors,5,6,68
+sem_2025_us,2025,UC,BE,4,CA0017001,Canada,702,University of Ottawa,uOttawa Supermileage,4,6,66
+sem_2025_us,2025,UC,BE,5,US0019002,United States,714,Cornell University,Cornell Electric Vehicles,5,6,32
+sem_2025_us,2025,UC,BE,-,CA0015001,Canada,711,University of British Columbia,UBC Supermileage - Urban Concept,3,6,0
+sem_2025_us,2025,UC,BE,-,US0058002,United States,716,Louisiana Tech University,LA Tech ECO-CAR II,1,6,0

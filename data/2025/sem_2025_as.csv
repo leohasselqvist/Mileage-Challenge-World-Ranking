@@ -1,0 +1,50 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+sem_2025_as,2025,P,ICE,1,ID0031001,Indonesia,16,Universitas Negeri Malang,SEMERU TEAM I UM,4,6,1083
+sem_2025_as,2025,P,ICE,2,TH0001001,Thailand,5,Amphawa Industrial and Community Education,Fueang Fha,5,6,806
+sem_2025_as,2025,P,ICE,3,ID0016002,Indonesia,1,Sebelas Maret University,Bengawan Team UNS,2,6,698
+sem_2025_as,2025,P,ICE,4,ID0030002,Indonesia,11,Universitas Negeri Jakarta,Batavia Gasoline Team,2,6,600
+sem_2025_as,2025,P,ICE,5,CN0036001,China,15,Tongji University,Tongji Zeal Eco-Power Team,5,6,555
+sem_2025_as,2025,P,ICE,6,SA0002001,Saudi Arabia,14,King Saud University,SAAF,4,6,183
+sem_2025_as,2025,P,ICE,7,PH0037001,Philippines,12,Xavier University Ateneo,XU MEKAN-ECO,3,6,63
+sem_2025_as,2025,P,ICE,-,PH0021002,Philippines,9,University of Mindanao,UMindanao Wildcats,5,6,0
+sem_2025_as,2025,P,ICE,-,SA0011001,Saudi Arabia,20,Prince Sattam bin Abdulaziz University,PSAU SAQR I,5,6,0
+sem_2025_as,2025,P,H2,1,ID0023002,Indonesia,212,Universitas Indonesia,NAKOELA UI TEAM,5,6,528
+sem_2025_as,2025,P,H2,2,CN0002001,China,214,Beijing Institute of Technology,BITEPC,3,6,478
+sem_2025_as,2025,P,H2,3,ID0008002,Indonesia,211,Institut Teknologi Sepuluh Nopember,Antasena ITS Team,4,6,341
+sem_2025_as,2025,P,H2,-,ID0021002,Indonesia,201,Universitas Brawijaya,Apatte Elang Energi Team 2,3,6,0
+sem_2025_as,2025,P,H2,-,IN0058001,India,213,KCT,Team ReNew,3,6,0
+sem_2025_as,2025,P,BE,1,ID0002002,Indonesia,304,Diponegoro University,Antawirya Rondhan,5,6,835
+sem_2025_as,2025,P,BE,2,ID0022002,Indonesia,302,Universitas Gadjah Mada,Semar Proto UGM,4,6,805
+sem_2025_as,2025,P,BE,3,BN0005002,Brunei Darussalam,309,Universiti Brunei Darussalam,Belia Tabah,4,6,302
+sem_2025_as,2025,P,BE,4,ID0001002,Indonesia,307,BINUS University,DBASE TEAM PROTO,5,6,240
+sem_2025_as,2025,P,BE,5,IN0028001,India,323,Pandit Deendayal Energy University,Team Kaizen India,3,6,227
+sem_2025_as,2025,P,BE,6,SA0003001,Saudi Arabia,329,Prince Sultan University,PSU ECO TEAM,4,6,212
+sem_2025_as,2025,P,BE,7,KZ0003001,Kazakhstan,311,Satbayev Kazakh National Technical University,S.U. racing team,3,6,205
+sem_2025_as,2025,P,BE,8,BN0006001,Brunei Darussalam,318,Universiti Teknologi Brunei,UTB Eco-Drive Team 2025,5,6,184
+sem_2025_as,2025,P,BE,9,MY0005001,Malaysia,313,Monash University Malaysia,Hyperion Racing,5,6,183
+sem_2025_as,2025,P,BE,10,QA0003001,Qatar,315,UDST,Wolves racing - EV1,6,6,147
+sem_2025_as,2025,P,BE,11,KZ0002002,Kazakhstan,326,Nazarbayev University,BULAN,4,6,111
+sem_2025_as,2025,P,BE,12,EG0027001,Egypt,321,Menofia University,Menofia Racing Team,2,6,110
+sem_2025_as,2025,P,BE,13,QA0001001,Qatar,314,Qatar University,Gernas EV,4,6,83
+sem_2025_as,2025,P,BE,-,KZ0004002,Kazakhstan,312,KBTU,ShallQar,5,6,0
+sem_2025_as,2025,P,BE,-,EG0007002,Egypt,320,Helwan University,E-Rally,4,6,0
+sem_2025_as,2025,P,BE,-,IN0064001,India,324,College of Engineering Trivandrum,Folium Eco-drive,1,6,0
+sem_2025_as,2025,P,BE,-,PK0022001,Pakistan,328,Nixor College,Team Nixor Sharks,1,6,0
+sem_2025_as,2025,UC,ICE,1,ID0008001,Indonesia,501,Institut Teknologi Sepuluh Nopember,ITS TEAM SAPUANGIN,2,6,513
+sem_2025_as,2025,UC,ICE,2,ID0002001,Indonesia,503,Diponegoro University,Antawirya Gentayu,3,6,415
+sem_2025_as,2025,UC,ICE,-,QA0001002,Qatar,511,Qatar University,GERNAS-ICE,3,6,0
+sem_2025_as,2025,UC,ICE,-,QA0002002,Qatar,512,Texas A&M University at Qatar,Maroon Mavericks,3,6,0
+sem_2025_as,2025,UC,ICE,-,QA0003002,Qatar,513,UDST,Wolves E100,4,6,0
+sem_2025_as,2025,UC,ICE,-,EG0004001,Egypt,517,Cairo University,Cairo university eco racing team-ANUBIS,1,6,0
+sem_2025_as,2025,UC,ICE,-,PK0009001,Pakistan,520,National University of Sciences and Technology Rawalpindi,NUSTAG,1,6,0
+sem_2025_as,2025,UC,H2,-,ID0022001,Indonesia,601,Universitas Gadjah Mada,Semar Urban UGM,5,6,0
+sem_2025_as,2025,UC,H2,-,KR0001001,"Korea, Republic Of",611,Kookmin University,KUST,4,6,0
+sem_2025_as,2025,UC,H2,-,MY0013002,Malaysia,612,Universiti Teknologi Mara Shah Alam,UITM ECO-SPRINT,4,6,0
+sem_2025_as,2025,UC,BE,1,ID0065001,Indonesia,701,Universitas Udayana,AGNIJAYA WEIMANA TEAM,5,6,246
+sem_2025_as,2025,UC,BE,2,ID0021001,Indonesia,702,Universitas Brawijaya,Apatte Elang Energi Team 1,4,6,203
+sem_2025_as,2025,UC,BE,3,ID0035001,Indonesia,711,Universitas Negeri Yogyakarta,GARUDA UNY ECO TEAM,5,6,202
+sem_2025_as,2025,UC,BE,4,ID0023001,Indonesia,703,Universitas Indonesia,Arjuna UI Team,4,6,159
+sem_2025_as,2025,UC,BE,5,CN0012001,China,713,Guangdong Polytechnic Normal University,Wing Of Guangshi,6,6,118
+sem_2025_as,2025,UC,BE,6,IN0014001,India,714,Indian Institute of Technology - Banaras Hindu University,Team AVERERA,3,6,83
+sem_2025_as,2025,UC,BE,7,SA0003002,Saudi Arabia,705,Prince Sultan University,PSU ECO TEAM,2,6,48
+sem_2025_as,2025,UC,BE,-,PH0011001,Philippines,712,José Rizal University,Siklab Rizal,1,6,0
