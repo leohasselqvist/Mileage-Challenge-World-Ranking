@@ -10,9 +10,7 @@ If you have any suggestions please send them over! I'd gladly make changes if my
 
 ## Is this ranking good?
 
-Shortly, no. It doesn't really use anything like number of valid attempts, track differences, weather differences, and so on. All it really does is shows your score as a ratio of the global best score in your vehicle class over 3 years.
-
-But it's fun! I wouldn't use this system as it is for invites to World Championship, but I like extending the competition across borders and seas.
+I don't really think so yet, but I would love to hear feedback on how it can improve! If you find any inconsistencies or have any ideas, don't be afraid to send a DM, report an issue on github or make a pull request on github.
 
 ## Should I use the SEM Scraper?
 
