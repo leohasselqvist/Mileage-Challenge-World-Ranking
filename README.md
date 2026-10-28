@@ -8,9 +8,14 @@ One thing I would love to do in the future is to bridge the results from other c
 If you have any suggestions please send them over! I'd gladly make changes if my system were to be unoptimal. Right now it is pretty apathetic towards track differences, which is unfair to teams with way tougher tracks.
 
 ## Is this ranking good?
+
 Shortly, no. It doesn't really use anything like number of valid attempts, track differences, weather differences, and so on. All it really does is shows your score as a ratio of the global best score in your vehicle class over 3 years.
 
 But it's fun! I wouldn't use this system as it is for invites to World Championship, but I like extending the competition across borders and seas.
+
+## Should I use the SEM Scraper?
+
+No, you will just get the same data I have included in the data folder and you will put unnecessary strain on Shell's servers. I just wanted the data source to be clear so it can be analyzed and critiqued.
 
 ## How does the ranking work?
 
@@ -45,3 +50,7 @@ Then you finally get your point result! The absolute best points result possible
 ## Why no off-track award points?
 
 I do not believe it to be fair to hand out points based on off-track awards since so few are given out per competition. It would basically hand the top ranking spots to one team per leaderboard. Unless we have something similar to the "Engineering Deisgn Event" at Formula Student Germany where each team is given points based on their design, it won't be considered. Also the data is annyoing to grab.
+
+## Was AI involved in this project?
+
+Yes.
