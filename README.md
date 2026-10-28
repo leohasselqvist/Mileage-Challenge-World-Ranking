@@ -50,7 +50,9 @@ The Podium Ratio rewards competing in more dominant regions.
 
 Then a modifier per track is calculated. This is an attempt to reward teams with harder configurations, as not every track is created equal. Each track is compared to a baseline track of with a turn density of 4 turns/km, 2 m/km of elevation and average velocity of 25 km/h.
 
-$$M_{\text{track}} = 1.0 + 0.08 \cdot \left(\frac{\text{turn\_ density} - 4.0}{4.0}\right) + 0.06 \cdot \left(\frac{\text{elev\_ rate} - 2.0}{2.0}\right) + 0.06 \cdot \left(\frac{v_{\text{avg}} - 25.0}{25.0}\right)`$$
+```math
+M_{\text{track}} = 1.0 + 0.08 \cdot \left(\frac{\text{turn\_ density} - 4.0}{4.0}\right) + 0.06 \cdot \left(\frac{\text{elev\_ rate} - 2.0}{2.0}\right) + 0.06 \cdot \left(\frac{v_{\text{avg}} - 25.0}{25.0}\right)
+```
 
 Where,
 
