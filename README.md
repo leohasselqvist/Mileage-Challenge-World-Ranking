@@ -68,7 +68,7 @@ Lastly $W_{points}$ is summed up per the last 3 years with the following weighti
 
 $$\{ \text{Current Year}: 1.00, \text{1 Year Ago}: 0.65, \text{2 Years Ago}: 0.35 \} $$
 
-The theoretical best score for a single season is $100 * 1.25 = 125$, if you maintain a perfect score over 3 seasons in a completely dominant event with an extremely tough track. The theoretical highest world score is $125 \cdot (1 + 0.65 + 0.35) = 250$.
+The theoretical best score for a single season is $100 * 1.25 = 125$, if you place first in a completely dominant event with an extremely tough track. Repeat this 3 years in a row and the theoretical highest world score is $125 \cdot (1 + 0.65 + 0.35) = 250$.
 
 ## Why no off-track award points?
 
