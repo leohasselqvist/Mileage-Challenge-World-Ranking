@@ -84,7 +84,7 @@
           <tr>
             <!-- Rigid fixed widths for all metadata columns -->
             <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('rank')">Rank</th>
-            <th class="w-28 min-w-[7rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('country')">Country</th>
+            <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable text-center whitespace-nowrap" onclick="sortTable('country')">Country</th>
             <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('vehicle_number')">No.
             </th>
     
@@ -264,6 +264,20 @@
         // <td class="px-4 py-3 text-right text-slate-400 text-xs hidden lg:table-cell">${parseFloat(row.best_single_score || 0).toFixed(1)}</td>
         const teamTitle = row.team_name || row.institution || 'Unknown Team';
         const subTitle = (row.institution && row.institution !== row.team_name) ? row.institution : '';
+
+        const cCode = row.team_id.substring(0, 2).toLowerCase();
+        const countryName = row.country || 'Unknown';
+        const flagHtml = cCode
+          ? `<img src="https://flagcdn.com/w80/${cCode}.png" 
+                  srcset="https://flagcdn.com/w160/${cCode}.png 2x" 
+                  width="24" height="18" 
+                  alt="${countryName}" 
+                  title="${countryName}" 
+                  class="rounded-sm inline-block shadow-sm transition-transform hover:scale-125" 
+                  onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"/>
+             <span class="hidden text-xs text-slate-300">${cCode.toUpperCase()}</span>`
+          : `<span class="text-xs text-slate-400">${countryName}</span>`;
+
         if (row.wrl_points != prevPoints) {
           listRank++;
         }
@@ -271,7 +285,7 @@
         return `
             <tr class="hover:bg-slate-800/40 transition">
               <td class="px-4 py-3 ${rankColor(listRank)} text-sm">#${listRank}</td>
-              <td class="px-4 py-3 font-sans text-slate-300 text-xs truncate" title="${row.country || ''}">${row.country || '-'}</td>
+              <td class="px-4 py-3 text-center whitespace-nowrap">${flagHtml}</td>
               <td class="px-4 py-3 text-slate-400 text-xs font-mono">#${row.vehicle_number || ''}</td>
               <td class="px-4 py-3 font-sans overflow-hidden">
                 <div class="font-bold text-white text-sm truncate" title="${teamTitle}">${teamTitle}</div>
