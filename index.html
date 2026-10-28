@@ -84,7 +84,7 @@
           <tr>
             <!-- Rigid fixed widths for all metadata columns -->
             <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('rank')">Rank</th>
-            <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable text-center whitespace-nowrap" onclick="sortTable('country')">Country</th>
+            <th class="w-16 min-w-[6rem] px-4 py-3.5 sortable text-center whitespace-nowrap" onclick="sortTable('country')">Country</th>
             <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('vehicle_number')">No.
             </th>
     
@@ -93,14 +93,14 @@
     
             <!-- Rigid fixed widths for stats/points -->
             <th class="w-36 min-w-[9rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('propulsion_type')">
-              Propulsion</th>
+              Vehicle</th>
             <th class="w-24 min-w-[6rem] px-4 py-3.5 text-right sortable text-white font-bold whitespace-nowrap"
               onclick="sortTable('wrl_points')">WRL Pts</th>
-            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right whitespace-nowrap hidden sm:table-cell" id="col-s0">Current
+            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right sortable whitespace-nowrap hidden sm:table-cell" id="col-s0" onclick="sortTable('points_2026')">Current
             </th>
-            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right whitespace-nowrap hidden sm:table-cell" id="col-s1">Prev
+            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right sortable whitespace-nowrap hidden sm:table-cell" id="col-s1" onclick="sortTable('points_2025')" >Prev
             </th>
-            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right whitespace-nowrap hidden md:table-cell" id="col-s2">Prev-2
+            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right sortable whitespace-nowrap hidden md:table-cell" id="col-s2" onclick="sortTable('points_202')">Prev-2
             </th>
           </tr>
         </thead>
@@ -194,18 +194,20 @@
       renderTable();
     }
 
-    function sortTable(column) {
-      if (sortColumn === column) {
-        sortAsc = !sortAsc;
-      } else {
-        sortColumn = column;
-        sortAsc = (column === 'rank');
-      }
-      renderTable();
-    }
-
     function rankColor(value) {
       return value === 1 ? 'text-amber-400 font-black' : (value === 2 ? 'text-slate-300 font-bold' : (value === 3 ? 'text-amber-600 font-bold' : 'text-slate-400 font-medium'));
+    }
+
+    function sortTable(column) {
+        // Map 'rank' header click to our dynamic leaderboard rank
+        const targetCol = column === 'rank' ? 'dynamicRank' : column;
+        if (sortColumn === targetCol) {
+          sortAsc = !sortAsc;
+        } else {
+          sortColumn = targetCol;
+          sortAsc = (targetCol === 'dynamicRank');
+        }
+        renderTable();
     }
 
     function renderTable() {
@@ -213,25 +215,41 @@
       const targetClassNorm = norm(selectedClass);
       const targetPropNorm = norm(selectedPropulsion);
 
-      // Filter rows
-      let filtered = rawData.filter(row => {
-        // Robust class match (handles 'prototype', 'Prototype ', 'UrbanConcept', etc.)
+      // 1. Filter by Class & Propulsion FIRST to establish the active leaderboard
+      let leaderboard = rawData.filter(row => {
         const rowClassNorm = norm(row.vehicle_class);
         const matchesClass = (targetClassNorm === 'all') || rowClassNorm.includes(targetClassNorm) || targetClassNorm.includes(rowClassNorm);
 
-        // Robust propulsion match
         const rowPropNorm = norm(row.propulsion_type);
         const matchesProp = (targetPropNorm === 'all') || rowPropNorm.includes(targetPropNorm) || targetPropNorm.includes(rowPropNorm);
 
-        // Text search
-        const matchesSearch = !query || [
-          row.team_name, row.institution, row.country, String(row.vehicle_number || ''), String(row.team_id || '')
-        ].some(field => String(field || '').toLowerCase().includes(query));
-
-        return matchesClass && matchesProp && matchesSearch;
+        return matchesClass && matchesProp;
       });
 
-      // Sort rows
+      // 2. Sort by official ranking criteria (WRL Points -> Peak Score -> Current Year)
+      //    and assign true 1, 2, 3... positions for this specific view
+      leaderboard.sort((a, b) => {
+        if ((b.wrl_points || 0) !== (a.wrl_points || 0)) {
+          return (b.wrl_points || 0) - (a.wrl_points || 0);
+        }
+        if ((b.best_single_score || 0) !== (a.best_single_score || 0)) {
+          return (b.best_single_score || 0) - (a.best_single_score || 0);
+        }
+        return (b[`points_${currentYear}`] || 0) - (a[`points_${currentYear}`] || 0);
+      });
+
+      leaderboard.forEach((row, idx) => {
+        row.dynamicRank = idx + 1;
+      });
+
+      // 3. Apply Search Filter (done AFTER ranking so searching a team still shows their true rank!)
+      let filtered = leaderboard.filter(row => {
+        return !query || [
+          row.team_name, row.institution, row.country, String(row.vehicle_number || ''), String(row.team_id || '')
+        ].some(field => String(field || '').toLowerCase().includes(query));
+      });
+
+      // 4. Sort rows by whichever column header the user clicked
       filtered.sort((a, b) => {
         let valA = a[sortColumn] ?? 0;
         let valB = b[sortColumn] ?? 0;
@@ -242,66 +260,62 @@
 
       const tbody = document.getElementById('rankingTableBody');
 
-      // Diagnostic message if 0 teams match
       if (filtered.length === 0) {
         const availableClasses = [...new Set(rawData.map(r => r.vehicle_class))].join(', ');
         const availableProps = [...new Set(rawData.map(r => r.propulsion_type))].join(', ');
         tbody.innerHTML = `
-            <tr>
-              <td colspan="10" class="text-center py-10 font-sans space-y-2">
-                <div class="text-slate-400 font-semibold text-base">No teams matched filter: "${selectedClass}" & "${selectedPropulsion}"</div>
-                <div class="text-slate-500 text-xs">Classes found in your CSV: [${availableClasses}]</div>
-                <div class="text-slate-500 text-xs">Propulsions found in your CSV: [${availableProps}]</div>
-              </td>
-            </tr>`;
+        <tr>
+          <td colspan="10" class="text-center py-10 font-sans space-y-2">
+            <div class="text-slate-400 font-semibold text-base">No teams matched filter: "${selectedClass}" & "${selectedPropulsion}"</div>
+            <div class="text-slate-500 text-xs">Classes found in your CSV: [${availableClasses}]</div>
+            <div class="text-slate-500 text-xs">Propulsions found in your CSV: [${availableProps}]</div>
+          </td>
+        </tr>`;
         return;
       }
-      
-      let listRank = 0;
-      let prevPoints = 0;
-      // Render table rows
-      tbody.innerHTML = filtered.map((row, index) => {
-        // <td class="px-4 py-3 text-right text-slate-400 text-xs hidden lg:table-cell">${parseFloat(row.best_single_score || 0).toFixed(1)}</td>
-        const teamTitle = row.team_name || row.institution || 'Unknown Team';
-        const subTitle = (row.institution && row.institution !== row.team_name) ? row.institution : '';
 
-        const cCode = row.team_id.substring(0, 2).toLowerCase();
-        const countryName = row.country || 'Unknown';
-        const flagHtml = cCode
-          ? `<img src="https://flagcdn.com/w80/${cCode}.png" 
-                  srcset="https://flagcdn.com/w160/${cCode}.png 2x" 
+        // 5. Render table rows using row.dynamicRank
+        tbody.innerHTML = filtered.map(row => {
+          console.log("row");
+          const rnk = row.dynamicRank;
+          const rankColor = rnk === 1 ? 'text-amber-400 font-black' : (rnk === 2 ? 'text-slate-300 font-bold' : (rnk === 3 ? 'text-amber-600 font-bold' : 'text-slate-400 font-medium'));
+          const fullTeam = row.team_name || row.institution || 'Unknown Team';
+          const fullInst = (row.institution && row.institution !== row.team_name) ? row.institution : '';
+
+          const cCode = row.team_id.substring(0, 2).toLowerCase();
+          const countryName = row.country || 'Unknown';
+          const flagHtml = cCode
+            ? `<img src="https://flagcdn.com/w160/${cCode}.png" 
+                  srcset="https://flagcdn.com/w320/${cCode}.png 2x" 
                   width="24" height="18" 
                   alt="${countryName}" 
                   title="${countryName}" 
                   class="rounded-sm inline-block shadow-sm transition-transform hover:scale-125" 
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"/>
              <span class="hidden text-xs text-slate-300">${cCode.toUpperCase()}</span>`
-          : `<span class="text-xs text-slate-400">${countryName}</span>`;
+            : `<span class="text-xs text-slate-400">${countryName}</span>`;
 
-        if (row.wrl_points != prevPoints) {
-          listRank++;
-        }
-        prevPoints = row.wrl_points;
-        return `
-            <tr class="hover:bg-slate-800/40 transition">
-              <td class="px-4 py-3 ${rankColor(listRank)} text-sm">#${listRank}</td>
-              <td class="px-4 py-3 text-center whitespace-nowrap">${flagHtml}</td>
-              <td class="px-4 py-3 text-slate-400 text-xs font-mono">#${row.vehicle_number || ''}</td>
-              <td class="px-4 py-3 font-sans overflow-hidden">
-                <div class="font-bold text-white text-sm truncate" title="${teamTitle}">${teamTitle}</div>
-                <div class="text-slate-400 text-xs font-normal truncate" title="${subTitle}">${subTitle}</div>
-              </td>
-              <td class="px-4 py-3 font-sans text-xs">
-                <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 whitespace-nowrap">${row.propulsion_type || '-'}</span>
-              </td>
-              <td class="px-4 py-3 text-right font-bold text-emerald-400 text-sm">${parseFloat(row.wrl_points || 0).toFixed(1)}</td>
-              <td class="px-4 py-3 text-right text-slate-400 text-xs hidden sm:table-cell">${parseFloat(row[`points_${currentYear}`] || 0).toFixed(1)}</td>
-              <td class="px-4 py-3 text-right text-slate-400 text-xs hidden sm:table-cell">${parseFloat(row[`points_${currentYear - 1}`] || 0).toFixed(1)}</td>
-              <td class="px-4 py-3 text-right text-slate-500 text-xs hidden md:table-cell">${parseFloat(row[`points_${currentYear - 2}`] || 0).toFixed(1)}</td>
-            </tr>
-          `;
-      }).join('');
-    }
+          return `
+          <tr class="hover:bg-slate-800/40 transition">
+            <td class="px-4 py-3 ${rankColor} text-sm whitespace-nowrap">#${row.wrl_points > 0 ? rnk : "-"}</td>
+            <td class="px-4 py-3 text-center whitespace-nowrap">${flagHtml}</td>
+            <td class="px-4 py-3 text-slate-400 text-xs font-mono whitespace-nowrap">#${row.vehicle_number || ''}</td>
+            <td class="px-4 py-3 font-sans">
+              <div class="font-bold text-white text-sm truncate" title="${fullTeam}">${fullTeam}</div>
+              <div class="text-slate-400 text-xs font-normal truncate" title="${fullInst}">${fullInst}</div>
+            </td>
+            <td class="px-4 py-3 font-sans text-xs whitespace-nowrap">
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">${row.vehicle_class.toUpperCase()}</span>
+              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">${row.propulsion_type.toUpperCase()}</span>
+            </td>
+            <td class="px-4 py-3 text-right font-bold text-emerald-400 text-sm whitespace-nowrap">${parseFloat(row.wrl_points || 0).toFixed(1)}</td>
+            <td class="px-4 py-3 text-right text-slate-400 text-xs hidden sm:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear}`] || 0).toFixed(1)}</td>
+            <td class="px-4 py-3 text-right text-slate-400 text-xs hidden sm:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear - 1}`] || 0).toFixed(1)}</td>
+            <td class="px-4 py-3 text-right text-slate-500 text-xs hidden md:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear - 2}`] || 0).toFixed(1)}</td>
+          </tr>
+        `;
+        }).join('');
+      }
 
     // Ingestion config with automatic header sanitization
     const parseConfig = {

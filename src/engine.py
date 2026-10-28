@@ -1,11 +1,12 @@
 #!/usr/bin/env python3
 """
-Shell Eco-marathon World Ranking Engine (Simplified Model)
-Calculates:
+Shell Eco-marathon World Ranking Engine
+Updated C_k model:
   S_ontrack = 100 * (E_teambest / E_eventmax)
-  C_k       = E_eventmax / E_worldmax
+  turn_density =
+  M_track = 1.0 + 0.08 * (turn_density - 4.0) / 4.0 + 0.06 * (elev_rate - 2.0) / 2.0 + 0.06 (v_avg - 25.0) / 25.0
+  C_k       = (E_event_top3 / E_world_top3) * M_track
   W_points  = S_ontrack * C_k
-Applies a 3-season sliding window (1.00, 0.65, 0.35) per vehicle class & propulsion type.
 """
 
 import argparse
@@ -35,11 +36,9 @@ def load_data(data_dir: Path) -> pd.DataFrame:
 
     df = pd.concat(frames, ignore_index=True)
 
-    # Standardize types
     df["year"] = pd.to_numeric(df["year"], errors="coerce").astype(int)
     df["rank"] = pd.to_numeric(df["rank"], errors="coerce")
 
-    # Clean numeric efficiency (handles strings like '1,101.7' -> 1101.7)
     df["best_efficiency"] = (
         df["best_efficiency"]
         .astype(str)
@@ -60,50 +59,123 @@ def load_data(data_dir: Path) -> pd.DataFrame:
 
 
 # -----------------------------------------------------------------------------
-# 2. CALCULATE EVENT SCORES (S_ontrack, C_k, W_points)
+# 2. TRACK DIFFICULTY MODIFIER (M_track from events.csv)
 # -----------------------------------------------------------------------------
-def calculate_event_points(df: pd.DataFrame) -> pd.DataFrame:
+def load_track_modifiers(events_path: Path) -> dict:
+    """
+    Computes M_track for each event based on turn density, elevation, and speed.
+    Baseline neutral circuit: 4.0 turns/km, 2.0 m/km elevation, 25 km/h.
+    """
+    if not events_path.exists():
+        print(f"[!] Note: {events_path} not found. Defaulting M_track = 1.0 for all tracks.")
+        return {}
+
+    events_df = pd.read_csv(events_path)
+    events_df.columns = events_df.columns.str.strip().str.lower()
+    modifiers = {}
+
+    print(f"[+] Loaded {len(events_df)} track record(s) from {events_path}:")
+    for _, row in events_df.iterrows():
+        ev_id = str(row["event_id"]).strip()
+        laps = float(row.get("laps", 10))
+        turns = float(row.get("turns", 8))
+        elev = float(row.get("elevation_change", 0.0))
+        dist = float(row.get("total_dist", 8.0))
+        time_mins = float(row.get("time", 25.0))
+
+        if dist <= 0 or time_mins <= 0:
+            modifiers[ev_id] = 1.0
+            continue
+
+        # Physical track metrics
+        turn_density = (turns * laps) / dist          # turns per km
+        elev_rate = (elev * laps) / dist               # meters climb per km
+        req_speed = dist / (time_mins / 60.0)          # target km/h
+
+        # Physics-based difficulty index (centered at 1.0)
+        # Turning losses (8%), Elevation resistance (6%), Speed drag (6%)
+        m_track = (
+            1.0
+            + 0.08 * ((turn_density - 4.0) / 4.0)
+            + 0.06 * ((elev_rate - 2.0) / 2.0)
+            + 0.06 * ((req_speed - 25.0) / 25.0)
+        )
+
+        # Clamp between 0.80 and 1.25 to prevent extreme distortion
+        m_track = round(float(np.clip(m_track, 0.80, 1.25)), 3)
+        modifiers[ev_id] = m_track
+        print(f"  • {ev_id:15} ({row.get('track', 'Unknown'):20}) -> M_track = {m_track:.3f} (Turns: {turn_density:.1f}/km, Speed: {req_speed:.1f} km/h)")
+
+    return modifiers
+
+
+# -----------------------------------------------------------------------------
+# 3. CALCULATE EVENT SCORES WITH TOP-3 C_k & TRACK MODIFIERS
+# -----------------------------------------------------------------------------
+def calculate_event_points(df: pd.DataFrame, modifiers: dict) -> pd.DataFrame:
     df = df.copy()
 
-    # E_worldmax: Maximum efficiency globally per year, class, and propulsion
-    df["e_worldmax"] = df.groupby(
-        ["year", "vehicle_class", "propulsion_type"]
-    )["best_efficiency"].transform("max")
-
-    # E_eventmax: Maximum efficiency at that event per class and propulsion
+    # 1. Event Max Efficiency (E_eventmax)
     df["e_eventmax"] = df.groupby(
         ["event_id", "vehicle_class", "propulsion_type"]
     )["best_efficiency"].transform("max")
 
-    # S_ontrack = 100 * (E_teambest / E_eventmax)
+    # 2. On-track score: S_ontrack = 100 * (E_teambest / E_eventmax)
     df["s_ontrack"] = np.where(
         df["e_eventmax"] > 0,
         100.0 * (df["best_efficiency"] / df["e_eventmax"]),
         0.0
     )
 
-    # C_k = E_eventmax / E_worldmax
-    df["c_k"] = np.where(
-        df["e_worldmax"] > 0,
-        df["e_eventmax"] / df["e_worldmax"],
-        0.0
-    )
+    # 3. Compute Top-3 Average per Event (E_event_top3)
+    event_top3 = {}
+    for (ev_id, v_class, p_type), grp in df.groupby(["event_id", "vehicle_class", "propulsion_type"]):
+        valid = grp[grp["best_efficiency"] > 0]["best_efficiency"].sort_values(ascending=False)
+        top3_sum = valid.head(3).sum()
+        # Always divide by 3 so uncontested 1- or 2-car classes are not artificially inflated
+        event_top3[(ev_id, v_class, p_type)] = float(top3_sum / 3.0) if not valid.empty else 0.0
 
-    # W_points = S_ontrack * C_k
+    # 4. Compute Top-3 Average Globally per Year (E_world_top3)
+    # Uses top 3 unique teams globally that season
+    world_top3 = {}
+    for (yr, v_class, p_type), grp in df.groupby(["year", "vehicle_class", "propulsion_type"]):
+        team_bests = grp[grp["best_efficiency"] > 0].groupby("team_id")["best_efficiency"].max().sort_values(ascending=False)
+        top3_vals = team_bests.head(3)
+        world_top3[(yr, v_class, p_type)] = float(top3_vals.mean()) if not top3_vals.empty else 0.0
+
+    # 5. Compute C_k = (E_event_top3 / E_world_top3) * M_track
+    c_k_values = []
+    m_track_values = []
+
+    for row in df.itertuples():
+        ev_top3 = event_top3.get((row.event_id, row.vehicle_class, row.propulsion_type), 0.0)
+        wld_top3 = world_top3.get((row.year, row.vehicle_class, row.propulsion_type), 0.0)
+        m_trk = modifiers.get(row.event_id, 1.0)
+
+        if wld_top3 > 0 and ev_top3 > 0:
+            c_k = (ev_top3 / wld_top3) * m_trk
+        else:
+            c_k = 0.0
+
+        c_k_values.append(round(c_k, 4))
+        m_track_values.append(m_trk)
+
+    df["m_track"] = m_track_values
+    df["c_k"] = c_k_values
     df["w_points"] = df["s_ontrack"] * df["c_k"]
 
     return df
 
 
 # -----------------------------------------------------------------------------
-# 3. AGGREGATE 3-SEASON WORLD RANKINGS
+# 4. AGGREGATE 3-SEASON WORLD RANKINGS
 # -----------------------------------------------------------------------------
 def build_world_rankings(df: pd.DataFrame, current_year: int) -> pd.DataFrame:
     valid_years = {current_year - i: w for i, w in SEASON_WEIGHTS.items()}
     window_df = df[df["year"].isin(valid_years.keys())].copy()
     window_df["season_weight"] = window_df["year"].map(valid_years)
 
-    # Optimal event rule: Take the best W_points per season per team
+    # Take highest W_points per season per team
     season_bests = (
         window_df.groupby(["vehicle_class", "propulsion_type", "team_id", "year"], as_index=False)
         .agg(
@@ -117,7 +189,7 @@ def build_world_rankings(df: pd.DataFrame, current_year: int) -> pd.DataFrame:
     )
     season_bests["season_pts"] = season_bests["best_event_pts"] * season_bests["weight"]
 
-    # Sum across the 3-season sliding window
+    # Sum across 3 seasons
     ranked_categories = []
     for (v_class, p_type), grp in season_bests.groupby(["vehicle_class", "propulsion_type"]):
         teams_data = []
@@ -174,22 +246,26 @@ def build_world_rankings(df: pd.DataFrame, current_year: int) -> pd.DataFrame:
 
 
 # -----------------------------------------------------------------------------
-# 4. CLI ENTRYPOINT
+# 5. CLI ENTRYPOINT
 # -----------------------------------------------------------------------------
 def main():
     parser = argparse.ArgumentParser(description="Generate Shell Eco-marathon World Rankings.")
-    parser.add_argument("--data-dir", type=str, default="data", help="Folder containing CSV files")
+    parser.add_argument("--data-dir", type=str, default="data/results", help="Folder containing CSV files")
+    parser.add_argument("--events", type=str, default="data/events.csv", help="Path to events.csv track characteristics file")
     parser.add_argument("--output", type=str, default="world_rankings.csv", help="Output path for rankings CSV")
     parser.add_argument("--year", type=int, default=None, help="Reference season year (defaults to max in data)")
 
     args = parser.parse_args()
     data_path = Path(args.data_dir)
+    events_path = Path(args.events)
 
     raw_df = load_data(data_path)
+    track_mods = load_track_modifiers(events_path)
+
     ref_year = args.year if args.year else int(raw_df["year"].max())
     print(f"\n[+] Computing World Rankings for Window: {ref_year - 2} – {ref_year}")
 
-    scored_df = calculate_event_points(raw_df)
+    scored_df = calculate_event_points(raw_df, track_mods)
     rankings_df = build_world_rankings(scored_df, current_year=ref_year)
 
     if rankings_df.empty:

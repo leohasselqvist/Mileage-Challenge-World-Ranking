@@ -1,0 +1,14 @@
+event_id,year,region,track,laps,turns,elevation_change,total_dist,time
+sem_2026_br,2026,Brazil,Pier Maua,10,8,0.2,8.53,25
+sem_2025_br,2025,Brazil,Pier Maua,10,8,0.2,8.53,25
+sem_2024_br,2024,Brazil,Pier Maua,10,8,0.2,8.53,25
+sem_2026_pl,2026,Europe and Africa,Silesia Ring,7,7,3.2566,9.27,22
+sem_2025_eu,2025,Europe and Africa,Silesia Ring,11,7,3.2566,14.6,35
+sem_2024_eu,2024,Europe and Africa,Nogaro,10,7,6.0,15.7,38
+sem_2026_qa,2026,Asia,Lusail International Circuit,4,11,7.5,14.8,35 
+sem_2025_as,2025,Asia,Lusail International Circuit,4,11,7.5,14.8,35 
+sem_2024_as,2024,Asia,Mandalika International Street Circuit,3,16,4.8,12.9,30
+sem_2026_us,2026,Americas,Indianapolis Motor Speedway,4,14,3.774,15.33,35
+sem_2025_us,2025,Americas,Indianapolis Motor Speedway,4,14,3.774,15.33,35
+sem_2024_us,2024,Americas,Indianapolis Motor Speedway,4,14,3.774,15.33,35
+sem_2024_cn,2024,China,Goldenport Track Beijing,5,10,8.0,11.82,29
