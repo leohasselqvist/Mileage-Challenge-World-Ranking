@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mileage Challenge World Rankings</title>
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- PapaParse for reading CSV in browser -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
+  <style>
+    th.sortable:hover { cursor: pointer; background-color: #1e293b; }
+    th.sortable::after { content: ' ↕'; opacity: 0.3; }
+    th.asc::after { content: ' ↑'; opacity: 1; color: #38bdf8; }
+    th.desc::after { content: ' ↓'; opacity: 1; color: #38bdf8; }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 min-h-screen p-4 md:p-8 font-sans antialiased">
+
+  <div class="max-w-7xl mx-auto space-y-6">
+    <!-- Header -->
+    <header class="border-b border-slate-800 pb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div>
+        <h1 class="text-3xl font-extrabold tracking-tight text-white flex items-center gap-3">
+          Mileage Challenge World Rankings
+        </h1>
+        <p class="text-slate-400 text-sm mt-1">Really really unofficial</p>
+      </div>
+      <div id="statusBadge" class="text-xs px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 font-mono">
+        Loading rankings...
+      </div>
+    </header>
+
+    <!-- Controls & Filters -->
+    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 md:p-6 shadow-sm space-y-4">
+      <!-- Vehicle Class Tabs -->
+      <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-4">
+        <button onclick="setClass('ALL')" id="tab-all" class="px-5 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white">
+          All
+        </button>
+        <button onclick="setClass('P')" id="tab-proto" class="px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">
+          Prototype
+        </button>
+        <button onclick="setClass('UC')" id="tab-urban" class="px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">
+          Urban Concept
+        </button>
+      </div>
+
+      <!-- Propulsion Filter & Search Bar -->
+      <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+        <!-- Propulsion Pills -->
+        <div class="flex flex-wrap gap-2 w-full md:w-auto" id="propulsionPills">
+          <button onclick="setPropulsion('ALL')" class="prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white" data-val="ALL">
+            All Propulsions
+          </button>
+          <button onclick="setPropulsion('BE')" class="prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700" data-val="BE">
+            Battery-Electric
+          </button>
+          <button onclick="setPropulsion('ICE')" class="prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700" data-val="ICE">
+            ICE
+          </button>
+          <button onclick="setPropulsion('H2')" class="prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700" data-val="H2">
+            Hydrogen
+          </button>
+        </div>
+
+        <!-- Search Input -->
+        <div class="w-full md:w-72">
+          <input 
+            type="text" 
+            id="searchInput" 
+            oninput="renderTable()" 
+            placeholder="Search team, university, country..." 
+            class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+          />
+        </div>
+      </div>
+    </section>
+
+    <!-- Table Container -->
+    <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-900 shadow-lg">
+      <table class="w-full table-fixed text-left text-sm text-slate-300">
+        <thead class="bg-slate-950 text-slate-400 uppercase text-xs tracking-wider border-b border-slate-800">
+          <tr>
+            <!-- Rigid fixed widths for all metadata columns -->
+            <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('rank')">Rank</th>
+            <th class="w-28 min-w-[7rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('country')">Country</th>
+            <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('vehicle_number')">No.
+            </th>
+    
+            <!-- w-full forces this column to greedily soak up ALL remaining width -->
+            <th class="w-full px-4 py-3.5 sortable" onclick="sortTable('team_name')">Team / Institution</th>
+    
+            <!-- Rigid fixed widths for stats/points -->
+            <th class="w-36 min-w-[9rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('propulsion_type')">
+              Propulsion</th>
+            <th class="w-24 min-w-[6rem] px-4 py-3.5 text-right sortable text-white font-bold whitespace-nowrap"
+              onclick="sortTable('wrl_points')">WRL Pts</th>
+            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right whitespace-nowrap hidden sm:table-cell" id="col-s0">Current
+            </th>
+            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right whitespace-nowrap hidden sm:table-cell" id="col-s1">Prev
+            </th>
+            <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right whitespace-nowrap hidden md:table-cell" id="col-s2">Prev-2
+            </th>
+          </tr>
+        </thead>
+        <tbody id="rankingTableBody" class="divide-y divide-slate-800/60 font-mono">
+          <!-- Rows will be injected here -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script>
+    let rawData = [];
+    let selectedClass = 'ALL';
+    let selectedPropulsion = 'ALL';
+    let sortColumn = 'wrl_points';
+    let sortAsc = false;
+    let currentYear = 2026;
+
+    // Helper: Normalize strings for comparison (removes spaces, dashes, casing)
+    function norm(str) {
+      return String(str || '').toLowerCase().replace(/[\s_-]+/g, '');
+    }
+
+    // Handles parsed CSV results
+    function handleResults(results) {
+      rawData = results.data.filter(r => r && (r.team_name || r.team_id || r.institution));
+
+      console.log("[+] CSV Successfully Parsed!");
+      console.log("[+] Total valid rows:", rawData.length);
+      console.log("[+] Sample row structure:", rawData[0]);
+
+      if (rawData.length === 0) {
+        document.getElementById('statusBadge').innerText = "0 valid rows found";
+        return;
+      }
+
+      detectSeasons(results.meta.fields || Object.keys(rawData[0]));
+      updateTabCounts();
+      document.getElementById('statusBadge').innerText = `${rawData.length} teams loaded`;
+      renderTable();
+    }
+
+    // Detects point columns (e.g., points_2026, points_2025, points_2024)
+    function detectSeasons(fields) {
+      const yearFields = fields
+        .filter(f => f && f.startsWith('points_'))
+        .map(f => parseInt(f.replace('points_', '')))
+        .filter(y => !isNaN(y))
+        .sort((a, b) => b - a);
+
+      if (yearFields.length >= 3) {
+        currentYear = yearFields[0];
+        document.getElementById('col-s0').innerText = yearFields[0];
+        document.getElementById('col-s1').innerText = yearFields[1];
+        document.getElementById('col-s2').innerText = yearFields[2];
+      }
+    }
+
+    // Updates tab numbers so you see how many cars exist per class
+    function updateTabCounts() {
+      const protoCount = rawData.filter(r => norm(r.vehicle_class).includes('p')).length;
+      const urbanCount = rawData.filter(r => norm(r.vehicle_class).includes('uc')).length;
+
+      document.getElementById('tab-proto').innerText = `Prototype (${protoCount})`;
+      document.getElementById('tab-urban').innerText = `Urban Concept (${urbanCount})`;
+      document.getElementById('tab-all').innerText = `All (${rawData.length})`;
+    }
+
+    function setClass(vClass) {
+      selectedClass = vClass;
+      document.getElementById('tab-proto').className = selectedClass === 'P'
+        ? "px-5 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white"
+        : "px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700";
+      document.getElementById('tab-urban').className = selectedClass === 'UC'
+        ? "px-5 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white"
+        : "px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700";
+      document.getElementById('tab-all').className = selectedClass === 'ALL'
+        ? "px-5 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white"
+        : "px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700";
+      renderTable();
+      } 
+    
+
+    function setPropulsion(prop) {
+      selectedPropulsion = prop;
+      document.querySelectorAll('.prop-btn').forEach(btn => {
+        btn.className = norm(btn.dataset.val) === norm(prop)
+          ? "prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white"
+          : "prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700";
+      });
+      renderTable();
+    }
+
+    function sortTable(column) {
+      if (sortColumn === column) {
+        sortAsc = !sortAsc;
+      } else {
+        sortColumn = column;
+        sortAsc = (column === 'rank');
+      }
+      renderTable();
+    }
+
+    function rankColor(value) {
+      return value === 1 ? 'text-amber-400 font-black' : (value === 2 ? 'text-slate-300 font-bold' : (value === 3 ? 'text-amber-600 font-bold' : 'text-slate-400 font-medium'));
+    }
+
+    function renderTable() {
+      const query = document.getElementById('searchInput').value.toLowerCase().trim();
+      const targetClassNorm = norm(selectedClass);
+      const targetPropNorm = norm(selectedPropulsion);
+
+      // Filter rows
+      let filtered = rawData.filter(row => {
+        // Robust class match (handles 'prototype', 'Prototype ', 'UrbanConcept', etc.)
+        const rowClassNorm = norm(row.vehicle_class);
+        const matchesClass = (targetClassNorm === 'all') || rowClassNorm.includes(targetClassNorm) || targetClassNorm.includes(rowClassNorm);
+
+        // Robust propulsion match
+        const rowPropNorm = norm(row.propulsion_type);
+        const matchesProp = (targetPropNorm === 'all') || rowPropNorm.includes(targetPropNorm) || targetPropNorm.includes(rowPropNorm);
+
+        // Text search
+        const matchesSearch = !query || [
+          row.team_name, row.institution, row.country, String(row.vehicle_number || ''), String(row.team_id || '')
+        ].some(field => String(field || '').toLowerCase().includes(query));
+
+        return matchesClass && matchesProp && matchesSearch;
+      });
+
+      // Sort rows
+      filtered.sort((a, b) => {
+        let valA = a[sortColumn] ?? 0;
+        let valB = b[sortColumn] ?? 0;
+        if (typeof valA === 'string') valA = valA.toLowerCase();
+        if (typeof valB === 'string') valB = valB.toLowerCase();
+        return sortAsc ? (valA > valB ? 1 : -1) : (valA < valB ? 1 : -1);
+      });
+
+      const tbody = document.getElementById('rankingTableBody');
+
+      // Diagnostic message if 0 teams match
+      if (filtered.length === 0) {
+        const availableClasses = [...new Set(rawData.map(r => r.vehicle_class))].join(', ');
+        const availableProps = [...new Set(rawData.map(r => r.propulsion_type))].join(', ');
+        tbody.innerHTML = `
+            <tr>
+              <td colspan="10" class="text-center py-10 font-sans space-y-2">
+                <div class="text-slate-400 font-semibold text-base">No teams matched filter: "${selectedClass}" & "${selectedPropulsion}"</div>
+                <div class="text-slate-500 text-xs">Classes found in your CSV: [${availableClasses}]</div>
+                <div class="text-slate-500 text-xs">Propulsions found in your CSV: [${availableProps}]</div>
+              </td>
+            </tr>`;
+        return;
+      }
+      
+      let listRank = 0;
+      let prevPoints = 0;
+      // Render table rows
+      tbody.innerHTML = filtered.map((row, index) => {
+        // <td class="px-4 py-3 text-right text-slate-400 text-xs hidden lg:table-cell">${parseFloat(row.best_single_score || 0).toFixed(1)}</td>
+        const teamTitle = row.team_name || row.institution || 'Unknown Team';
+        const subTitle = (row.institution && row.institution !== row.team_name) ? row.institution : '';
+        if (row.wrl_points != prevPoints) {
+          listRank++;
+        }
+        prevPoints = row.wrl_points;
+        return `
+            <tr class="hover:bg-slate-800/40 transition">
+              <td class="px-4 py-3 ${rankColor(listRank)} text-sm">#${listRank}</td>
+              <td class="px-4 py-3 font-sans text-slate-300 text-xs truncate" title="${row.country || ''}">${row.country || '-'}</td>
+              <td class="px-4 py-3 text-slate-400 text-xs font-mono">#${row.vehicle_number || ''}</td>
+              <td class="px-4 py-3 font-sans overflow-hidden">
+                <div class="font-bold text-white text-sm truncate" title="${teamTitle}">${teamTitle}</div>
+                <div class="text-slate-400 text-xs font-normal truncate" title="${subTitle}">${subTitle}</div>
+              </td>
+              <td class="px-4 py-3 font-sans text-xs">
+                <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300 whitespace-nowrap">${row.propulsion_type || '-'}</span>
+              </td>
+              <td class="px-4 py-3 text-right font-bold text-emerald-400 text-sm">${parseFloat(row.wrl_points || 0).toFixed(1)}</td>
+              <td class="px-4 py-3 text-right text-slate-400 text-xs hidden sm:table-cell">${parseFloat(row[`points_${currentYear}`] || 0).toFixed(1)}</td>
+              <td class="px-4 py-3 text-right text-slate-400 text-xs hidden sm:table-cell">${parseFloat(row[`points_${currentYear - 1}`] || 0).toFixed(1)}</td>
+              <td class="px-4 py-3 text-right text-slate-500 text-xs hidden md:table-cell">${parseFloat(row[`points_${currentYear - 2}`] || 0).toFixed(1)}</td>
+            </tr>
+          `;
+      }).join('');
+    }
+
+    // Ingestion config with automatic header sanitization
+    const parseConfig = {
+      header: true,
+      dynamicTyping: true,
+      skipEmptyLines: true,
+      transformHeader: (header) => header.trim().toLowerCase().replace(/[\s-]+/g, '_'),
+      complete: handleResults,
+      error: (err) => console.error(err)
+    };
+
+    // Load CSV (handles both local file and web server)
+    window.addEventListener('DOMContentLoaded', () => {
+      if (window.location.protocol === 'file:') {
+        const badge = document.getElementById('statusBadge');
+        badge.innerHTML = `
+            <span class="text-amber-400">Local file:</span> 
+            <label class="cursor-pointer underline font-bold ml-1 text-white hover:text-blue-400">
+              Select world_rankings.csv
+              <input type="file" id="csvFileInput" accept=".csv" class="hidden" />
+            </label>
+          `;
+        document.getElementById('csvFileInput').addEventListener('change', (e) => {
+          if (e.target.files[0]) Papa.parse(e.target.files[0], parseConfig);
+        });
+      } else {
+        Papa.parse('world_rankings.csv', { ...parseConfig, download: true });
+      }
+    });
+  </script>
+</body>
+</html>
