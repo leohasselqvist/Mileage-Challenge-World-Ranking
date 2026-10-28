@@ -50,21 +50,21 @@ The Podium Ratio rewards competing in more dominant regions.
 
 Then a modifier per track is calculated. This is an attempt to reward teams with harder configurations, as not every track is created equal. Each track is compared to a baseline track of with a turn density of 4 turns/km, 2 m/km of elevation and average velocity of 25 km/h.
 
-$$M_{\text{track}} = 1.0 + 0.08 \cdot \left(\frac{\text{turn\_density} - 4.0}{4.0}\right) + 0.06 \cdot \left(\frac{\text{elev\_rate} - 2.0}{2.0}\right) + 0.06 \cdot \left(\frac{v_{\text{avg}} - 25.0}{25.0}\right)$$
+$`\begin{align}M_{\text{track}} = 1.0 + 0.08 \cdot \left(\frac{\text{turn\_density} - 4.0}{4.0}\right) + 0.06 \cdot \left(\frac{\text{elev\_rate} - 2.0}{2.0}\right) + 0.06 \cdot \left(\frac{v_{\text{avg}} - 25.0}{25.0}\right)\end{align}`$
 
 Where,
 
-**$\text{turn\_density} = \frac{\text{turns} \times \text{laps}}{\text{total\_dist}}$** ($\text{turns/km}$), represenets cornering losses.
+**$`\text{turn\_density} = \frac{\text{turns} \times \text{laps}}{\text{total\_dist}}`$** ($`\text{turns/km}`$), represenets cornering losses.
 
-**$\text{elev\_rate} = \frac{\text{elevation\_change} \times \text{laps}}{\text{total\_dist}}$** ($\text{m/km}$), represents elevation change losses
+**$`\text{elev\_rate} = \frac{\text{elevation\_change} \times \text{laps}}{\text{total\_dist}}`$** ($`\text{m/km}`$), represents elevation change losses
 
-**$v_{\text{avg}} = \frac{\text{total\_dist}}{\text{time} / 60}$** ($\text{km/h}$), represents rolling resistance losses
+**$`v_{\text{avg}} = \frac{\text{total\_dist}}{\text{time} / 60}`$** ($`\text{km/h}`$), represents rolling resistance losses
 
-$M_{\text{track}}$ is clamped between 0.80 and 1.25. If track data is unavailable, $M_{\text{track}}$ defaults to 1. All track data is found in events.csv
+$`M_{\text{track}}`$ is clamped between 0.80 and 1.25. If track data is unavailable, $`M_{\text{track}}`$ defaults to 1. All track data is found in events.csv
 
 Lastly $W_{points}$ is summed up per the last 3 years with the following weighting falloff, so newer seasons are worth more than older ones.
 
-$$\{\text{Current Year}: 1.00, \text{1 Year Ago}: 0.65, \text{2 Years Ago}: 0.35\}$$
+$`\begin{align}\{\text{Current Year}: 1.00, \text{1 Year Ago}: 0.65, \text{2 Years Ago}: 0.35\}\end{align}`$
 
 The theoretical best score for a single season is $100 * 1.25 = 125$, if you maintain a perfect score over 3 seasons in a completely dominant event with an extremely tough track. The theoretical highest world score is $125 \cdot (1 + 0.65 + 0.35) = 250$.
 
