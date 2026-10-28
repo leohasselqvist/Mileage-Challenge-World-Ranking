@@ -9,39 +9,46 @@
   <!-- PapaParse for reading CSV in browser -->
   <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.4.1/papaparse.min.js"></script>
   <style>
-    th.sortable:hover { cursor: pointer; background-color: #1e293b; }
+    th.sortable:hover { cursor: pointer; background-color: #cfd9e9; }
     th.sortable::after { content: ' ↕'; opacity: 0.3; }
     th.asc::after { content: ' ↑'; opacity: 1; color: #38bdf8; }
     th.desc::after { content: ' ↓'; opacity: 1; color: #38bdf8; }
   </style>
 </head>
-<body class="bg-slate-950 text-slate-100 min-h-screen p-4 md:p-8 font-sans antialiased">
+<body class="bg-slate-150 text-slate-900 min-h-screen p-4 md:p-8 font-sans antialiased">
 
   <div class="max-w-7xl mx-auto space-y-6">
     <!-- Header -->
-    <header class="border-b border-slate-800 pb-6 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
-      <div>
-        <h1 class="text-3xl font-extrabold tracking-tight text-white flex items-center gap-3">
-          Mileage Challenge World Rankings
+    <header class="border-slate-500 flex flex-col md:flex-row justify-between items-start md:items-center gap-4">
+      <div class="">
+        <h1 class="text-3xl font-extrabold tracking-tight text-black flex items-center gap-3">
+          Mileage Challenge World Rankings (UNOFFICIAL) (ALPHA)
         </h1>
-        <p class="text-slate-400 text-sm mt-1">Really really unofficial</p>
+        <p class="text-slate-600 text-sm mt-1">For the best experience, select a vehicle class and propulsion type.</p>
+        <p class="text-slate-600 text-sm mt-1">This isn't supposed to be something too serious, but a fun way for teams to compare between regions.</p>
+        <p class="text-slate-600 text-sm mt-1">I'd love to hear suggestions to improve, check the github for more info!</p></p>
       </div>
-      <div id="statusBadge" class="text-xs px-3 py-1.5 rounded-full bg-slate-800 text-slate-300 font-mono">
-        Loading rankings...
-      </div>
+      <button class="flex items-center text-xs gap-2 px-3 py-1.5 bg-slate-200 text-slate-700 font-mono" onclick="window.open('https://github.com/leohasselqvist/Mileage-Challenge-World-Ranking')">
+        <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor"
+          class="size-6">
+          <path stroke-linecap="round" stroke-linejoin="round"
+            d="M17.25 6.75 22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3-4.5 16.5" />
+        </svg>
+        <u>Check out the source code!</u>
+      </button>
     </header>
 
     <!-- Controls & Filters -->
-    <section class="bg-slate-900 border border-slate-800 rounded-xl p-4 md:p-6 shadow-sm space-y-4">
+    <section class="bg-slate-100 border border-slate-500  p-4 md:p-6 shadow-sm space-y-4">
       <!-- Vehicle Class Tabs -->
-      <div class="flex flex-wrap gap-2 border-b border-slate-800 pb-4">
-        <button onclick="setClass('ALL')" id="tab-all" class="px-5 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white">
+      <div class="flex flex-wrap gap-2 border-b border-slate-500 pb-4">
+        <button onclick="setClass('ALL')" id="tab-all" class="px-5 py-2  text-sm font-semibold transition bg-orange-500 text-white">
           All
         </button>
-        <button onclick="setClass('P')" id="tab-proto" class="px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">
+        <button onclick="setClass('P')" id="tab-p" class="px-5 py-2  text-sm font-semibold transition bg-slate-200 text-slate-700 hover:bg-slate-300">
           Prototype
         </button>
-        <button onclick="setClass('UC')" id="tab-urban" class="px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700">
+        <button onclick="setClass('UC')" id="tab-uc" class="px-5 py-2  text-sm font-semibold transition bg-slate-200 text-slate-700 hover:bg-slate-300">
           Urban Concept
         </button>
       </div>
@@ -50,16 +57,16 @@
       <div class="flex flex-col md:flex-row justify-between items-center gap-4">
         <!-- Propulsion Pills -->
         <div class="flex flex-wrap gap-2 w-full md:w-auto" id="propulsionPills">
-          <button onclick="setPropulsion('ALL')" class="prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white" data-val="ALL">
+          <button onclick="setPropulsion('ALL')" class="prop-btn px-3.5 py-1.5  text-xs font-semibold bg-orange-500 text-white" data-val="ALL">
             All Propulsions
           </button>
-          <button onclick="setPropulsion('BE')" class="prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700" data-val="BE">
+          <button onclick="setPropulsion('BE')" class="prop-btn px-3.5 py-1.5  text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300" data-val="BE">
             Battery-Electric
           </button>
-          <button onclick="setPropulsion('ICE')" class="prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700" data-val="ICE">
+          <button onclick="setPropulsion('ICE')" class="prop-btn px-3.5 py-1.5  text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300" data-val="ICE">
             ICE
           </button>
-          <button onclick="setPropulsion('H2')" class="prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700" data-val="H2">
+          <button onclick="setPropulsion('H2')" class="prop-btn px-3.5 py-1.5  text-xs font-semibold bg-slate-200 text-slate-700 hover:bg-slate-300" data-val="H2">
             Hydrogen
           </button>
         </div>
@@ -71,16 +78,16 @@
             id="searchInput" 
             oninput="renderTable()" 
             placeholder="Search team, university, country..." 
-            class="w-full bg-slate-950 border border-slate-800 rounded-lg px-3.5 py-2 text-sm text-slate-100 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
+            class="w-full bg-slate-150 border border-slate-500  px-3.5 py-2 text-sm text-slate-900 placeholder-slate-500 focus:outline-none focus:ring-2 focus:ring-blue-500"
           />
         </div>
       </div>
     </section>
 
     <!-- Table Container -->
-    <div class="overflow-x-auto rounded-xl border border-slate-800 bg-slate-900 shadow-lg">
-      <table class="w-full table-fixed text-left text-sm text-slate-300">
-        <thead class="bg-slate-950 text-slate-400 uppercase text-xs tracking-wider border-b border-slate-800">
+    <div class="overflow-x-auto  border border-slate-500 bg-slate-100 shadow-lg">
+      <table class="w-full table-fixed text-left text-sm text-slate-700">
+        <thead class="bg-slate-150 text-slate-800 uppercase text-xs tracking-wider border-b border-slate-500">
           <tr>
             <!-- Rigid fixed widths for all metadata columns -->
             <th class="w-16 min-w-[4rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('rank')">Rank</th>
@@ -94,7 +101,7 @@
             <!-- Rigid fixed widths for stats/points -->
             <th class="w-36 min-w-[9rem] px-4 py-3.5 sortable whitespace-nowrap" onclick="sortTable('propulsion_type')">
               Vehicle</th>
-            <th class="w-24 min-w-[6rem] px-4 py-3.5 text-right sortable text-white font-bold whitespace-nowrap"
+            <th class="w-24 min-w-[6rem] px-4 py-3.5 text-right sortable font-bold whitespace-nowrap"
               onclick="sortTable('wrl_points')">WRL Pts</th>
             <th class="w-20 min-w-[5rem] px-4 py-3.5 text-right sortable whitespace-nowrap hidden sm:table-cell" id="col-s0" onclick="sortTable('points_2026')">Current
             </th>
@@ -112,9 +119,20 @@
   </div>
 
   <script>
+    const classes = ['ALL', 'P', 'UC']
+    const types = ['ALL', 'ICE', 'BE', 'H2']
+    const vehicleColors = {
+      'P': 'yellow-500',
+      'UC': 'red-500',
+      'ICE': 'pink-500',
+      'BE': 'green-500',
+      'H2': 'blue-500',
+      'ALL': 'orange-500'
+
+    }
     let rawData = [];
-    let selectedClass = 'ALL';
-    let selectedPropulsion = 'ALL';
+    let selectedClass = classes[0];
+    let selectedPropulsion = types[0];
     let sortColumn = 'wrl_points';
     let sortAsc = false;
     let currentYear = 2026;
@@ -139,7 +157,7 @@
 
       detectSeasons(results.meta.fields || Object.keys(rawData[0]));
       updateTabCounts();
-      document.getElementById('statusBadge').innerText = `${rawData.length} teams loaded`;
+      //document.getElementById('statusBadge').innerText = `${rawData.length} teams loaded`;
       renderTable();
     }
 
@@ -163,23 +181,16 @@
     function updateTabCounts() {
       const protoCount = rawData.filter(r => norm(r.vehicle_class).includes('p')).length;
       const urbanCount = rawData.filter(r => norm(r.vehicle_class).includes('uc')).length;
-
-      document.getElementById('tab-proto').innerText = `Prototype (${protoCount})`;
-      document.getElementById('tab-urban').innerText = `Urban Concept (${urbanCount})`;
-      document.getElementById('tab-all').innerText = `All (${rawData.length})`;
     }
 
     function setClass(vClass) {
       selectedClass = vClass;
-      document.getElementById('tab-proto').className = selectedClass === 'P'
-        ? "px-5 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white"
-        : "px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700";
-      document.getElementById('tab-urban').className = selectedClass === 'UC'
-        ? "px-5 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white"
-        : "px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700";
-      document.getElementById('tab-all').className = selectedClass === 'ALL'
-        ? "px-5 py-2 rounded-lg text-sm font-semibold transition bg-blue-600 text-white"
-        : "px-5 py-2 rounded-lg text-sm font-semibold transition bg-slate-800 text-slate-300 hover:bg-slate-700";
+
+      classes.forEach(existingClass => {
+        document.getElementById(`tab-${existingClass.toLowerCase()}`).className = selectedClass === existingClass
+          ? `px-5 py-2  text-sm font-semibold transition bg-${vehicleColors[selectedClass]} text-white`
+          : "px-5 py-2  text-sm font-semibold transition bg-slate-200 text-slate-700 hover:bg-slate-300";
+      });
       renderTable();
       } 
     
@@ -188,14 +199,14 @@
       selectedPropulsion = prop;
       document.querySelectorAll('.prop-btn').forEach(btn => {
         btn.className = norm(btn.dataset.val) === norm(prop)
-          ? "prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-emerald-600 text-white"
-          : "prop-btn px-3.5 py-1.5 rounded-lg text-xs font-semibold bg-slate-800 text-slate-300 hover:bg-slate-700";
+          ? `prop-btn px-3.5 py-1.5  text-xs font-semibold transition bg-${vehicleColors[prop]} text-white`
+          : "prop-btn px-3.5 py-1.5  text-xs font-semibold transition bg-slate-200 text-slate-700 hover:bg-slate-300";
       });
       renderTable();
     }
 
     function rankColor(value) {
-      return value === 1 ? 'text-amber-400 font-black' : (value === 2 ? 'text-slate-300 font-bold' : (value === 3 ? 'text-amber-600 font-bold' : 'text-slate-400 font-medium'));
+      return value === 1 ? 'text-amber-400 font-black' : (value === 2 ? 'text-slate-700 font-bold' : (value === 3 ? 'text-amber-600 font-bold' : 'text-slate-600 font-medium'));
     }
 
     function sortTable(column) {
@@ -266,7 +277,7 @@
         tbody.innerHTML = `
         <tr>
           <td colspan="10" class="text-center py-10 font-sans space-y-2">
-            <div class="text-slate-400 font-semibold text-base">No teams matched filter: "${selectedClass}" & "${selectedPropulsion}"</div>
+            <div class="text-slate-600 font-semibold text-base">No teams matched filter: "${selectedClass}" & "${selectedPropulsion}"</div>
             <div class="text-slate-500 text-xs">Classes found in your CSV: [${availableClasses}]</div>
             <div class="text-slate-500 text-xs">Propulsions found in your CSV: [${availableProps}]</div>
           </td>
@@ -278,10 +289,10 @@
         tbody.innerHTML = filtered.map(row => {
           console.log("row");
           const rnk = row.dynamicRank;
-          const rankColor = rnk === 1 ? 'text-amber-400 font-black' : (rnk === 2 ? 'text-slate-300 font-bold' : (rnk === 3 ? 'text-amber-600 font-bold' : 'text-slate-400 font-medium'));
+          const rankColor = rnk === 1 ? 'text-amber-400 font-black' : (rnk === 2 ? 'text-slate-400 font-bold' : (rnk === 3 ? 'text-amber-600 font-bold' : 'text-slate-900 font-medium'));
           const fullTeam = row.team_name || row.institution || 'Unknown Team';
           const fullInst = (row.institution && row.institution !== row.team_name) ? row.institution : '';
-
+          
           const cCode = row.team_id.substring(0, 2).toLowerCase();
           const countryName = row.country || 'Unknown';
           const flagHtml = cCode
@@ -290,28 +301,28 @@
                   width="24" height="18" 
                   alt="${countryName}" 
                   title="${countryName}" 
-                  class="rounded-sm inline-block shadow-sm transition-transform hover:scale-125" 
+                  class=" inline-block shadow-sm" 
                   onerror="this.style.display='none'; this.nextElementSibling.style.display='inline'"/>
-             <span class="hidden text-xs text-slate-300">${cCode.toUpperCase()}</span>`
-            : `<span class="text-xs text-slate-400">${countryName}</span>`;
+             <span class="hidden text-xs text-slate-700">${cCode.toUpperCase()}</span>`
+            : `<span class="text-xs text-slate-600">${countryName}</span>`;
 
           return `
-          <tr class="hover:bg-slate-800/40 transition">
+          <tr class="hover:bg-slate-200/40 transition">
             <td class="px-4 py-3 ${rankColor} text-sm whitespace-nowrap">#${row.wrl_points > 0 ? rnk : "-"}</td>
             <td class="px-4 py-3 text-center whitespace-nowrap">${flagHtml}</td>
-            <td class="px-4 py-3 text-slate-400 text-xs font-mono whitespace-nowrap">#${row.vehicle_number || ''}</td>
+            <td class="px-4 py-3 text-slate-600 text-xs font-mono whitespace-nowrap">#${row.vehicle_number || ''}</td>
             <td class="px-4 py-3 font-sans">
-              <div class="font-bold text-white text-sm truncate" title="${fullTeam}">${fullTeam}</div>
-              <div class="text-slate-400 text-xs font-normal truncate" title="${fullInst}">${fullInst}</div>
+              <div class="font-bold text-black text-sm truncate" title="${fullTeam}">${fullTeam}</div>
+              <div class="text-slate-600 text-xs font-normal truncate" title="${fullInst}">${fullInst}</div>
             </td>
             <td class="px-4 py-3 font-sans text-xs whitespace-nowrap">
-              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">${row.vehicle_class.toUpperCase()}</span>
-              <span class="px-2 py-0.5 rounded bg-slate-800 text-slate-300">${row.propulsion_type.toUpperCase()}</span>
+              <span class="px-2 py-0.5 rounded bg-${vehicleColors[row.vehicle_class.toUpperCase()]} text-slate-100">${row.vehicle_class.toUpperCase()}</span>
+              <span class="px-2 py-0.5 rounded bg-${vehicleColors[row.propulsion_type.toUpperCase()]} text-slate-100">${row.propulsion_type.toUpperCase()}</span>
             </td>
-            <td class="px-4 py-3 text-right font-bold text-emerald-400 text-sm whitespace-nowrap">${parseFloat(row.wrl_points || 0).toFixed(1)}</td>
-            <td class="px-4 py-3 text-right text-slate-400 text-xs hidden sm:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear}`] || 0).toFixed(1)}</td>
-            <td class="px-4 py-3 text-right text-slate-400 text-xs hidden sm:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear - 1}`] || 0).toFixed(1)}</td>
-            <td class="px-4 py-3 text-right text-slate-500 text-xs hidden md:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear - 2}`] || 0).toFixed(1)}</td>
+            <td class="px-4 py-3 text-right font-bold text-green-600 text-base whitespace-nowrap">${parseFloat(row.wrl_points || 0).toFixed(1)}</td>
+            <td class="px-4 py-3 text-right text-slate-900 text-sm hidden sm:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear}`] || 0).toFixed(1)}</td>
+            <td class="px-4 py-3 text-right text-slate-700 text-sm hidden sm:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear - 1}`] || 0).toFixed(1)}</td>
+            <td class="px-4 py-3 text-right text-slate-500 text-sm hidden md:table-cell whitespace-nowrap">${parseFloat(row[`points_${currentYear - 2}`] || 0).toFixed(1)}</td>
           </tr>
         `;
         }).join('');
@@ -333,7 +344,7 @@
         const badge = document.getElementById('statusBadge');
         badge.innerHTML = `
             <span class="text-amber-400">Local file:</span> 
-            <label class="cursor-pointer underline font-bold ml-1 text-white hover:text-blue-400">
+            <label class="cursor-pointer underline font-bold ml-1 text-black hover:text-blue-400">
               Select world_rankings.csv
               <input type="file" id="csvFileInput" accept=".csv" class="hidden" />
             </label>
