@@ -64,6 +64,7 @@ def load_data(data_dir: Path) -> pd.DataFrame:
 def load_track_modifiers(events_path: Path) -> dict:
     """
     Computes M_track for each event based on turn density, elevation, and speed.
+    Event IDs containing '*' apply to IDs that start with the preceding prefix.
     Baseline neutral circuit: 4.0 turns/km, 2.0 m/km elevation, 25 km/h.
     """
     if not events_path.exists():
@@ -146,11 +147,35 @@ def calculate_event_points(df: pd.DataFrame, modifiers: dict) -> pd.DataFrame:
     # 5. Compute C_k = (E_event_top3 / E_world_top3) * M_track
     c_k_values = []
     m_track_values = []
+    wildcard_modifiers = sorted(
+        (
+            (event_id.split("*", 1)[0], modifier)
+            for event_id, modifier in modifiers.items()
+            if "*" in event_id
+        ),
+        key=lambda item: len(item[0]),
+        reverse=True,
+    )
 
     for row in df.itertuples():
         ev_top3 = event_top3.get((row.event_id, row.vehicle_class, row.propulsion_type), 0.0)
         wld_top3 = world_top3.get((row.year, row.vehicle_class, row.propulsion_type), 0.0)
-        m_trk = modifiers.get(row.event_id, 1.0)
+        if row.event_id in modifiers:
+            m_trk = modifiers[row.event_id]
+        else:
+            wildcard_modifier = next(
+                (
+                    modifier
+                    for prefix, modifier in wildcard_modifiers
+                    if row.event_id.startswith(prefix)
+                ),
+                None,
+            )
+            if wildcard_modifier is None:
+                m_trk = 1.0
+                print(f"[!] Warning: No track modifier found for {row.event_id}. Defaulting M_track = 1.0")
+            else:
+                m_trk = wildcard_modifier
 
         if wld_top3 > 0 and ev_top3 > 0:
             c_k = (ev_top3 / wld_top3) * m_trk

@@ -1,0 +1,3 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+hem_2025_nc_cnnc,2025,P,ICE,1,JP0000501,Japan,501,,栃木県立矢板高等学校 B,,,1165.522
+hem_2025_nc_cnnc,2025,P,ICE,2,JP0000502,Japan,502,,長野県工科短大Z,,,747.888

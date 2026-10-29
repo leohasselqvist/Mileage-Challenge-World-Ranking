@@ -1,0 +1,26 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+hem_2025_nc_gr3,2025,P,ICE,1,JP0000326,Japan,326,,八戸高専自動車工学部NP号Ⅳ,,,1476.247
+hem_2025_nc_gr3,2025,P,ICE,2,JP0000341,Japan,341,,名城大学 SPICA,,,1234.143
+hem_2025_nc_gr3,2025,P,ICE,3,JP0000330,Japan,330,,鈴鹿高専しろくま組,,,977.152
+hem_2025_nc_gr3,2025,P,ICE,4,JP0000328,Japan,328,,神奈川県立産業技術短期大学校β,,,711.322
+hem_2025_nc_gr3,2025,P,ICE,5,JP0000336,Japan,336,,八戸工業大学動研OneFlat,,,616.147
+hem_2025_nc_gr3,2025,P,ICE,6,JP0000329,Japan,329,,山形産技短大庄内校,,,339.984
+hem_2025_nc_gr3,2025,P,ICE,7,JP0000337,Japan,337,,新居浜高専 機械工学科Girls,,,338.957
+hem_2025_nc_gr3,2025,P,ICE,8,JP0000333,Japan,333,,日産栃木自動車大学校,,,326.062
+hem_2025_nc_gr3,2025,P,ICE,9,JP0000338,Japan,338,,新居浜高専 機械工学科Boys,,,286.278
+hem_2025_nc_gr3,2025,P,ICE,10,JP0000335,Japan,335,,八戸工業大学 動力研究部 STD,,,271.002
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000321,Japan,321,,長野高専 Reginetta,,,1465.728
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000322,Japan,322,,長野高専Selene,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000323,Japan,323,,金沢工業大学夢考房welt,,,951.537
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000324,Japan,324,,鹿児島高専REDチーム,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000325,Japan,325,,長野県飯田技術専門校エコスピード,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000327,Japan,327,,オートメ M.D.,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000331,Japan,331,,鈴鹿高専きりん組,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000332,Japan,332,,群馬高専エコノパワー愛好会マシン,,,255.516
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000334,Japan,334,,日産横浜自動車大学校 Aチーム,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000339,Japan,339,,津山高専内燃機関部Ⅰ,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000340,Japan,340,,津山高専内燃機関部Ⅱ,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000342,Japan,342,,名城大学 軻遇突智,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000343,Japan,343,,都城高専,,,0.0
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000344,Japan,344,,木更津高専自動車部,,,145.125
+hem_2025_nc_gr3,2025,P,ICE,-,JP0000345,Japan,345,,埼玉工業大学エコラン,,,0.0

@@ -1,0 +1,4 @@
+event_id,year,vehicle_class,propulsion_type,rank,team_id,country,vehicle_number,institution,team_name,attempts_recorded,attempts_max,best_efficiency
+hem_2025_nc_nc,2025,P,ICE,1,JP0000513,Japan,513,,EM長野TeamRising,,,729.83
+hem_2025_nc_nc,2025,P,ICE,2,JP0000511,Japan,511,,神奈川県立平塚工科高等学校 社会,,,543.436
+hem_2025_nc_nc,2025,P,ICE,-,JP0000512,Japan,512,,チームＯＡＣ,,,0.0
